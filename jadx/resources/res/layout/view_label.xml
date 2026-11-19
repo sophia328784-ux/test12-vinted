@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vinted.views.common.VintedSpacerView
+        android:id="@+id/label_spacer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:vinted_spacer_size="x_large"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/label_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vinted.views.common.VintedTextView
+            android:ellipsize="end"
+            android:layout_gravity="left"
+            android:id="@+id/label_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_weight="1"/>
+        <com.vinted.views.common.VintedTextView
+            android:layout_gravity="right"
+            android:id="@+id/label_link"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            app:vinted_text_style="primary"/>
+    </LinearLayout>
+</merge>

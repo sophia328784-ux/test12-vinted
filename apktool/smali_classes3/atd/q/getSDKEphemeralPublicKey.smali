@@ -1,0 +1,333 @@
+.class public final Latd/q/getSDKEphemeralPublicKey;
+.super Lcom/adyen/threeds2/internal/deviceinfo/parameter/getDeviceData;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Latd/q/getSDKEphemeralPublicKey$getSDKTransactionID;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0000\u0018\u00002\u00020\u0001:\u0001\u000bB\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u000f\u0010\t\u001a\u00020\u0006H\u0014\u00a2\u0006\u0004\u0008\u0007\u0010\u0008R\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0003\u0010\n\u00a8\u0006\u000c"
+    }
+    d2 = {
+        "Lcom/adyen/threeds2/internal/deviceinfo/parameter/packagemanager/IsSafeMode;",
+        "Lcom/adyen/threeds2/internal/deviceinfo/parameter/DeviceParameter;",
+        "Landroid/app/Application;",
+        "application",
+        "<init>",
+        "(Landroid/app/Application;)V",
+        "Lcom/adyen/threeds2/internal/deviceinfo/parameter/DeviceParameterResult$Success$BooleanValue;",
+        "getDeviceParameterResult-f40dxT0",
+        "()Z",
+        "getDeviceParameterResult",
+        "Landroid/app/Application;",
+        "Companion",
+        "threeds2_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field private static AuthenticationRequestParameters:[C = null
+
+.field private static ChallengeResult:I = 0x0
+
+.field private static getMessageVersion:I = 0x1
+
+.field private static getSDKAppID:I = 0x0
+
+.field private static getSDKReferenceNumber:I = 0x1
+
+.field private static getSDKTransactionID:J
+
+
+# instance fields
+.field private final getDeviceData:Landroid/app/Application;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    invoke-static {}, Latd/q/getSDKEphemeralPublicKey;->getSDKAppID()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {}, Landroid/view/ViewConfiguration;->getJumpTapTimeout()I
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {}, Landroid/view/ViewConfiguration;->getScrollDefaultDelay()I
+
+    .line 8
+    .line 9
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    invoke-static {v0, v0}, Landroid/view/View;->resolveSize(II)I
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v1, Latd/q/getSDKEphemeralPublicKey$getSDKTransactionID;
+
+    .line 15
+    .line 16
+    invoke-direct {v1, v0}, Latd/q/getSDKEphemeralPublicKey$getSDKTransactionID;-><init>(B)V
+
+    .line 17
+    .line 18
+    .line 19
+    sget v1, Latd/q/getSDKEphemeralPublicKey;->getMessageVersion:I
+
+    .line 20
+    .line 21
+    add-int/lit8 v1, v1, 0x5
+
+    .line 22
+    .line 23
+    rem-int/lit16 v2, v1, 0x80
+
+    .line 24
+    .line 25
+    sput v2, Latd/q/getSDKEphemeralPublicKey;->ChallengeResult:I
+
+    .line 26
+    .line 27
+    rem-int/lit8 v1, v1, 0x2
+
+    .line 28
+    .line 29
+    if-eqz v1, :cond_0
+
+    .line 30
+    .line 31
+    const/16 v1, 0x5c
+
+    .line 32
+    .line 33
+    div-int/2addr v1, v0
+
+    .line 34
+    :cond_0
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/app/Application;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Lcom/adyen/threeds2/internal/deviceinfo/parameter/getDeviceData;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Latd/q/getSDKEphemeralPublicKey;->getDeviceData:Landroid/app/Application;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static getSDKAppID()V
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    new-array v0, v0, [C
+
+    .line 3
+    .line 4
+    fill-array-data v0, :array_0
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Latd/q/getSDKEphemeralPublicKey;->AuthenticationRequestParameters:[C
+
+    .line 8
+    .line 9
+    const-wide v0, -0x1266cc5113ef8633L    # -8.896310384214554E219
+
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    sput-wide v0, Latd/q/getSDKEphemeralPublicKey;->getSDKTransactionID:J
+
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :array_0
+    .array-data 2
+        0x2a72s
+        -0x583fs
+        0x3187s
+        -0x7cb2s
+    .end array-data
+.end method
+
+.method private getSDKTransactionID()Z
+    .locals 2
+
+    .line 1
+    sget v0, Latd/q/getSDKEphemeralPublicKey;->getSDKAppID:I
+
+    .line 2
+    .line 3
+    add-int/lit8 v0, v0, 0x2d
+
+    .line 4
+    .line 5
+    rem-int/lit16 v0, v0, 0x80
+
+    .line 6
+    .line 7
+    sput v0, Latd/q/getSDKEphemeralPublicKey;->getSDKReferenceNumber:I
+
+    .line 8
+    .line 9
+    iget-object p0, p0, Latd/q/getSDKEphemeralPublicKey;->getDeviceData:Landroid/app/Application;
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    invoke-virtual {p0}, Landroid/content/pm/PackageManager;->isSafeMode()Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
+    invoke-static {p0}, Lcom/adyen/threeds2/internal/deviceinfo/parameter/DeviceParameterResult$Success$BooleanValue;->constructor-impl(Z)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p0
+
+    .line 23
+    sget v0, Latd/q/getSDKEphemeralPublicKey;->getSDKAppID:I
+
+    .line 24
+    .line 25
+    add-int/lit8 v0, v0, 0x9
+
+    .line 26
+    .line 27
+    rem-int/lit16 v1, v0, 0x80
+
+    .line 28
+    .line 29
+    sput v1, Latd/q/getSDKEphemeralPublicKey;->getSDKReferenceNumber:I
+
+    .line 30
+    .line 31
+    rem-int/lit8 v0, v0, 0x2
+
+    .line 32
+    .line 33
+    if-eqz v0, :cond_0
+
+    .line 34
+    .line 35
+    return p0
+
+    .line 36
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 37
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final synthetic getSDKReferenceNumber()Lcom/adyen/threeds2/internal/deviceinfo/parameter/DeviceParameterResult;
+    .locals 1
+
+    .line 1
+    sget v0, Latd/q/getSDKEphemeralPublicKey;->getSDKAppID:I
+
+    .line 2
+    .line 3
+    add-int/lit8 v0, v0, 0x51
+
+    .line 4
+    .line 5
+    rem-int/lit16 v0, v0, 0x80
+
+    .line 6
+    .line 7
+    sput v0, Latd/q/getSDKEphemeralPublicKey;->getSDKReferenceNumber:I
+
+    .line 8
+    .line 9
+    invoke-direct {p0}, Latd/q/getSDKEphemeralPublicKey;->getSDKTransactionID()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
+
+    .line 13
+    invoke-static {p0}, Lcom/adyen/threeds2/internal/deviceinfo/parameter/DeviceParameterResult$Success$BooleanValue;->box-impl(Z)Lcom/adyen/threeds2/internal/deviceinfo/parameter/DeviceParameterResult$Success$BooleanValue;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    sget v0, Latd/q/getSDKEphemeralPublicKey;->getSDKReferenceNumber:I
+
+    .line 18
+    .line 19
+    add-int/lit8 v0, v0, 0x31
+
+    .line 20
+    .line 21
+    rem-int/lit16 v0, v0, 0x80
+
+    .line 22
+    .line 23
+    sput v0, Latd/q/getSDKEphemeralPublicKey;->getSDKAppID:I
+
+    .line 24
+    .line 25
+    return-object p0
+.end method

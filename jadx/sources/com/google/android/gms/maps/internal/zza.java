@@ -1,0 +1,25 @@
+package com.google.android.gms.maps.internal;
+
+import androidx.annotation.Nullable;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zza {
+    public static byte zza(@Nullable Boolean bool) {
+        if (bool != null) {
+            return !bool.booleanValue() ? (byte) 0 : (byte) 1;
+        }
+        return (byte) -1;
+    }
+
+    @Nullable
+    public static Boolean zzb(byte b) {
+        if (b == 0) {
+            return Boolean.FALSE;
+        }
+        if (b != 1) {
+            return null;
+        }
+        return Boolean.TRUE;
+    }
+}

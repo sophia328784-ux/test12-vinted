@@ -1,0 +1,481 @@
+.class public final Lhu9$n;
+.super Lno3;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lhu9;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-direct {p0, v0}, Lno3;-><init>(Z)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-static {p1, p2, p2}, Lu2d;->a(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, [Ljava/lang/String;
+
+    .line 6
+    .line 7
+    if-eqz p0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-static {p0}, Lkotlin/collections/a;->W([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 15
+    return-object p0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    const-string p0, "List<String?>"
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final c(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    check-cast p1, Ljava/util/List;
+
+    .line 2
+    .line 3
+    const/4 p0, 0x0
+
+    .line 4
+    const-string v0, "null"
+
+    .line 5
+    .line 6
+    sget-object v1, Landroidx/navigation/u;->o:Landroidx/navigation/u$p;
+
+    .line 7
+    .line 8
+    if-eqz p1, :cond_1
+
+    .line 9
+    .line 10
+    check-cast p1, Ljava/util/Collection;
+
+    .line 11
+    .line 12
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-eqz v0, :cond_0
+
+    .line 20
+    .line 21
+    move-object p2, p0
+
+    .line 22
+    :cond_0
+    invoke-static {p2}, Lcp3;->c(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 27
+    .line 28
+    invoke-static {p0, p1}, Llp3;->g0(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/ArrayList;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p0
+
+    .line 32
+    return-object p0
+
+    .line 33
+    :cond_1
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {p2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result p1
+
+    .line 40
+    if-eqz p1, :cond_2
+
+    .line 41
+    .line 42
+    move-object p2, p0
+
+    .line 43
+    :cond_2
+    invoke-static {p2}, Lcp3;->c(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p0
+
+    .line 47
+    return-object p0
+.end method
+
+.method public final d(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    sget-object p0, Landroidx/navigation/u;->o:Landroidx/navigation/u$p;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    const-string p0, "null"
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+
+    .line 12
+    if-eqz p0, :cond_0
+
+    .line 13
+    .line 14
+    const/4 p1, 0x0
+
+    .line 15
+    :cond_0
+    invoke-static {p1}, Lcp3;->c(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    return-object p0
+.end method
+
+.method public final e(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p3, Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    if-eqz p3, :cond_0
+
+    .line 7
+    .line 8
+    check-cast p3, Ljava/util/Collection;
+
+    .line 9
+    .line 10
+    const/4 p0, 0x0
+
+    .line 11
+    new-array p0, p0, [Ljava/lang/String;
+
+    .line 12
+    .line 13
+    invoke-interface {p3, p0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    check-cast p0, [Ljava/lang/String;
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 21
+    :goto_0
+    invoke-virtual {p1, p2, p0}, Landroid/os/BaseBundle;->putStringArray(Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
+.end method
+
+.method public final g(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    check-cast p1, Ljava/util/List;
+
+    .line 2
+    .line 3
+    check-cast p2, Ljava/util/List;
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    if-eqz p1, :cond_0
+
+    .line 8
+    .line 9
+    check-cast p1, Ljava/util/Collection;
+
+    .line 10
+    .line 11
+    new-array v1, v0, [Ljava/lang/String;
+
+    .line 12
+    .line 13
+    invoke-interface {p1, v1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    check-cast p1, [Ljava/lang/String;
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    move-object p1, p0
+
+    .line 21
+    :goto_0
+    if-eqz p2, :cond_1
+
+    .line 22
+    .line 23
+    check-cast p2, Ljava/util/Collection;
+
+    .line 24
+    .line 25
+    new-array p0, v0, [Ljava/lang/String;
+
+    .line 26
+    .line 27
+    invoke-interface {p2, p0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p0
+
+    .line 31
+    check-cast p0, [Ljava/lang/String;
+
+    .line 32
+    .line 33
+    :cond_1
+    invoke-static {p1, p0}, Lbp0;->b([Ljava/lang/Object;[Ljava/lang/Object;)Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p0
+
+    .line 37
+    return p0
+.end method
+
+.method public final h()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lkotlin/collections/EmptyList;->a:Lkotlin/collections/EmptyList;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final i(Ljava/lang/Object;)Ljava/util/List;
+    .locals 1
+
+    .line 1
+    check-cast p1, Ljava/util/List;
+
+    .line 2
+    .line 3
+    if-eqz p1, :cond_1
+
+    .line 4
+    .line 5
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 6
+    .line 7
+    new-instance p0, Ljava/util/ArrayList;
+
+    .line 8
+    .line 9
+    const/16 v0, 0xa
+
+    .line 10
+    .line 11
+    invoke-static {p1, v0}, Lep3;->o(Ljava/lang/Iterable;I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    invoke-direct {p0, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v0
+
+    .line 26
+    if-eqz v0, :cond_0
+
+    .line 27
+    .line 28
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    check-cast v0, Ljava/lang/String;
+
+    .line 33
+    .line 34
+    invoke-static {v0}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :cond_0
+    return-object p0
+
+    .line 43
+    :cond_1
+    sget-object p0, Lkotlin/collections/EmptyList;->a:Lkotlin/collections/EmptyList;
+
+    .line 44
+    .line 45
+    return-object p0
+.end method

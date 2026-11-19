@@ -1,0 +1,33 @@
+package com.google.android.gms.internal.location;
+
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.common.api.internal.BaseImplementation;
+import com.google.android.gms.common.api.internal.TaskUtil;
+import com.google.android.gms.common.internal.Preconditions;
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+final class zzan implements BaseImplementation.ResultHolder {
+    private final TaskCompletionSource zza;
+
+    public zzan(TaskCompletionSource taskCompletionSource) {
+        Preconditions.checkNotNull(taskCompletionSource);
+        this.zza = taskCompletionSource;
+    }
+
+    @Override // com.google.android.gms.common.api.internal.BaseImplementation.ResultHolder
+    public final void setFailedResult(@Nullable Status status) {
+        if (status == null) {
+            return;
+        }
+        this.zza.setException(new ApiException(status));
+    }
+
+    @Override // com.google.android.gms.common.api.internal.BaseImplementation.ResultHolder
+    public final /* synthetic */ void setResult(Object obj) {
+        TaskUtil.setResultOrApiException((Status) obj, (Object) null, (TaskCompletionSource<Object>) this.zza);
+    }
+}

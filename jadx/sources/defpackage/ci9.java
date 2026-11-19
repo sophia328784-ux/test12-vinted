@@ -1,0 +1,37 @@
+package defpackage;
+
+import android.content.Context;
+import android.util.Log;
+import com.google.ads.mediation.inmobi.InMobiInitializer;
+import com.google.ads.mediation.inmobi.InMobiMediationAdapter;
+import com.google.ads.mediation.inmobi.waterfall.InMobiWaterfallNativeAd;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.mediation.MediationAdLoadCallback;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public final class ci9 implements InMobiInitializer.Listener {
+    public final /* synthetic */ Context a;
+    public final /* synthetic */ long b;
+    public final /* synthetic */ InMobiWaterfallNativeAd c;
+
+    public ci9(InMobiWaterfallNativeAd inMobiWaterfallNativeAd, Context context, long j) {
+        this.c = inMobiWaterfallNativeAd;
+        this.a = context;
+        this.b = j;
+    }
+
+    @Override // com.google.ads.mediation.inmobi.InMobiInitializer.Listener
+    public final void onInitializeError(AdError adError) {
+        Log.w(InMobiMediationAdapter.TAG, adError.toString());
+        MediationAdLoadCallback mediationAdLoadCallback = this.c.c;
+        if (mediationAdLoadCallback != null) {
+            mediationAdLoadCallback.onFailure(adError);
+        }
+    }
+
+    @Override // com.google.ads.mediation.inmobi.InMobiInitializer.Listener
+    public final void onInitializeSuccess() {
+        this.c.a(this.a, this.b);
+    }
+}

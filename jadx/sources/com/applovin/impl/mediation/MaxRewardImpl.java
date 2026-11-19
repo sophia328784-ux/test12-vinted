@@ -1,0 +1,48 @@
+package com.applovin.impl.mediation;
+
+import androidx.annotation.NonNull;
+import com.applovin.mediation.MaxReward;
+import defpackage.g57;
+import defpackage.p83;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public class MaxRewardImpl implements MaxReward {
+    private final String a;
+    private final int b;
+
+    private MaxRewardImpl(int i, String str) {
+        if (i < 0) {
+            g57.s("Reward amount must be greater than or equal to 0");
+            throw null;
+        }
+        this.a = str;
+        this.b = i;
+    }
+
+    public static MaxReward create(int i, String str) {
+        return new MaxRewardImpl(i, str);
+    }
+
+    public static MaxReward createDefault() {
+        return create(0, "");
+    }
+
+    @Override // com.applovin.mediation.MaxReward
+    public final int getAmount() {
+        return this.b;
+    }
+
+    @Override // com.applovin.mediation.MaxReward
+    public final String getLabel() {
+        return this.a;
+    }
+
+    @NonNull
+    public String toString() {
+        StringBuilder sb = new StringBuilder("MaxReward{amount=");
+        sb.append(this.b);
+        sb.append(", label=");
+        return p83.a(sb, this.a, "}");
+    }
+}

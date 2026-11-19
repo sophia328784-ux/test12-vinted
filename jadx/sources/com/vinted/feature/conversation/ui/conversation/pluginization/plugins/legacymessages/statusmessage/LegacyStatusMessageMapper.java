@@ -1,0 +1,46 @@
+package com.vinted.feature.conversation.ui.conversation.pluginization.plugins.legacymessages.statusmessage;
+
+import com.vinted.feature.conversation.api.response.legacymessage.ConversationStatusMessageResponse;
+import com.vinted.feature.conversation.api.response.message.ConversationMessageResponse;
+import com.vinted.feature.conversation.domain.entity.ConversationMessagePluginData;
+import com.vinted.feature.conversation.ui.conversation.pluginization.base.BasePluginMessageMapper;
+import defpackage.cp3;
+import defpackage.te7;
+import defpackage.wm9;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.collections.EmptyList;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001:\u0001\u0004B\t\b\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0005"}, d2 = {"Lcom/vinted/feature/conversation/ui/conversation/pluginization/plugins/legacymessages/statusmessage/LegacyStatusMessageMapper;", "Lcom/vinted/feature/conversation/ui/conversation/pluginization/base/BasePluginMessageMapper;", "<init>", "()V", "a", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public final class LegacyStatusMessageMapper extends BasePluginMessageMapper {
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public static final class a implements te7 {
+        public static final a a = new a();
+
+        private a() {
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            return new LegacyStatusMessageMapper();
+        }
+    }
+
+    @wm9
+    public LegacyStatusMessageMapper() {
+    }
+
+    @Override // com.vinted.feature.conversation.ui.conversation.pluginization.base.BasePluginMessageMapper
+    public final List<ConversationMessagePluginData> mapToSpecificPluginData(ConversationMessageResponse conversationMessageResponse) {
+        if (!(conversationMessageResponse instanceof ConversationStatusMessageResponse)) {
+            return EmptyList.a;
+        }
+        ConversationStatusMessageResponse conversationStatusMessageResponse = (ConversationStatusMessageResponse) conversationMessageResponse;
+        LegacyStatusMessageData legacyStatusMessageData = new LegacyStatusMessageData(conversationStatusMessageResponse.getTitle(), conversationStatusMessageResponse.getSubtitle(), conversationStatusMessageResponse.getTemplate(), false, 8, null);
+        legacyStatusMessageData.setMessageId(conversationStatusMessageResponse.getMessageId());
+        return cp3.c(legacyStatusMessageData);
+    }
+}

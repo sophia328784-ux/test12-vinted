@@ -1,0 +1,34 @@
+package defpackage;
+
+import java.nio.Buffer;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+public final class zea {
+    private zea() {
+    }
+
+    public static void clear(Buffer buffer) {
+        buffer.clear();
+    }
+
+    public static void flip(Buffer buffer) {
+        buffer.flip();
+    }
+
+    public static void limit(Buffer buffer, int i) {
+        buffer.limit(i);
+    }
+
+    public static void mark(Buffer buffer) {
+        buffer.mark();
+    }
+
+    public static void position(Buffer buffer, int i) {
+        buffer.position(i);
+    }
+
+    public static void reset(Buffer buffer) {
+        buffer.reset();
+    }
+}

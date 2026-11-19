@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vinted.views.common.VintedIconView android:id="@id/info_banner_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/info_banner_content_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.vinted.views.common.VintedTextView android:id="@id/info_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.vinted.views.common.VintedTextView android:id="@id/info_banner_body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/info_banner_button_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.vinted.views.common.VintedButton android:id="@id/info_banner_primary_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.vinted.views.common.VintedButton android:id="@id/info_banner_secondary_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.vinted.views.common.VintedIconView android:id="@id/info_banner_close" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vinted_source="@drawable/x_12" />
+</merge>

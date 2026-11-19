@@ -1,0 +1,106 @@
+package com.mbridge.msdk.config.component.info.provider.subprovider;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.res.Resources;
+import android.media.AudioManager;
+import android.os.Environment;
+import android.os.PowerManager;
+import android.os.StatFs;
+import android.text.TextUtils;
+import androidx.camera.core.processing.util.GLUtils;
+import androidx.core.app.NotificationCompat;
+import com.applovin.sdk.AppLovinEventTypes;
+import com.mbridge.msdk.foundation.tools.q0;
+import com.vinted.feature.catalog.filters.category.api.entity.DynamicItemCategory;
+import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.TimeZone;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public class d {
+    static String a = "OtherDeviceInfoProvider";
+
+    public Map<String, Object> a(Context context) {
+        Intent intentRegisterReceiver = context.registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
+        HashMap map = new HashMap();
+        if (intentRegisterReceiver != null) {
+            int intExtra = intentRegisterReceiver.getIntExtra(AppLovinEventTypes.USER_COMPLETED_LEVEL, -1);
+            int intExtra2 = intentRegisterReceiver.getIntExtra("scale", -1);
+            int i = (intExtra == -1 || intExtra2 == -1) ? -1 : (intExtra * 100) / intExtra2;
+            int intExtra3 = intentRegisterReceiver.getIntExtra(NotificationCompat.CATEGORY_STATUS, -1);
+            map.put("batteryLevel", Integer.valueOf(i));
+            map.put("charging", Integer.valueOf(intExtra3 == 2 ? 1 : 2));
+        }
+        return map;
+    }
+
+    public String b(Context context) {
+        if (context == null) {
+            return DynamicItemCategory.ROOT_ID;
+        }
+        try {
+            AudioManager audioManager = (AudioManager) context.getApplicationContext().getSystemService("audio");
+            String str = new DecimalFormat(GLUtils.VERSION_UNKNOWN).format((audioManager != null ? audioManager.getStreamVolume(3) : -1) / (audioManager != null ? audioManager.getStreamMaxVolume(3) : -1));
+            return TextUtils.isEmpty(str) ? DynamicItemCategory.ROOT_ID : str;
+        } catch (Throwable th) {
+            q0.b(a, th.getMessage());
+            return DynamicItemCategory.ROOT_ID;
+        }
+    }
+
+    public float c(Context context) {
+        if (context == null) {
+            return -1.0f;
+        }
+        try {
+            Resources resources = context.getResources();
+            if (resources != null) {
+                return resources.getConfiguration().fontScale;
+            }
+        } catch (Throwable th) {
+            q0.b(a, th.getMessage());
+        }
+        return -1.0f;
+    }
+
+    public int d(Context context) {
+        if (context == null) {
+            return -1;
+        }
+        try {
+            return ((PowerManager) context.getSystemService("power")).isPowerSaveMode() ? 1 : 0;
+        } catch (Throwable th) {
+            q0.b(a, th.getMessage());
+            return -1;
+        }
+    }
+
+    public String b() {
+        try {
+            return TimeZone.getDefault().getDisplayName(false, 0, Locale.ENGLISH);
+        } catch (Throwable th) {
+            q0.b(a, th.getMessage(), th);
+            return "";
+        }
+    }
+
+    public Map<String, Object> a() {
+        try {
+            StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
+            long totalBytes = statFs.getTotalBytes();
+            long availableBlocksLong = statFs.getAvailableBlocksLong() * statFs.getBlockSizeLong();
+            HashMap map = new HashMap();
+            map.put("totalSpace", Long.valueOf(totalBytes));
+            map.put("freeExternalSize", Long.valueOf(availableBlocksLong));
+            return map;
+        } catch (Throwable th) {
+            q0.b(a, th.getMessage(), th);
+            return null;
+        }
+    }
+}

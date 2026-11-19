@@ -1,0 +1,277 @@
+.class final Landroidx/camera/core/DelegatingImageSavedCallback;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0002\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0001\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u0006\u0010\n\u001a\u00020\u000bJ\u0008\u0010\u000c\u001a\u00020\u000bH\u0016J\u0010\u0010\r\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\u000fH\u0016J\u0010\u0010\u0010\u001a\u00020\u000b2\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0010\u0010\u0013\u001a\u00020\u000b2\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010\u0016\u001a\u00020\u000b2\u0006\u0010\u0017\u001a\u00020\u0018H\u0016R\u001c\u0010\u0005\u001a\u0010\u0012\u000c\u0012\n \u0007*\u0004\u0018\u00010\u00010\u00010\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0002\u001a\u0004\u0018\u00010\u00018BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\t\u00a8\u0006\u0019"
+    }
+    d2 = {
+        "Landroidx/camera/core/DelegatingImageSavedCallback;",
+        "Landroidx/camera/core/ImageCapture$OnImageSavedCallback;",
+        "delegate",
+        "<init>",
+        "(Landroidx/camera/core/ImageCapture$OnImageSavedCallback;)V",
+        "_delegate",
+        "Ljava/util/concurrent/atomic/AtomicReference;",
+        "kotlin.jvm.PlatformType",
+        "getDelegate",
+        "()Landroidx/camera/core/ImageCapture$OnImageSavedCallback;",
+        "dispose",
+        "",
+        "onCaptureStarted",
+        "onCaptureProcessProgressed",
+        "progress",
+        "",
+        "onPostviewBitmapAvailable",
+        "bitmap",
+        "Landroid/graphics/Bitmap;",
+        "onImageSaved",
+        "outputFileResults",
+        "Landroidx/camera/core/ImageCapture$OutputFileResults;",
+        "onError",
+        "exception",
+        "Landroidx/camera/core/ImageCaptureException;",
+        "camera-core_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final _delegate:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Landroidx/camera/core/ImageCapture$OnImageSavedCallback;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroidx/camera/core/ImageCapture$OnImageSavedCallback;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 8
+    .line 9
+    invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object v0, p0, Landroidx/camera/core/DelegatingImageSavedCallback;->_delegate:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method private final getDelegate()Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroidx/camera/core/DelegatingImageSavedCallback;->_delegate:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final dispose()V
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Landroidx/camera/core/DelegatingImageSavedCallback;->_delegate:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public onCaptureProcessProgressed(I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroidx/camera/core/DelegatingImageSavedCallback;->getDelegate()Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    if-eqz p0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-interface {p0, p1}, Landroidx/camera/core/ImageCapture$OnImageSavedCallback;->onCaptureProcessProgressed(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    return-void
+.end method
+
+.method public onCaptureStarted()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroidx/camera/core/DelegatingImageSavedCallback;->getDelegate()Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    if-eqz p0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-interface {p0}, Landroidx/camera/core/ImageCapture$OnImageSavedCallback;->onCaptureStarted()V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    return-void
+.end method
+
+.method public onError(Landroidx/camera/core/ImageCaptureException;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Landroidx/camera/core/DelegatingImageSavedCallback;->getDelegate()Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    if-eqz p0, :cond_0
+
+    .line 9
+    .line 10
+    invoke-interface {p0, p1}, Landroidx/camera/core/ImageCapture$OnImageSavedCallback;->onError(Landroidx/camera/core/ImageCaptureException;)V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+.end method
+
+.method public onImageSaved(Landroidx/camera/core/ImageCapture$OutputFileResults;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Landroidx/camera/core/DelegatingImageSavedCallback;->getDelegate()Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    if-eqz p0, :cond_0
+
+    .line 9
+    .line 10
+    invoke-interface {p0, p1}, Landroidx/camera/core/ImageCapture$OnImageSavedCallback;->onImageSaved(Landroidx/camera/core/ImageCapture$OutputFileResults;)V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+.end method
+
+.method public onPostviewBitmapAvailable(Landroid/graphics/Bitmap;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Landroidx/camera/core/DelegatingImageSavedCallback;->getDelegate()Landroidx/camera/core/ImageCapture$OnImageSavedCallback;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    if-eqz p0, :cond_0
+
+    .line 9
+    .line 10
+    invoke-interface {p0, p1}, Landroidx/camera/core/ImageCapture$OnImageSavedCallback;->onPostviewBitmapAvailable(Landroid/graphics/Bitmap;)V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+.end method

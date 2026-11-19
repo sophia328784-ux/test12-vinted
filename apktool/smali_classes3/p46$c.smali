@@ -1,0 +1,39 @@
+.class public final Lp46$c;
+.super Lp46;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lp46;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "c"
+.end annotation
+
+
+# instance fields
+.field public final a:J
+
+
+# direct methods
+.method public constructor <init>(JLkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    .line 1
+    const/4 p3, 0x0
+
+    .line 2
+    invoke-direct {p0, p3}, Lp46;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-wide p1, p0, Lp46$c;->a:J
+
+    .line 6
+    .line 7
+    return-void
+.end method

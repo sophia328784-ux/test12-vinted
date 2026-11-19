@@ -1,0 +1,23 @@
+package defpackage;
+
+import android.view.View;
+import android.view.ViewGroup;
+import java.util.Iterator;
+import kotlin.sequences.Sequence;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public final class mtk implements Sequence {
+    final /* synthetic */ ViewGroup $this_descendants$inlined;
+
+    public mtk(ViewGroup viewGroup) {
+        this.$this_descendants$inlined = viewGroup;
+    }
+
+    @Override // kotlin.sequences.Sequence
+    public Iterator<View> iterator() {
+        ViewGroup viewGroup = this.$this_descendants$inlined;
+        viewGroup.getClass();
+        return new boj(new jtk(viewGroup).iterator(), ktk.a);
+    }
+}

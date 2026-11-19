@@ -1,0 +1,23 @@
+package com.google.ads.interactivemedia.v3.api.signals;
+
+import androidx.annotation.NonNull;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public final class SecureSignals {
+    public final String a;
+
+    public SecureSignals(String str) {
+        this.a = str;
+    }
+
+    @NonNull
+    public static SecureSignals create(@NonNull String str) {
+        return new SecureSignals(str);
+    }
+
+    @NonNull
+    public String getSecureSignal() {
+        return this.a;
+    }
+}

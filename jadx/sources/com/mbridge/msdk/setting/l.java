@@ -1,0 +1,13 @@
+package com.mbridge.msdk.setting;
+
+import org.json.JSONObject;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes7.dex */
+public class l {
+    public static void a(JSONObject jSONObject) {
+    }
+
+    public static void a() {
+    }
+}

@@ -1,0 +1,12 @@
+package com.facetec.sdk;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+enum co {
+    ZOOM_CLOSE,
+    ZOOM_FAR,
+    PROCESSING_COMPLETE_TIMED_OUT,
+    PROCESSING_COMPLETE_SUCCESS,
+    PROCESSING_COMPLETE_RETRY,
+    PROCESSING_COMPLETE_STILL_COMPUTING
+}

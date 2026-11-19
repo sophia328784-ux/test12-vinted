@@ -1,0 +1,68 @@
+.class final Lcom/google/android/gms/internal/consent_sdk/zzql;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/consent_sdk/zzqe;
+
+
+# virtual methods
+.method public final bridge synthetic compareTo(Ljava/lang/Object;)I
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    throw p0
+.end method
+
+.method public final zza()I
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    throw p0
+.end method
+
+.method public final zzb()Lcom/google/android/gms/internal/consent_sdk/zzsz;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    throw p0
+.end method
+
+.method public final zzc()Lcom/google/android/gms/internal/consent_sdk/zzta;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    throw p0
+.end method
+
+.method public final zzd()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    throw p0
+.end method
+
+.method public final zze()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    throw p0
+.end method

@@ -1,0 +1,13 @@
+package com.google.firebase.crashlytics.internal.network;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes.dex */
+public class HttpResponse {
+    public final int a;
+    public final String b;
+
+    public HttpResponse(int i, String str) {
+        this.a = i;
+        this.b = str;
+    }
+}

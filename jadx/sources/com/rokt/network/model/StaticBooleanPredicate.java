@@ -1,0 +1,128 @@
+package com.rokt.network.model;
+
+import com.fyber.inneractive.sdk.external.InneractiveMediationNameConsts;
+import defpackage.fah;
+import defpackage.i14;
+import defpackage.lah;
+import defpackage.opa;
+import defpackage.u9h;
+import defpackage.uc4;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes7.dex */
+@fah
+@Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\b\u000e\b\u0087\b\u0018\u0000 '2\u00020\u0001:\u0002('B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007B-\b\u0017\u0012\u0006\u0010\t\u001a\u00020\b\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u0006\u0010\fJ(\u0010\u0013\u001a\u00020\u00122\u0006\u0010\r\u001a\u00020\u00002\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u0010HÇ\u0001¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0015\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u0015\u0010\u0016J\u0010\u0010\u0017\u001a\u00020\u0004HÆ\u0003¢\u0006\u0004\b\u0017\u0010\u0018J$\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0003\u001a\u00020\u00022\b\b\u0002\u0010\u0005\u001a\u00020\u0004HÆ\u0001¢\u0006\u0004\b\u0019\u0010\u001aJ\u0010\u0010\u001c\u001a\u00020\u001bHÖ\u0001¢\u0006\u0004\b\u001c\u0010\u001dJ\u0010\u0010\u001e\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\u001e\u0010\u001fJ\u001a\u0010!\u001a\u00020\u00042\b\u0010 \u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b!\u0010\"R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010#\u001a\u0004\b$\u0010\u0016R\u0017\u0010\u0005\u001a\u00020\u00048\u0006¢\u0006\f\n\u0004\b\u0005\u0010%\u001a\u0004\b&\u0010\u0018¨\u0006)"}, d2 = {"Lcom/rokt/network/model/StaticBooleanPredicate;", "", "Lcom/rokt/network/model/BooleanWhenCondition;", "condition", "", "value", "<init>", "(Lcom/rokt/network/model/BooleanWhenCondition;Z)V", "", "seen1", "Llah;", "serializationConstructorMarker", "(ILcom/rokt/network/model/BooleanWhenCondition;ZLlah;)V", "self", "Li14;", "output", "Lu9h;", "serialDesc", "", "write$Self", "(Lcom/rokt/network/model/StaticBooleanPredicate;Li14;Lu9h;)V", "component1", "()Lcom/rokt/network/model/BooleanWhenCondition;", "component2", "()Z", "copy", "(Lcom/rokt/network/model/BooleanWhenCondition;Z)Lcom/rokt/network/model/StaticBooleanPredicate;", "", "toString", "()Ljava/lang/String;", "hashCode", "()I", InneractiveMediationNameConsts.OTHER, "equals", "(Ljava/lang/Object;)Z", "Lcom/rokt/network/model/BooleanWhenCondition;", "getCondition", "Z", "getValue", "Companion", "$serializer", "lib_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+public final /* data */ class StaticBooleanPredicate {
+
+    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    private final BooleanWhenCondition condition;
+    private final boolean value;
+
+    @Deprecated
+    public /* synthetic */ StaticBooleanPredicate(int i, BooleanWhenCondition booleanWhenCondition, boolean z, lah lahVar) {
+        if (3 != (i & 3)) {
+            uc4.i(i, 3, StaticBooleanPredicate$$serializer.INSTANCE.getDescriptor());
+            throw null;
+        }
+        this.condition = booleanWhenCondition;
+        this.value = z;
+    }
+
+    public static /* synthetic */ StaticBooleanPredicate copy$default(StaticBooleanPredicate staticBooleanPredicate, BooleanWhenCondition booleanWhenCondition, boolean z, int i, Object obj) {
+        if ((i & 1) != 0) {
+            booleanWhenCondition = staticBooleanPredicate.condition;
+        }
+        if ((i & 2) != 0) {
+            z = staticBooleanPredicate.value;
+        }
+        return staticBooleanPredicate.copy(booleanWhenCondition, z);
+    }
+
+    @JvmStatic
+    public static final void write$Self(StaticBooleanPredicate self, i14 output, u9h serialDesc) {
+        self.getClass();
+        output.getClass();
+        serialDesc.getClass();
+        output.x(serialDesc, 0, BooleanWhenCondition.INSTANCE.serializer(), self.condition);
+        output.t(serialDesc, 1, self.value);
+    }
+
+    /* JADX INFO: renamed from: component1, reason: from getter */
+    public final BooleanWhenCondition getCondition() {
+        return this.condition;
+    }
+
+    /* JADX INFO: renamed from: component2, reason: from getter */
+    public final boolean getValue() {
+        return this.value;
+    }
+
+    public final StaticBooleanPredicate copy(BooleanWhenCondition condition, boolean value) {
+        condition.getClass();
+        return new StaticBooleanPredicate(condition, value);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof StaticBooleanPredicate)) {
+            return false;
+        }
+        StaticBooleanPredicate staticBooleanPredicate = (StaticBooleanPredicate) other;
+        return this.condition == staticBooleanPredicate.condition && this.value == staticBooleanPredicate.value;
+    }
+
+    public final BooleanWhenCondition getCondition() {
+        return this.condition;
+    }
+
+    public final boolean getValue() {
+        return this.value;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v3, types: [int] */
+    /* JADX WARN: Type inference failed for: r1v2, types: [int] */
+    /* JADX WARN: Type inference failed for: r1v3 */
+    /* JADX WARN: Type inference failed for: r1v4 */
+    public int hashCode() {
+        int iHashCode = this.condition.hashCode() * 31;
+        boolean z = this.value;
+        ?? r1 = z;
+        if (z) {
+            r1 = 1;
+        }
+        return iHashCode + r1;
+    }
+
+    public String toString() {
+        return "StaticBooleanPredicate(condition=" + this.condition + ", value=" + this.value + ")";
+    }
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0016\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Lcom/rokt/network/model/StaticBooleanPredicate$Companion;", "", "<init>", "()V", "Lopa;", "Lcom/rokt/network/model/StaticBooleanPredicate;", "serializer", "()Lopa;", "lib_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final opa serializer() {
+            return StaticBooleanPredicate$$serializer.INSTANCE;
+        }
+
+        private Companion() {
+        }
+    }
+
+    public StaticBooleanPredicate(BooleanWhenCondition booleanWhenCondition, boolean z) {
+        booleanWhenCondition.getClass();
+        this.condition = booleanWhenCondition;
+        this.value = z;
+    }
+}

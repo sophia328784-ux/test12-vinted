@@ -1,0 +1,30 @@
+package kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers;
+
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import kotlin.reflect.jvm.internal.impl.name.Name;
+import kotlin.reflect.jvm.internal.impl.types.KotlinType;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+public final class ContextClassReceiver extends AbstractReceiverValue implements ImplicitContextReceiver {
+    public final ClassDescriptor c;
+    public final Name d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ContextClassReceiver(ClassDescriptor classDescriptor, KotlinType kotlinType, Name name, ReceiverValue receiverValue) {
+        super(kotlinType, receiverValue);
+        classDescriptor.getClass();
+        kotlinType.getClass();
+        this.c = classDescriptor;
+        this.d = name;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ImplicitContextReceiver
+    public final Name a() {
+        return this.d;
+    }
+
+    public final String toString() {
+        return getType() + ": Ctx { " + this.c + " }";
+    }
+}

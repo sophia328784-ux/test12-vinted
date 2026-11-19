@@ -1,0 +1,73 @@
+package com.fyber.inneractive.sdk.player.exoplayer2;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public abstract class a {
+    public final int a;
+    public t b;
+    public int c;
+    public com.fyber.inneractive.sdk.player.exoplayer2.source.v d;
+    public long e;
+    public boolean f = true;
+    public boolean g;
+
+    public a(int i) {
+        this.a = i;
+    }
+
+    public final int a(p pVar, com.fyber.inneractive.sdk.player.exoplayer2.decoder.c cVar, boolean z) {
+        int iA = this.d.a(pVar, cVar, z);
+        if (iA == -4) {
+            if (cVar.b(4)) {
+                this.f = true;
+                return this.g ? -4 : -3;
+            }
+            cVar.d += this.e;
+            return iA;
+        }
+        if (iA == -5) {
+            o oVar = pVar.a;
+            long j = oVar.w;
+            if (j != Long.MAX_VALUE) {
+                pVar.a = new o(oVar.a, oVar.e, oVar.f, oVar.c, oVar.b, oVar.g, oVar.j, oVar.k, oVar.l, oVar.m, oVar.n, oVar.f332p, oVar.o, oVar.q, oVar.r, oVar.s, oVar.t, oVar.u, oVar.v, oVar.x, oVar.y, oVar.z, j + this.e, oVar.h, oVar.i, oVar.d);
+            }
+        }
+        return iA;
+    }
+
+    public abstract void a(int i, Object obj);
+
+    public abstract void a(long j, long j2);
+
+    public abstract void a(boolean z, long j);
+
+    public final void c() {
+        if (this.c != 1) {
+            atd.bc.a.h();
+            return;
+        }
+        this.c = 0;
+        this.d = null;
+        this.g = false;
+        g();
+    }
+
+    public com.fyber.inneractive.sdk.player.exoplayer2.util.h d() {
+        return null;
+    }
+
+    public abstract boolean e();
+
+    public abstract boolean f();
+
+    public abstract void g();
+
+    public abstract void h();
+
+    public abstract void i();
+
+    public abstract void j();
+
+    public void a(o[] oVarArr) {
+    }
+}

@@ -1,0 +1,659 @@
+.class public final Lcom/vinted/feature/trust/report/report/ReportViewModel$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Luj4;",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "Lkotlin/Unit;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.vinted.feature.trust.report.report.ReportViewModel$1"
+    f = "ReportViewModel.kt"
+    l = {
+        0x67,
+        0x68
+    }
+    m = "invokeSuspend"
+    v = 0x2
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+.end annotation
+
+
+# instance fields
+.field public synthetic A:Ljava/lang/Object;
+
+.field public final synthetic B:Lcom/vinted/feature/trust/report/report/ReportViewModel;
+
+.field public r:Lsl5;
+
+.field public s:Lsl5;
+
+.field public t:Luwc;
+
+.field public u:Ljava/lang/Object;
+
+.field public v:Lcom/vinted/feature/trust/report/report/ReportState;
+
+.field public w:Ljava/util/List;
+
+.field public x:I
+
+.field public y:I
+
+.field public z:B
+
+
+# direct methods
+.method public constructor <init>(Lcom/vinted/feature/trust/report/report/ReportViewModel;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->B:Lcom/vinted/feature/trust/report/report/ReportViewModel;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x2
+
+    .line 4
+    invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->B:Lcom/vinted/feature/trust/report/report/ReportViewModel;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, p2}, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;-><init>(Lcom/vinted/feature/trust/report/report/ReportViewModel;Lkotlin/coroutines/Continuation;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iput-object p1, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->A:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Luj4;
+
+    .line 2
+    .line 3
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    check-cast p0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;
+
+    .line 10
+    .line 11
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 12
+    .line 13
+    invoke-virtual {p0, p1}, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 18
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    iget-object v1, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->A:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    check-cast v1, Luj4;
+
+    .line 6
+    .line 7
+    sget-object v2, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
+    .line 8
+    .line 9
+    iget-byte v3, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->z:B
+
+    .line 10
+    .line 11
+    const/4 v4, 0x2
+
+    .line 12
+    const/4 v5, 0x1
+
+    .line 13
+    const/4 v6, 0x0
+
+    .line 14
+    const/4 v7, 0x0
+
+    .line 15
+    if-eqz v3, :cond_2
+
+    .line 16
+    .line 17
+    if-eq v3, v5, :cond_1
+
+    .line 18
+    .line 19
+    if-ne v3, v4, :cond_0
+
+    .line 20
+    .line 21
+    iget v1, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->x:I
+
+    .line 22
+    .line 23
+    iget-object v3, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->w:Ljava/util/List;
+
+    .line 24
+    .line 25
+    check-cast v3, Ljava/util/List;
+
+    .line 26
+    .line 27
+    iget-object v8, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->v:Lcom/vinted/feature/trust/report/report/ReportState;
+
+    .line 28
+    .line 29
+    iget-object v9, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->u:Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    iget-object v10, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->t:Luwc;
+
+    .line 32
+    .line 33
+    iget-object v11, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->s:Lsl5;
+
+    .line 34
+    .line 35
+    iget-object v12, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->r:Lsl5;
+
+    .line 36
+    .line 37
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V
+
+    .line 38
+    .line 39
+    .line 40
+    move-object/from16 v17, v10
+
+    .line 41
+    .line 42
+    move-object v15, v12
+
+    .line 43
+    move-object v10, v9
+
+    .line 44
+    move-object v9, v3
+
+    .line 45
+    move-object/from16 v3, p1
+
+    .line 46
+    .line 47
+    :goto_0
+    move/from16 v16, v1
+
+    .line 48
+    .line 49
+    move-object v1, v11
+
+    .line 50
+    goto/16 :goto_4
+
+    .line 51
+    .line 52
+    :cond_0
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 53
+    .line 54
+    invoke-static {v0}, Lmuk;->A(Ljava/lang/String;)V
+
+    .line 55
+    .line 56
+    .line 57
+    return-object v7
+
+    .line 58
+    :cond_1
+    iget v1, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->y:I
+
+    .line 59
+    .line 60
+    iget v3, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->x:I
+
+    .line 61
+    .line 62
+    iget-object v8, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->v:Lcom/vinted/feature/trust/report/report/ReportState;
+
+    .line 63
+    .line 64
+    iget-object v9, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->u:Ljava/lang/Object;
+
+    .line 65
+    .line 66
+    iget-object v10, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->t:Luwc;
+
+    .line 67
+    .line 68
+    iget-object v11, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->s:Lsl5;
+
+    .line 69
+    .line 70
+    iget-object v12, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->r:Lsl5;
+
+    .line 71
+    .line 72
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V
+
+    .line 73
+    .line 74
+    .line 75
+    move v13, v3
+
+    .line 76
+    move v3, v1
+
+    .line 77
+    move v1, v13
+
+    .line 78
+    move-object v13, v12
+
+    .line 79
+    move-object/from16 v12, p1
+
+    .line 80
+    .line 81
+    goto :goto_2
+
+    .line 82
+    :cond_2
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V
+
+    .line 83
+    .line 84
+    .line 85
+    new-instance v3, Lcom/vinted/feature/trust/report/report/ReportViewModel$1$reportReasonsDeferred$1;
+
+    .line 86
+    .line 87
+    iget-object v8, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->B:Lcom/vinted/feature/trust/report/report/ReportViewModel;
+
+    .line 88
+    .line 89
+    invoke-direct {v3, v8, v7}, Lcom/vinted/feature/trust/report/report/ReportViewModel$1$reportReasonsDeferred$1;-><init>(Lcom/vinted/feature/trust/report/report/ReportViewModel;Lkotlin/coroutines/Continuation;)V
+
+    .line 90
+    .line 91
+    .line 92
+    const/4 v9, 0x3
+
+    .line 93
+    invoke-static {v1, v7, v7, v3, v9}, Lje2;->a(Luj4;Lkotlin/coroutines/CoroutineContext;Lxj4;Lkotlin/jvm/functions/Function2;I)Ltl5;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object v3
+
+    .line 97
+    new-instance v10, Lcom/vinted/feature/trust/report/report/ReportViewModel$1$reportItemDeferred$1;
+
+    .line 98
+    .line 99
+    invoke-direct {v10, v8, v7}, Lcom/vinted/feature/trust/report/report/ReportViewModel$1$reportItemDeferred$1;-><init>(Lcom/vinted/feature/trust/report/report/ReportViewModel;Lkotlin/coroutines/Continuation;)V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-static {v1, v7, v7, v10, v9}, Lje2;->a(Luj4;Lkotlin/coroutines/CoroutineContext;Lxj4;Lkotlin/jvm/functions/Function2;I)Ltl5;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object v1
+
+    .line 106
+    iget-object v8, v8, Lcom/vinted/feature/trust/report/report/ReportViewModel;->_state:Lo9i;
+
+    .line 107
+    .line 108
+    move v9, v6
+
+    .line 109
+    :goto_1
+    invoke-virtual {v8}, Lo9i;->getValue()Ljava/lang/Object;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v10
+
+    .line 113
+    move-object v11, v10
+
+    .line 114
+    check-cast v11, Lcom/vinted/feature/trust/report/report/ReportState;
+
+    .line 115
+    .line 116
+    iput-object v7, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->A:Ljava/lang/Object;
+
+    .line 117
+    .line 118
+    iput-object v3, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->r:Lsl5;
+
+    .line 119
+    .line 120
+    iput-object v1, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->s:Lsl5;
+
+    .line 121
+    .line 122
+    iput-object v8, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->t:Luwc;
+
+    .line 123
+    .line 124
+    iput-object v10, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->u:Ljava/lang/Object;
+
+    .line 125
+    .line 126
+    iput-object v11, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->v:Lcom/vinted/feature/trust/report/report/ReportState;
+
+    .line 127
+    .line 128
+    iput-object v7, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->w:Ljava/util/List;
+
+    .line 129
+    .line 130
+    iput v9, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->x:I
+
+    .line 131
+    .line 132
+    iput v6, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->y:I
+
+    .line 133
+    .line 134
+    iput-byte v5, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->z:B
+
+    .line 135
+    .line 136
+    invoke-interface {v3, v0}, Lsl5;->n(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object v12
+
+    .line 140
+    if-ne v12, v2, :cond_3
+
+    .line 141
+    .line 142
+    goto :goto_3
+
+    .line 143
+    :cond_3
+    move-object v13, v11
+
+    .line 144
+    move-object v11, v1
+
+    .line 145
+    move v1, v9
+
+    .line 146
+    move-object v9, v10
+
+    .line 147
+    move-object v10, v8
+
+    .line 148
+    move-object v8, v13
+
+    .line 149
+    move-object v13, v3
+
+    .line 150
+    move v3, v6
+
+    .line 151
+    :goto_2
+    check-cast v12, Ljava/util/List;
+
+    .line 152
+    .line 153
+    iput-object v7, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->A:Ljava/lang/Object;
+
+    .line 154
+    .line 155
+    iput-object v13, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->r:Lsl5;
+
+    .line 156
+    .line 157
+    iput-object v11, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->s:Lsl5;
+
+    .line 158
+    .line 159
+    iput-object v10, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->t:Luwc;
+
+    .line 160
+    .line 161
+    iput-object v9, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->u:Ljava/lang/Object;
+
+    .line 162
+    .line 163
+    iput-object v8, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->v:Lcom/vinted/feature/trust/report/report/ReportState;
+
+    .line 164
+    .line 165
+    move-object v14, v12
+
+    .line 166
+    check-cast v14, Ljava/util/List;
+
+    .line 167
+    .line 168
+    iput-object v14, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->w:Ljava/util/List;
+
+    .line 169
+    .line 170
+    iput v1, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->x:I
+
+    .line 171
+    .line 172
+    iput v3, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->y:I
+
+    .line 173
+    .line 174
+    iput-byte v4, v0, Lcom/vinted/feature/trust/report/report/ReportViewModel$1;->z:B
+
+    .line 175
+    .line 176
+    invoke-interface {v11, v0}, Lsl5;->n(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v3
+
+    .line 180
+    if-ne v3, v2, :cond_4
+
+    .line 181
+    .line 182
+    :goto_3
+    return-object v2
+
+    .line 183
+    :cond_4
+    move-object/from16 v17, v10
+
+    .line 184
+    .line 185
+    move-object v15, v13
+
+    .line 186
+    move-object v10, v9
+
+    .line 187
+    move-object v9, v12
+
+    .line 188
+    goto/16 :goto_0
+
+    .line 189
+    .line 190
+    :goto_4
+    move-object v14, v3
+
+    .line 191
+    check-cast v14, Lcom/vinted/feature/trust/api/entity/SelectedReportItem;
+
+    .line 192
+    .line 193
+    move-object v3, v10
+
+    .line 194
+    iget-object v10, v8, Lcom/vinted/feature/trust/report/report/ReportState;->reportArguments:Lcom/vinted/feature/trust/report/report/ReportArguments;
+
+    .line 195
+    .line 196
+    iget-object v11, v8, Lcom/vinted/feature/trust/report/report/ReportState;->alertType:Lcom/vinted/feature/trust/api/entity/AdminAlertType;
+
+    .line 197
+    .line 198
+    iget-boolean v12, v8, Lcom/vinted/feature/trust/report/report/ReportState;->shouldShowUserPhoto:Z
+
+    .line 199
+    .line 200
+    iget-object v13, v8, Lcom/vinted/feature/trust/report/report/ReportState;->sessionId:Ljava/lang/String;
+
+    .line 201
+    .line 202
+    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 203
+    .line 204
+    .line 205
+    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 206
+    .line 207
+    .line 208
+    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 209
+    .line 210
+    .line 211
+    invoke-virtual {v13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 212
+    .line 213
+    .line 214
+    new-instance v8, Lcom/vinted/feature/trust/report/report/ReportState;
+
+    .line 215
+    .line 216
+    invoke-direct/range {v8 .. v14}, Lcom/vinted/feature/trust/report/report/ReportState;-><init>(Ljava/util/List;Lcom/vinted/feature/trust/report/report/ReportArguments;Lcom/vinted/feature/trust/api/entity/AdminAlertType;ZLjava/lang/String;Lcom/vinted/feature/trust/api/entity/SelectedReportItem;)V
+
+    .line 217
+    .line 218
+    .line 219
+    move-object/from16 v9, v17
+
+    .line 220
+    .line 221
+    check-cast v9, Lo9i;
+
+    .line 222
+    .line 223
+    invoke-virtual {v9, v3, v8}, Lo9i;->k(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 224
+    .line 225
+    .line 226
+    move-result v3
+
+    .line 227
+    if-eqz v3, :cond_5
+
+    .line 228
+    .line 229
+    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 230
+    .line 231
+    return-object v0
+
+    .line 232
+    :cond_5
+    move-object v8, v9
+
+    .line 233
+    move-object v3, v15
+
+    .line 234
+    move/from16 v9, v16
+
+    .line 235
+    .line 236
+    goto :goto_1
+.end method

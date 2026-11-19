@@ -1,0 +1,17 @@
+package com.facebook.login;
+
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public enum a {
+    S256("S256"),
+    PLAIN("plain");
+
+    /* synthetic */ a(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? "S256" : str);
+    }
+
+    a(String str) {
+    }
+}

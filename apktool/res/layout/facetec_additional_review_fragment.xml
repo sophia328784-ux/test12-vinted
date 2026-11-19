@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/backgroundView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/contentLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" android:translationY="-55.0dp">
+        <RelativeLayout android:gravity="center_horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/iconFrameLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:id="@id/iconImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/facetec_review" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+            </FrameLayout>
+            <com.facetec.sdk.ay android:textSize="20.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/messageTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/FaceTec_idscan_additional_review_message" android:layout_below="@id/iconFrameLayout" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.1" android:textAlignment="center" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,184 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.os.LocaleList;
+import android.os.StatFs;
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.util.DeviceProperties;
+import com.google.android.gms.common.wrappers.Wrappers;
+import com.google.common.util.concurrent.ListenableFuture;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.concurrent.Callable;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+final class zzfdt implements zzfdi {
+    private final zzhdi zza;
+    private final Context zzb;
+    private final zzeez zzc;
+
+    @Nullable
+    private final String zzd;
+
+    public zzfdt(zzhdi zzhdiVar, Context context, zzeez zzeezVar, @Nullable String str) {
+        this.zza = zzhdiVar;
+        this.zzb = context;
+        this.zzc = zzeezVar;
+        this.zzd = str;
+    }
+
+    @Nullable
+    private static ResolveInfo zzd(PackageManager packageManager, String str) {
+        return packageManager.resolveActivity(new Intent("android.intent.action.VIEW", Uri.parse(str)), 65536);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    public final ListenableFuture zza() {
+        return this.zza.submit(new Callable() { // from class: com.google.android.gms.internal.ads.zzfds
+            @Override // java.util.concurrent.Callable
+            public final /* synthetic */ Object call() {
+                return this.zza.zzc();
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    public final int zzb() {
+        return 38;
+    }
+
+    /* JADX WARN: Code duplicated, block: B:35:0x0131 A[PHI: r1
+      0x0131: PHI (r1v17 java.lang.String) = (r1v7 java.lang.String), (r1v7 java.lang.String), (r1v7 java.lang.String), (r1v8 java.lang.String) binds: [B:34:0x012f, B:37:0x014d, B:38:0x014f, B:77:0x0131] A[DONT_GENERATE, DONT_INLINE]] */
+    /* JADX WARN: Code duplicated, block: B:51:0x01b6  */
+    public final /* synthetic */ zzfdr zzc() {
+        ActivityInfo activityInfo;
+        boolean z;
+        String string;
+        String string2;
+        String str;
+        boolean zEquals;
+        boolean z2;
+        Context context = this.zzb;
+        PackageManager packageManager = context.getPackageManager();
+        Locale locale = Locale.getDefault();
+        ResolveInfo resolveInfoZzd = zzd(packageManager, "geo:0,0?q=donuts");
+        ResolveInfo resolveInfoZzd2 = zzd(packageManager, "http://www.google.com");
+        String country = locale.getCountry();
+        com.google.android.gms.ads.internal.zzt.zzc();
+        com.google.android.gms.ads.internal.client.zzay.zza();
+        boolean zZzy = com.google.android.gms.ads.internal.util.client.zzf.zzy();
+        boolean zIsLatchsky = DeviceProperties.isLatchsky(context);
+        boolean zIsSidewinder = DeviceProperties.isSidewinder(context);
+        String language = locale.getLanguage();
+        ArrayList arrayList = new ArrayList();
+        LocaleList localeList = LocaleList.getDefault();
+        for (int i = 0; i < localeList.size(); i++) {
+            arrayList.add(localeList.get(i).getLanguage());
+        }
+        ResolveInfo resolveInfoZzd3 = zzd(packageManager, "market://details?id=com.google.android.gms.ads");
+        if (resolveInfoZzd3 == null || (activityInfo = resolveInfoZzd3.activityInfo) == null) {
+            string = null;
+            z = true;
+        } else {
+            try {
+                z = true;
+                try {
+                    PackageInfo packageInfo = Wrappers.packageManager(context).getPackageInfo(activityInfo.packageName, 0);
+                    if (packageInfo != null) {
+                        int i2 = packageInfo.versionCode;
+                        String str2 = activityInfo.packageName;
+                        StringBuilder sb = new StringBuilder(String.valueOf(i2).length() + 1 + String.valueOf(str2).length());
+                        sb.append(i2);
+                        sb.append(".");
+                        sb.append(str2);
+                        string = sb.toString();
+                    } else {
+                        string = null;
+                    }
+                } catch (PackageManager.NameNotFoundException unused) {
+                }
+            } catch (PackageManager.NameNotFoundException unused2) {
+                z = true;
+            }
+        }
+        try {
+            PackageInfo packageInfo2 = Wrappers.packageManager(this.zzb).getPackageInfo("com.android.vending", 128);
+            if (packageInfo2 != null) {
+                int i3 = packageInfo2.versionCode;
+                String str3 = packageInfo2.packageName;
+                StringBuilder sb2 = new StringBuilder(String.valueOf(i3).length() + 1 + String.valueOf(str3).length());
+                sb2.append(i3);
+                sb2.append(".");
+                sb2.append(str3);
+                string2 = sb2.toString();
+            } else {
+                string2 = null;
+            }
+        } catch (Exception unused3) {
+        }
+        String strZza = null;
+        String str4 = Build.FINGERPRINT;
+        String language2 = Locale.getDefault().getLanguage();
+        if (((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zzpm)).booleanValue()) {
+            com.google.android.gms.ads.internal.util.zzq zzqVarZzk = com.google.android.gms.ads.internal.util.zzs.zzk(this.zzb);
+            language2 = zzqVarZzk.zzb();
+            strZza = zzqVarZzk.zza();
+        } else if (((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zzpl)).booleanValue()) {
+            language2 = com.google.android.gms.ads.internal.util.zzs.zzk(this.zzb).zzb();
+        }
+        String str5 = strZza;
+        String str6 = language2;
+        Context context2 = this.zzb;
+        if (packageManager == null) {
+            str = string2;
+            zEquals = false;
+            break;
+        }
+        Intent intent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.example.com"));
+        ResolveInfo resolveInfoResolveActivity = packageManager.resolveActivity(intent, 0);
+        List<ResolveInfo> listQueryIntentActivities = packageManager.queryIntentActivities(intent, 65536);
+        if (listQueryIntentActivities == null || resolveInfoResolveActivity == null) {
+            str = string2;
+            zEquals = false;
+            break;
+        }
+        int i4 = 0;
+        while (true) {
+            if (i4 >= listQueryIntentActivities.size()) {
+                str = string2;
+                zEquals = false;
+                break;
+            }
+            str = string2;
+            if (resolveInfoResolveActivity.activityInfo.name.equals(listQueryIntentActivities.get(i4).activityInfo.name)) {
+                zEquals = resolveInfoResolveActivity.activityInfo.packageName.equals(zziom.zza(context2));
+                break;
+            }
+            i4++;
+            string2 = str;
+        }
+        com.google.android.gms.ads.internal.zzt.zzc();
+        long availableBytes = new StatFs(Environment.getDataDirectory().getAbsolutePath()).getAvailableBytes() / 1024;
+        if (((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zzmX)).booleanValue()) {
+            com.google.android.gms.ads.internal.zzt.zzc();
+            if (com.google.android.gms.ads.internal.util.zzs.zzE(context2)) {
+                z2 = z;
+            } else {
+                z2 = false;
+            }
+        } else {
+            z2 = false;
+        }
+        return new zzfdr(resolveInfoZzd != null ? z : false, resolveInfoZzd2 != null ? z : false, country, zZzy, zIsLatchsky, zIsSidewinder, language, arrayList, string, str, str4, zEquals, Build.MODEL, availableBytes, z2, ((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zznb)).booleanValue() ? ((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zznd)).booleanValue() ? this.zzd : com.google.android.gms.ads.internal.util.client.zzf.zzf(context2) : "", Build.VERSION.SDK_INT, str6, str5, this.zzc.zza());
+    }
+}

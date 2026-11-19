@@ -1,0 +1,163 @@
+.class public final Lcgg$u;
+.super Llel;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcgg;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Llel;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lme6;
+    .locals 11
+
+    .line 1
+    const-wide/16 v0, 0x1
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v7
+
+    .line 7
+    const-string p0, "027B680AC8B8596DA5A4AF8A19A0303FCA97FD7645309FA2A581485AF6263E313B79A2F5"
+
+    .line 8
+    .line 9
+    invoke-static {p0}, Lcgg;->d(Ljava/lang/String;)Ljava/math/BigInteger;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v8
+
+    .line 13
+    const-string p0, "03FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEF90399660FC938A90165B042A7CEFADB307"
+
+    .line 14
+    .line 15
+    invoke-static {p0}, Lcgg;->d(Ljava/lang/String;)Ljava/math/BigInteger;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v9
+
+    .line 19
+    const-wide/16 v0, 0x2
+
+    .line 20
+    .line 21
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v10
+
+    .line 25
+    new-instance v2, Lke6;
+
+    .line 26
+    .line 27
+    const/16 v3, 0x11b
+
+    .line 28
+    .line 29
+    const/4 v4, 0x5
+
+    .line 30
+    const/4 v5, 0x7
+
+    .line 31
+    const/16 v6, 0xc
+
+    .line 32
+    .line 33
+    invoke-direct/range {v2 .. v10}, Lke6;-><init>(IIIILjava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+
+    .line 34
+    .line 35
+    .line 36
+    return-object v2
+.end method
+
+.method public final b()Lkel;
+    .locals 7
+
+    .line 1
+    const-string v0, "77E2B07370EB0F832A6DD5B62DFC88CD06BB84BE"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcv8;->b(Ljava/lang/String;)[B
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v6
+
+    .line 7
+    invoke-virtual {p0}, Llel;->c()Lme6;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v2
+
+    .line 11
+    const-string p0, "0405F939258DB7DD90E1934F8C70B0DFEC2EED25B8557EAC9C80E2E198F8CDBECD86B1205303676854FE24141CB98FE6D4B20D02B4516FF702350EDDB0826779C813F0DF45BE8112F4"
+
+    .line 12
+    .line 13
+    invoke-static {v2, p0}, Lcgg;->a(Lme6;Ljava/lang/String;)Lmel;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v3
+
+    .line 17
+    new-instance v1, Lkel;
+
+    .line 18
+    .line 19
+    iget-object v4, v2, Lme6;->d:Ljava/math/BigInteger;
+
+    .line 20
+    .line 21
+    iget-object v5, v2, Lme6;->e:Ljava/math/BigInteger;
+
+    .line 22
+    .line 23
+    invoke-direct/range {v1 .. v6}, Lkel;-><init>(Lme6;Lmel;Ljava/math/BigInteger;Ljava/math/BigInteger;[B)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-object v1
+.end method

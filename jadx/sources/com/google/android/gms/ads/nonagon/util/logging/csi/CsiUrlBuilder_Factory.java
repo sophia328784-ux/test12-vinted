@@ -1,0 +1,25 @@
+package com.google.android.gms.ads.nonagon.util.logging.csi;
+
+import androidx.annotation.NonNull;
+import com.google.android.gms.internal.ads.zzinw;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public final class CsiUrlBuilder_Factory implements zzinw<CsiUrlBuilder> {
+    @NonNull
+    public static CsiUrlBuilder_Factory create() {
+        return zza.zza;
+    }
+
+    @NonNull
+    public static CsiUrlBuilder newInstance() {
+        return new CsiUrlBuilder();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zziol, com.google.android.gms.internal.ads.zziok
+    @NonNull
+    /* JADX INFO: renamed from: get, reason: merged with bridge method [inline-methods] */
+    public CsiUrlBuilder zzb() {
+        return newInstance();
+    }
+}

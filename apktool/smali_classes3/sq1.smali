@@ -1,0 +1,152 @@
+.class public Lsq1;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Ltzg;
+
+
+# instance fields
+.field public final a:Lvq1;
+
+.field public final b:J
+
+.field public final c:J
+
+.field public final d:J
+
+.field public final e:J
+
+.field public final f:J
+
+.field public final g:J
+
+
+# direct methods
+.method public constructor <init>(Lvq1;JJJJJJ)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lsq1;->a:Lvq1;
+
+    .line 5
+    .line 6
+    iput-wide p2, p0, Lsq1;->b:J
+
+    .line 7
+    .line 8
+    iput-wide p4, p0, Lsq1;->c:J
+
+    .line 9
+    .line 10
+    iput-wide p6, p0, Lsq1;->d:J
+
+    .line 11
+    .line 12
+    iput-wide p8, p0, Lsq1;->e:J
+
+    .line 13
+    .line 14
+    iput-wide p10, p0, Lsq1;->f:J
+
+    .line 15
+    .line 16
+    iput-wide p12, p0, Lsq1;->g:J
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getDurationUs()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lsq1;->b:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public final getSeekPoints(J)Lrzg;
+    .locals 13
+
+    .line 1
+    iget-object v0, p0, Lsq1;->a:Lvq1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2}, Lvq1;->c(J)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v1
+
+    .line 7
+    iget-wide v9, p0, Lsq1;->f:J
+
+    .line 8
+    .line 9
+    iget-wide v11, p0, Lsq1;->g:J
+
+    .line 10
+    .line 11
+    iget-wide v3, p0, Lsq1;->c:J
+
+    .line 12
+    .line 13
+    iget-wide v5, p0, Lsq1;->d:J
+
+    .line 14
+    .line 15
+    iget-wide v7, p0, Lsq1;->e:J
+
+    .line 16
+    .line 17
+    invoke-static/range {v1 .. v12}, Luq1;->a(JJJJJJ)J
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-wide v0
+
+    .line 21
+    new-instance p0, Lrzg;
+
+    .line 22
+    .line 23
+    new-instance v2, Lvzg;
+
+    .line 24
+    .line 25
+    invoke-direct {v2, p1, p2, v0, v1}, Lvzg;-><init>(JJ)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-direct {p0, v2}, Lrzg;-><init>(Lvzg;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object p0
+.end method
+
+.method public final isSeekable()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
+.end method

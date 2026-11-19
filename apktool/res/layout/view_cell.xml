@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.vinted.views.common.VintedImageView android:layout_gravity="left|top" android:id="@id/view_cell_image" android:visibility="gone" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_cell_body_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/view_cell_title_line" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.vinted.views.common.VintedTextView android:id="@id/view_cell_title" android:saveEnabled="false" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.vinted.views.common.VintedTextView android:layout_gravity="right|top" android:id="@id/view_cell_subtitle" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <com.vinted.views.common.VintedTextView android:id="@id/view_cell_body" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.vinted.views.common.VintedValidationView android:id="@id/view_cell_validation" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</merge>

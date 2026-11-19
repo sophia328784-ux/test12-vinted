@@ -1,0 +1,18 @@
+package kotlinx.serialization.json;
+
+import com.mbridge.msdk.MBridgeConstans;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B?\b\u0001\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0002¢\u0006\u0004\b\n\u0010\u000b¨\u0006\f"}, d2 = {"Lkotlinx/serialization/json/JsonDecodingException;", "Lkotlinx/serialization/json/JsonException;", "", "fullMessage", "shortMessage", "", "offset", MBridgeConstans.DYNAMIC_VIEW_WX_PATH, "input", "hint", "<init>", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "kotlinx-serialization-json"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public final class JsonDecodingException extends JsonException {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    @Deprecated
+    public JsonDecodingException(String str, String str2, int i, String str3, String str4, String str5) {
+        super(str, null);
+        str.getClass();
+        str2.getClass();
+    }
+}

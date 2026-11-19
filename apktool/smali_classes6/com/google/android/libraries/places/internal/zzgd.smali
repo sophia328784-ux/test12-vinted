@@ -1,0 +1,62 @@
+.class public final Lcom/google/android/libraries/places/internal/zzgd;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Lcom/google/android/libraries/places/internal/zzaxy;
+
+
+# instance fields
+.field private final zza:Lcom/google/android/libraries/places/internal/zzbvt;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/libraries/places/internal/zzbvt;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/google/android/libraries/places/internal/zzgd;->zza:Lcom/google/android/libraries/places/internal/zzbvt;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic zzb()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/libraries/places/internal/zzgd;->zza:Lcom/google/android/libraries/places/internal/zzbvt;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Lcom/google/android/libraries/places/internal/zzbvt;->zzb()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    new-instance v0, Lcom/google/android/libraries/places/internal/zzgc;
+
+    .line 8
+    .line 9
+    check-cast p0, Lcom/google/android/libraries/places/internal/zzge;
+
+    .line 10
+    .line 11
+    invoke-direct {v0, p0}, Lcom/google/android/libraries/places/internal/zzgc;-><init>(Lcom/google/android/libraries/places/internal/zzge;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object v0
+.end method

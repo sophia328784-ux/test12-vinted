@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__62_res_0x7f080061"
+        android:duration="1680"
+        android:startOffset="0"
+        android:valueFrom="M-7.03 2.66 C-4.43,2.85 -1.81,2.45 0.63,1.5 C3.06,0.55 5.25,-0.94 7.03,-2.85 "
+        android:valueTo="M-7.03 2.66 C-4.43,2.85 -1.81,2.45 0.63,1.5 C3.06,0.55 5.25,-0.94 7.03,-2.85 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__63_res_0x7f080062"
+        android:duration="560"
+        android:startOffset="1680"
+        android:valueFrom="M-7.03 2.66 C-4.43,2.85 -1.81,2.45 0.63,1.5 C3.06,0.55 5.25,-0.94 7.03,-2.85 "
+        android:valueTo="M-7.03 2.66 C-5,2.89 -2.3,2.61 0.22,1.91 C2.79,1.19 6.36,-1.25 8.33,-3.74 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__64_res_0x7f080063"
+        android:duration="640"
+        android:startOffset="2240"
+        android:valueFrom="M-7.03 2.66 C-5,2.89 -2.3,2.61 0.22,1.91 C2.79,1.19 6.36,-1.25 8.33,-3.74 "
+        android:valueTo="M-7.03 2.66 C-5,2.89 -2.3,2.61 0.22,1.91 C2.79,1.19 6.36,-1.25 8.33,-3.74 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__65_res_0x7f080064"
+        android:duration="1480"
+        android:startOffset="2880"
+        android:valueFrom="M-7.03 2.66 C-5,2.89 -2.3,2.61 0.22,1.91 C2.79,1.19 6.36,-1.25 8.33,-3.74 "
+        android:valueTo="M-7.03 2.66 C-4.43,2.85 -1.81,2.45 0.63,1.5 C3.06,0.55 5.25,-0.94 7.03,-2.85 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+</set>

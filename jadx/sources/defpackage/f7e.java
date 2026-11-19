@@ -1,0 +1,20 @@
+package defpackage;
+
+import java.nio.file.Path;
+import java.util.Iterator;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+public final class f7e {
+    public final Path a;
+    public final Object b;
+    public final f7e c;
+    public Iterator d;
+
+    public f7e(Path path, Object obj, f7e f7eVar) {
+        path.getClass();
+        this.a = path;
+        this.b = obj;
+        this.c = f7eVar;
+    }
+}

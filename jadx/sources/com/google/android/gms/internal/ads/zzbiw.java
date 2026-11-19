@@ -1,0 +1,33 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import org.json.JSONObject;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+final class zzbiw extends zzbix {
+    public zzbiw(int i, String str, String str2, String str3) {
+        super(1, str, str2, str3, null);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbix
+    public final /* bridge */ /* synthetic */ Object zza(Bundle bundle) {
+        return bundle.containsKey("com.google.android.gms.ads.flag.".concat(zze())) ? bundle.getString("com.google.android.gms.ads.flag.".concat(zze())) : (String) zzf();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbix
+    public final /* bridge */ /* synthetic */ void zzb(SharedPreferences.Editor editor, Object obj) {
+        editor.putString(zze(), (String) obj);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbix
+    public final /* bridge */ /* synthetic */ Object zzc(JSONObject jSONObject) {
+        return jSONObject.optString(zze(), (String) zzf());
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbix
+    public final /* bridge */ /* synthetic */ Object zzd(SharedPreferences sharedPreferences) {
+        return sharedPreferences.getString(zze(), (String) zzf());
+    }
+}

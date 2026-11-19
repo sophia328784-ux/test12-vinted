@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/view_selection_item_body_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <com.vinted.views.common.VintedTextView
+            android:id="@+id/view_selection_item_title"
+            android:saveEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.vinted.views.common.VintedTextView
+            android:id="@+id/view_selection_item_body"
+            android:saveEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.vinted.views.common.VintedIconView
+        android:id="@+id/view_selection_item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</merge>

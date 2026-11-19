@@ -1,0 +1,16 @@
+package com.google.android.gms.common.api.internal;
+
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.internal.IAccountAccessor;
+import java.util.Set;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes.dex */
+public interface zacl {
+    void zaa(ConnectionResult connectionResult);
+
+    void zab(int i);
+
+    void zac(@Nullable IAccountAccessor iAccountAccessor, @Nullable Set set);
+}

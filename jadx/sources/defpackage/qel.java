@@ -1,0 +1,114 @@
+package defpackage;
+
+import net.pubnative.lite.sdk.models.Protocol;
+
+/* JADX INFO: loaded from: classes11.dex */
+public interface qel {
+    public static final i1 Aa;
+    public static final i1 Ba;
+    public static final i1 Ca;
+    public static final i1 Da;
+    public static final i1 Ea;
+    public static final i1 Fa;
+    public static final i1 Ga;
+    public static final i1 Ha;
+    public static final i1 Ia;
+    public static final i1 Ja;
+    public static final i1 Ka;
+    public static final i1 W9;
+    public static final i1 X9;
+    public static final i1 Y9;
+    public static final i1 Z9;
+    public static final i1 ba;
+
+    /* JADX INFO: renamed from: ca, reason: collision with root package name */
+    public static final i1 f1103ca;
+    public static final i1 da;
+    public static final i1 ea;
+    public static final i1 fa;
+    public static final i1 ga;
+    public static final i1 ha;
+    public static final i1 ia;
+    public static final i1 ja;
+    public static final i1 ka;
+    public static final i1 la;
+    public static final i1 ma;
+    public static final i1 na;
+    public static final i1 oa;
+    public static final i1 pa;
+    public static final i1 qa;
+    public static final i1 ra;
+    public static final i1 sa;
+    public static final i1 ta;
+    public static final i1 va;
+    public static final i1 wa;
+    public static final i1 xa;
+    public static final i1 ya;
+    public static final i1 za;
+
+    static {
+        i1 i1Var = new i1("1.2.840.10045");
+        i1 i1VarW = i1Var.w("1");
+        W9 = i1VarW.w("1");
+        i1 i1VarW2 = i1VarW.w("2");
+        X9 = i1VarW2;
+        i1VarW2.w("3.1");
+        Y9 = i1VarW2.w("3.2");
+        Z9 = i1VarW2.w("3.3");
+        i1 i1VarW3 = i1Var.w(Protocol.VAST_1_0_WRAPPER);
+        ba = i1VarW3.w("1");
+        f1103ca = i1Var.w("2").w("1");
+        i1 i1VarW4 = i1VarW3.w("3");
+        da = i1VarW4.w("1");
+        ea = i1VarW4.w("2");
+        fa = i1VarW4.w("3");
+        ga = i1VarW4.w(Protocol.VAST_1_0_WRAPPER);
+        i1 i1VarW5 = i1Var.w("3");
+        i1 i1VarW6 = i1VarW5.w("0");
+        ha = i1VarW6.w("1");
+        ia = i1VarW6.w("2");
+        ja = i1VarW6.w("3");
+        ka = i1VarW6.w(Protocol.VAST_1_0_WRAPPER);
+        la = i1VarW6.w("5");
+        ma = i1VarW6.w("6");
+        na = i1VarW6.w("7");
+        i1VarW6.w("8");
+        i1VarW6.w("9");
+        oa = i1VarW6.w("10");
+        pa = i1VarW6.w(Protocol.VAST_4_1);
+        qa = i1VarW6.w(Protocol.VAST_4_1_WRAPPER);
+        ra = i1VarW6.w(Protocol.VAST_4_2);
+        i1VarW6.w(Protocol.VAST_4_2_WRAPPER);
+        i1VarW6.w("15");
+        sa = i1VarW6.w("16");
+        ta = i1VarW6.w("17");
+        va = i1VarW6.w("18");
+        wa = i1VarW6.w("19");
+        xa = i1VarW6.w("20");
+        i1 i1VarW7 = i1VarW5.w("1");
+        ya = i1VarW7.w("1");
+        za = i1VarW7.w("2");
+        Aa = i1VarW7.w("3");
+        Ba = i1VarW7.w(Protocol.VAST_1_0_WRAPPER);
+        Ca = i1VarW7.w("5");
+        Da = i1VarW7.w("6");
+        Ea = i1VarW7.w("7");
+        Fa = new i1("1.2.840.10040.4.1");
+        Ga = new i1("1.2.840.10040.4.3");
+        i1 i1Var2 = new i1("1.3.133.16.840.63.0");
+        Ha = i1Var2.w("2");
+        Ia = i1Var2.w("3");
+        Ja = i1Var2.w("16");
+        i1 i1Var3 = new i1("1.2.840.10046");
+        Ka = i1Var3.w("2.1");
+        i1 i1VarW8 = i1Var3.w("3");
+        i1VarW8.w("1");
+        i1VarW8.w("2");
+        i1VarW8.w("3");
+        k81.a(i1VarW8, Protocol.VAST_1_0_WRAPPER, "5", "6", "7");
+        i1VarW8.w("8");
+        i1 i1VarW9 = new i1("1.3.133.16.840.9.44").w("1");
+        i1VarW9.w("1");
+        i1VarW9.w("2");
+    }
+}

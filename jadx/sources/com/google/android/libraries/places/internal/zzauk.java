@@ -1,0 +1,19 @@
+package com.google.android.libraries.places.internal;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+public final class zzauk extends zzaul {
+    @Override // com.google.android.libraries.places.internal.zzaul
+    public final boolean equals(Object obj) {
+        throw null;
+    }
+
+    @Override // com.google.android.libraries.places.internal.zzaul
+    public final int hashCode() {
+        throw null;
+    }
+
+    public final String toString() {
+        throw null;
+    }
+}

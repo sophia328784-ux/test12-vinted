@@ -1,0 +1,165 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes11.dex */
+public abstract class yzc {
+    public static void a(int[] iArr, int[] iArr2, int[] iArr3) {
+        uzc.o(iArr, iArr2, iArr3);
+        long j = ((long) iArr2[6]) & 4294967295L;
+        long j2 = ((long) iArr2[7]) & 4294967295L;
+        long j3 = ((long) iArr2[8]) & 4294967295L;
+        long j4 = ((long) iArr2[9]) & 4294967295L;
+        long j5 = ((long) iArr2[10]) & 4294967295L;
+        long j6 = ((long) iArr2[11]) & 4294967295L;
+        long j7 = ((long) iArr[6]) & 4294967295L;
+        long j8 = j7 * j;
+        iArr3[12] = (int) j8;
+        long j9 = (j7 * j2) + (j8 >>> 32);
+        iArr3[13] = (int) j9;
+        long j10 = (j7 * j3) + (j9 >>> 32);
+        iArr3[14] = (int) j10;
+        long j11 = (j7 * j4) + (j10 >>> 32);
+        iArr3[15] = (int) j11;
+        long j12 = (j7 * j5) + (j11 >>> 32);
+        iArr3[16] = (int) j12;
+        long j13 = (j7 * j6) + (j12 >>> 32);
+        iArr3[17] = (int) j13;
+        iArr3[18] = (int) (j13 >>> 32);
+        int i = 12;
+        int i2 = 1;
+        while (i2 < 6) {
+            int i3 = i + 1;
+            int i4 = i2;
+            long j14 = ((long) iArr[6 + i2]) & 4294967295L;
+            long j15 = j3;
+            long j16 = (j14 * j) + (((long) iArr3[i3]) & 4294967295L);
+            iArr3[i3] = (int) j16;
+            int i5 = i + 2;
+            long j17 = (j14 * j2) + (((long) iArr3[i5]) & 4294967295L) + (j16 >>> 32);
+            iArr3[i5] = (int) j17;
+            int i6 = i + 3;
+            long j18 = (j14 * j15) + (((long) iArr3[i6]) & 4294967295L) + (j17 >>> 32);
+            iArr3[i6] = (int) j18;
+            int i7 = i + 4;
+            long j19 = (j14 * j4) + (((long) iArr3[i7]) & 4294967295L) + (j18 >>> 32);
+            iArr3[i7] = (int) j19;
+            int i8 = i + 5;
+            long j20 = (j14 * j5) + (((long) iArr3[i8]) & 4294967295L) + (j19 >>> 32);
+            iArr3[i8] = (int) j20;
+            int i9 = i + 6;
+            long j21 = (j14 * j6) + (((long) iArr3[i9]) & 4294967295L) + (j20 >>> 32);
+            iArr3[i9] = (int) j21;
+            iArr3[i + 7] = (int) (j21 >>> 32);
+            i2 = i4 + 1;
+            i = i3;
+            j3 = j15;
+        }
+        int iD = uzc.d(iArr3, iArr3);
+        int iC = uzc.c(18, 12, uzc.c(0, 6, 0, iArr3, iArr3) + iD, iArr3, iArr3) + iD;
+        int[] iArr4 = new int[6];
+        int[] iArr5 = new int[6];
+        boolean z = uzc.g(iArr, iArr, iArr4) != uzc.g(iArr2, iArr2, iArr5);
+        int[] iArr6 = new int[12];
+        uzc.o(iArr4, iArr5, iArr6);
+        b0d.f(24, iC + (z ? b0d.d(12, 6, iArr6, iArr3) : b0d.A(12, 6, iArr6, iArr3)), 18, iArr3);
+    }
+
+    public static void b(int[] iArr, int[] iArr2) {
+        uzc.q(iArr, iArr2);
+        long j = 4294967295L;
+        long j2 = ((long) iArr[6]) & 4294967295L;
+        int i = 5;
+        int i2 = 12;
+        int i3 = 0;
+        while (true) {
+            int i4 = i - 1;
+            long j3 = ((long) iArr[i + 6]) & j;
+            long j4 = j3 * j3;
+            long j5 = j;
+            iArr2[i2 + 11] = ((int) (j4 >>> 33)) | (i3 << 31);
+            int i5 = i2 - 2;
+            iArr2[i2 + 10] = (int) (j4 >>> 1);
+            i3 = (int) j4;
+            if (i4 <= 0) {
+                long j6 = j2 * j2;
+                iArr2[12] = (int) j6;
+                long j7 = ((long) iArr[7]) & j5;
+                long j8 = ((long) iArr2[14]) & j5;
+                long j9 = (j7 * j2) + ((((long) (i3 << 31)) & j5) | (j6 >>> 33));
+                int i6 = (int) j9;
+                iArr2[13] = (i6 << 1) | (((int) (j6 >>> 32)) & 1);
+                long j10 = ((long) iArr[8]) & j5;
+                long j11 = ((long) iArr2[15]) & j5;
+                long j12 = ((long) iArr2[16]) & j5;
+                long j13 = (j10 * j2) + j8 + (j9 >>> 32);
+                int i7 = (int) j13;
+                iArr2[14] = (i7 << 1) | (i6 >>> 31);
+                long jA = gq3.a(j10, j7, j13 >>> 32, j11);
+                long j14 = j12 + (jA >>> 32);
+                long j15 = ((long) iArr[9]) & j5;
+                long j16 = (((long) iArr2[17]) & j5) + (j14 >>> 32);
+                long j17 = (((long) iArr2[18]) & j5) + (j16 >>> 32);
+                long j18 = (j15 * j2) + (jA & j5);
+                int i8 = (int) j18;
+                iArr2[15] = (i7 >>> 31) | (i8 << 1);
+                long jA2 = gq3.a(j15, j7, j18 >>> 32, j14 & j5);
+                long jA3 = gq3.a(j15, j10, jA2 >>> 32, j16 & j5);
+                long j19 = j17 + (jA3 >>> 32);
+                long j20 = jA3 & j5;
+                long j21 = ((long) iArr[10]) & j5;
+                long j22 = (((long) iArr2[19]) & j5) + (j19 >>> 32);
+                long j23 = j19 & j5;
+                long j24 = (((long) iArr2[20]) & j5) + (j22 >>> 32);
+                long j25 = j22 & j5;
+                long j26 = (j21 * j2) + (jA2 & j5);
+                int i9 = (int) j26;
+                iArr2[16] = (i9 << 1) | (i8 >>> 31);
+                long jA4 = gq3.a(j21, j7, j26 >>> 32, j20);
+                long jA5 = gq3.a(j21, j10, jA4 >>> 32, j23);
+                long jA6 = gq3.a(j21, j15, jA5 >>> 32, j25);
+                long j27 = jA5 & j5;
+                long j28 = j24 + (jA6 >>> 32);
+                long j29 = jA6 & j5;
+                long j30 = ((long) iArr[11]) & j5;
+                long j31 = (((long) iArr2[21]) & j5) + (j28 >>> 32);
+                long j32 = j28 & j5;
+                long j33 = (((long) iArr2[22]) & j5) + (j31 >>> 32);
+                long j34 = j31 & j5;
+                long j35 = (j30 * j2) + (jA4 & j5);
+                int i10 = (int) j35;
+                iArr2[17] = (i9 >>> 31) | (i10 << 1);
+                int i11 = i10 >>> 31;
+                long jA7 = gq3.a(j30, j7, j35 >>> 32, j27);
+                long jA8 = gq3.a(j30, j10, jA7 >>> 32, j29);
+                long jA9 = gq3.a(j30, j15, jA8 >>> 32, j32);
+                long jA10 = gq3.a(j30, j21, jA9 >>> 32, j34);
+                long j36 = j33 + (jA10 >>> 32);
+                int i12 = (int) jA7;
+                iArr2[18] = i11 | (i12 << 1);
+                int i13 = i12 >>> 31;
+                int i14 = (int) jA8;
+                iArr2[19] = i13 | (i14 << 1);
+                int i15 = i14 >>> 31;
+                int i16 = (int) jA9;
+                iArr2[20] = i15 | (i16 << 1);
+                int i17 = i16 >>> 31;
+                int i18 = (int) jA10;
+                iArr2[21] = i17 | (i18 << 1);
+                int i19 = i18 >>> 31;
+                int i20 = (int) j36;
+                iArr2[22] = i19 | (i20 << 1);
+                iArr2[23] = ((iArr2[23] + ((int) (j36 >>> 32))) << 1) | (i20 >>> 31);
+                int iD = uzc.d(iArr2, iArr2);
+                int iC = uzc.c(18, 12, uzc.c(0, 6, 0, iArr2, iArr2) + iD, iArr2, iArr2) + iD;
+                int[] iArr3 = new int[6];
+                uzc.g(iArr, iArr, iArr3);
+                int[] iArr4 = new int[12];
+                uzc.q(iArr3, iArr4);
+                b0d.f(24, b0d.A(12, 6, iArr4, iArr2) + iC, 18, iArr2);
+                return;
+            }
+            i2 = i5;
+            i = i4;
+            j = j5;
+        }
+    }
+}

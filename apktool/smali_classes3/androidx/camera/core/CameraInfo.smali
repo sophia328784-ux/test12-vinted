@@ -1,0 +1,380 @@
+.class public interface abstract Landroidx/camera/core/CameraInfo;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/camera/core/CameraInfo$ImplementationType;
+    }
+.end annotation
+
+
+# static fields
+.field public static final IMPLEMENTATION_TYPE_CAMERA2:Ljava/lang/String; = "androidx.camera.camera2"
+
+.field public static final IMPLEMENTATION_TYPE_CAMERA2_LEGACY:Ljava/lang/String; = "androidx.camera.camera2.legacy"
+
+.field public static final IMPLEMENTATION_TYPE_FAKE:Ljava/lang/String; = "androidx.camera.fake"
+
+.field public static final IMPLEMENTATION_TYPE_UNKNOWN:Ljava/lang/String; = "<unknown>"
+
+.field public static final INTRINSIC_ZOOM_RATIO_UNKNOWN:F = 1.0f
+
+.field public static final TORCH_STRENGTH_LEVEL_UNSUPPORTED:I
+
+
+# direct methods
+.method public static mustPlayShutterSound()Z
+    .locals 1
+
+    .line 1
+    invoke-static {}, Landroidx/camera/core/internal/compat/MediaActionSoundCompat;->mustPlayShutterSound()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+
+# virtual methods
+.method public getCameraIdentifier()Landroidx/camera/core/CameraIdentifier;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public abstract getCameraSelector()Landroidx/camera/core/CameraSelector;
+.end method
+
+.method public abstract getCameraState()Landroidx/lifecycle/LiveData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Landroidx/camera/core/CameraState;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getExposureState()Landroidx/camera/core/ExposureState;
+.end method
+
+.method public abstract getImplementationType()Ljava/lang/String;
+.end method
+
+.method public getIntrinsicZoomRatio()F
+    .locals 0
+
+    .line 1
+    const/high16 p0, 0x3f800000    # 1.0f
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public getLensFacing()I
+    .locals 0
+
+    .line 1
+    const/4 p0, -0x1
+
+    .line 2
+    return p0
+.end method
+
+.method public getLowLightBoostState()Landroidx/lifecycle/LiveData;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance p0, Landroidx/lifecycle/MutableLiveData;
+
+    .line 2
+    .line 3
+    const/4 v0, -0x1
+
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-direct {p0, v0}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public getMaxTorchStrengthLevel()I
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public getPhysicalCameraInfos()Ljava/util/Set;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Landroidx/camera/core/CameraInfo;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object p0, Ljava/util/Collections;->EMPTY_SET:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public abstract getSensorRotationDegrees()I
+.end method
+
+.method public abstract getSensorRotationDegrees(I)I
+.end method
+
+.method public getSupportedFrameRateRanges()Ljava/util/Set;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Landroid/util/Range<",
+            "Ljava/lang/Integer;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object p0, Ljava/util/Collections;->EMPTY_SET:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public getSupportedFrameRateRanges(Landroidx/camera/core/SessionConfig;)Ljava/util/Set;
+    .locals 0
+    .annotation build Landroidx/camera/core/ExperimentalSessionConfig;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/camera/core/SessionConfig;",
+            ")",
+            "Ljava/util/Set<",
+            "Landroid/util/Range<",
+            "Ljava/lang/Integer;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 4
+    sget-object p0, Ljava/util/Collections;->EMPTY_SET:Ljava/util/Set;
+
+    return-object p0
+.end method
+
+.method public abstract getTorchState()Landroidx/lifecycle/LiveData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public getTorchStrengthLevel()Landroidx/lifecycle/LiveData;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance p0, Landroidx/lifecycle/MutableLiveData;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-direct {p0, v0}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public abstract getZoomState()Landroidx/lifecycle/LiveData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Landroidx/camera/core/ZoomState;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract hasFlashUnit()Z
+.end method
+
+.method public isFeatureGroupSupported(Landroidx/camera/core/SessionConfig;)Z
+    .locals 0
+    .annotation build Landroidx/camera/core/ExperimentalSessionConfig;
+    .end annotation
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public isFocusMeteringSupported(Landroidx/camera/core/FocusMeteringAction;)Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public isLogicalMultiCameraSupported()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public isLowLightBoostSupported()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public isPrivateReprocessingSupported()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public isTorchStrengthSupported()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public isZslSupported()Z
+    .locals 0
+    .annotation build Landroidx/camera/core/ExperimentalZeroShutterLag;
+    .end annotation
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public querySupportedDynamicRanges(Ljava/util/Set;)Ljava/util/Set;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set<",
+            "Landroidx/camera/core/DynamicRange;",
+            ">;)",
+            "Ljava/util/Set<",
+            "Landroidx/camera/core/DynamicRange;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object p0, Landroidx/camera/core/DynamicRange;->SDR:Landroidx/camera/core/DynamicRange;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-static {p1, p0}, Landroidx/camera/core/impl/DynamicRanges;->findAllPossibleMatches(Ljava/util/Set;Ljava/util/Set;)Ljava/util/Set;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method

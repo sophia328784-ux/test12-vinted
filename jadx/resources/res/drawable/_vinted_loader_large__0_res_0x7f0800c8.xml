@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="28dp"
+    android:width="28dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <group
+        android:name="progressBarContainer"
+        android:pivotX="14"
+        android:pivotY="14"
+        android:translateX="2"
+        android:translateY="2">
+        <path
+            android:name="progressBar"
+            android:fillColor="@color/vinted_loader_fill_color"
+            android:pathData="M14,14m-12.5,0a12.5,12.5 0,1 1,25 0a12.5,12.5 0,1 1,-25 0"
+            android:strokeColor="@color/vinted_loader_loading_color"
+            android:strokeWidth="3"
+            android:trimPathStart="0"
+            android:trimPathEnd="0"
+            android:trimPathOffset="0.25"
+            android:strokeLineCap="square"
+            android:fillType="evenOdd"/>
+    </group>
+</vector>

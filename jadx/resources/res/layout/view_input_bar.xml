@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/view_input_value_container"
+        android:addStatesFromChildren="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vinted.views.common.VintedIconView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/view_input_bar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.vinted.views.containers.input.PasteListenerAppCompatAutoCompleteTextView
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/view_input_value"
+            android:background="@null"
+            android:saveEnabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <com.vinted.views.common.VintedIconButton
+            android:id="@+id/view_input_bar_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

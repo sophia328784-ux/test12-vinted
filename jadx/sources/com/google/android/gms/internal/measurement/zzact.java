@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.measurement;
+
+import java.io.IOException;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes.dex */
+final class zzact extends zzacs {
+    public /* synthetic */ zzact(byte[] bArr, int i, int i2, boolean z, byte[] bArr2) {
+        super(bArr, 0, 0, false, null);
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzacs
+    public final int zzv() throws IOException {
+        return zzy();
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzacs
+    public final int zzw() throws IOException {
+        return zzy();
+    }
+}

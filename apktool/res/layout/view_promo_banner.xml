@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.vinted.views.common.VintedIconView android:id="@id/promo_banner_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/promo_banner_content_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.vinted.views.common.VintedTextView android:id="@id/promo_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.vinted.views.common.VintedTextView android:id="@id/promo_banner_body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.vinted.views.common.VintedIconView android:id="@id/promo_banner_close" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vinted_source="@drawable/x_12" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.vinted.views.common.VintedTextView android:id="@id/promo_banner_action" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

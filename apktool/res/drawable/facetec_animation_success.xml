@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$facetec_animation_success__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="_R_G_L_1_G_L_11_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__1" />
+    <target android:name="_R_G_L_1_G_L_10_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__3" />
+    <target android:name="_R_G_L_1_G_L_9_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__5" />
+    <target android:name="_R_G_L_1_G_L_8_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__7" />
+    <target android:name="_R_G_L_1_G_L_7_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__9" />
+    <target android:name="_R_G_L_1_G_L_6_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__11" />
+    <target android:name="_R_G_L_1_G_L_5_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__13" />
+    <target android:name="_R_G_L_1_G_L_4_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__15" />
+    <target android:name="_R_G_L_1_G_L_3_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__17" />
+    <target android:name="_R_G_L_1_G_L_2_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__19" />
+    <target android:name="_R_G_L_1_G_L_1_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__21" />
+    <target android:name="_R_G_L_1_G_L_0_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__23" />
+    <target android:name="_R_G_L_1_G" android:animation="@drawable/$facetec_animation_success__25" />
+    <target android:name="_R_G_L_0_G_D_0_P_0" android:animation="@drawable/$facetec_animation_success__30" />
+    <target android:name="_R_G_L_0_G" android:animation="@drawable/$facetec_animation_success__34" />
+    <target android:name="time_group" android:animation="@drawable/$facetec_animation_success__39" />
+</animated-vector>

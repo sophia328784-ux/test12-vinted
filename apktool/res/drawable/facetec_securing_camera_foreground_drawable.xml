@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="strokeGroup" android:pivotX="12.0" android:pivotY="12.0" android:rotation="90.0">
+        <path android:name="strokePath" android:pathData="M 12, 12                         m 0, -9.75                         a 5,-5 0 1,0 0, 19.5                         a 5,-5 0 1,0 0, -19.5" android:strokeColor="#ff00e6" android:strokeWidth="3.5" android:trimPathEnd="0.25" android:strokeLineCap="butt" android:strokeLineJoin="miter" />
+    </group>
+</vector>

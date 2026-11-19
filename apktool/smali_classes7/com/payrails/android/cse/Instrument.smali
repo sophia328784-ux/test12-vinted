@@ -1,0 +1,2223 @@
+.class public final Lcom/payrails/android/cse/Instrument;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/payrails/android/cse/Instrument$$serializer;,
+        Lcom/payrails/android/cse/Instrument$Companion;
+    }
+.end annotation
+
+.annotation runtime Lfah;
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u001b\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u001d\u0008\u0087\u0008\u0018\u0000 X2\u00020\u0001:\u0002YXBs\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0006\u001a\u00020\u0002\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\u000c\u001a\u00020\u000b\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\u000f\u001a\u00020\u000e\u0012\n\u0008\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0010\u0012\n\u0008\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0012\u0012\n\u0008\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0004\u0008\u0015\u0010\u0016B\u0091\u0001\u0008\u0017\u0012\u0006\u0010\u0018\u001a\u00020\u0017\u0012\n\u0008\u0001\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\n\u0008\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\n\u0008\u0001\u0010\u0006\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0010\n\u001a\u0004\u0018\u00010\t\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u000b\u0012\u0008\u0010\r\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u000e\u0012\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0010\u0012\n\u0008\u0001\u0010\u0013\u001a\u0004\u0018\u00010\u0012\u0012\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0010\u001a\u001a\u0004\u0018\u00010\u0019\u00a2\u0006\u0004\u0008\u0015\u0010\u001bJ\u0010\u0010\u001c\u001a\u00020\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\u0010\u0010\u001e\u001a\u00020\u0004H\u00c6\u0003\u00a2\u0006\u0004\u0008\u001e\u0010\u001fJ\u0010\u0010 \u001a\u00020\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008 \u0010\u001dJ\u0012\u0010!\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003\u00a2\u0006\u0004\u0008!\u0010\"J\u0010\u0010#\u001a\u00020\tH\u00c6\u0003\u00a2\u0006\u0004\u0008#\u0010$J\u0010\u0010%\u001a\u00020\u000bH\u00c6\u0003\u00a2\u0006\u0004\u0008%\u0010&J\u0012\u0010\'\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003\u00a2\u0006\u0004\u0008\'\u0010\"J\u0010\u0010(\u001a\u00020\u000eH\u00c6\u0003\u00a2\u0006\u0004\u0008(\u0010)J\u0012\u0010*\u001a\u0004\u0018\u00010\u0010H\u00c6\u0003\u00a2\u0006\u0004\u0008*\u0010+J\u0012\u0010,\u001a\u0004\u0018\u00010\u0012H\u00c6\u0003\u00a2\u0006\u0004\u0008,\u0010-J\u0012\u0010.\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003\u00a2\u0006\u0004\u0008.\u0010\"J\u0088\u0001\u0010/\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u00042\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00022\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u00072\u0008\u0008\u0002\u0010\n\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000c\u001a\u00020\u000b2\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u00072\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u000e2\n\u0008\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00122\n\u0008\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0007H\u00c6\u0001\u00a2\u0006\u0004\u0008/\u00100J\u0010\u00101\u001a\u00020\u0007H\u00d6\u0001\u00a2\u0006\u0004\u00081\u0010\"J\u0010\u00102\u001a\u00020\u0017H\u00d6\u0001\u00a2\u0006\u0004\u00082\u00103J\u001a\u00106\u001a\u0002052\u0008\u00104\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u00086\u00107J(\u0010>\u001a\u00020=2\u0006\u00108\u001a\u00020\u00002\u0006\u0010:\u001a\u0002092\u0006\u0010<\u001a\u00020;H\u00c7\u0001\u00a2\u0006\u0004\u0008>\u0010?R \u0010\u0003\u001a\u00020\u00028\u0006X\u0087\u0004\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010@\u0012\u0004\u0008B\u0010C\u001a\u0004\u0008A\u0010\u001dR \u0010\u0005\u001a\u00020\u00048\u0006X\u0087\u0004\u00a2\u0006\u0012\n\u0004\u0008\u0005\u0010D\u0012\u0004\u0008F\u0010C\u001a\u0004\u0008E\u0010\u001fR \u0010\u0006\u001a\u00020\u00028\u0006X\u0087\u0004\u00a2\u0006\u0012\n\u0004\u0008\u0006\u0010@\u0012\u0004\u0008H\u0010C\u001a\u0004\u0008G\u0010\u001dR\u0019\u0010\u0008\u001a\u0004\u0018\u00010\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0008\u0010I\u001a\u0004\u0008J\u0010\"R\u0017\u0010\n\u001a\u00020\t8\u0006\u00a2\u0006\u000c\n\u0004\u0008\n\u0010K\u001a\u0004\u0008L\u0010$R\u0017\u0010\u000c\u001a\u00020\u000b8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010M\u001a\u0004\u0008N\u0010&R\u0019\u0010\r\u001a\u0004\u0018\u00010\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\r\u0010I\u001a\u0004\u0008O\u0010\"R\u0017\u0010\u000f\u001a\u00020\u000e8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000f\u0010P\u001a\u0004\u0008Q\u0010)R\u0019\u0010\u0011\u001a\u0004\u0018\u00010\u00108\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0011\u0010R\u001a\u0004\u0008S\u0010+R\"\u0010\u0013\u001a\u0004\u0018\u00010\u00128\u0006X\u0087\u0004\u00a2\u0006\u0012\n\u0004\u0008\u0013\u0010T\u0012\u0004\u0008V\u0010C\u001a\u0004\u0008U\u0010-R\u0019\u0010\u0014\u001a\u0004\u0018\u00010\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0014\u0010I\u001a\u0004\u0008W\u0010\"\u00a8\u0006Z"
+    }
+    d2 = {
+        "Lcom/payrails/android/cse/Instrument;",
+        "",
+        "Ljava/util/UUID;",
+        "id",
+        "Ljava/time/Instant;",
+        "createdAt",
+        "holderId",
+        "",
+        "holderReference",
+        "Lcom/payrails/android/cse/PaymentMethodType;",
+        "paymentMethod",
+        "Lcom/payrails/android/cse/InstrumentStatus;",
+        "status",
+        "description",
+        "Lcom/payrails/android/cse/InstrumentData;",
+        "data",
+        "Lqha;",
+        "providerData",
+        "Lcom/payrails/android/cse/FutureUsage;",
+        "futureUsage",
+        "fingerprint",
+        "<init>",
+        "(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;)V",
+        "",
+        "seen1",
+        "Llah;",
+        "serializationConstructorMarker",
+        "(ILjava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;Llah;)V",
+        "component1",
+        "()Ljava/util/UUID;",
+        "component2",
+        "()Ljava/time/Instant;",
+        "component3",
+        "component4",
+        "()Ljava/lang/String;",
+        "component5",
+        "()Lcom/payrails/android/cse/PaymentMethodType;",
+        "component6",
+        "()Lcom/payrails/android/cse/InstrumentStatus;",
+        "component7",
+        "component8",
+        "()Lcom/payrails/android/cse/InstrumentData;",
+        "component9",
+        "()Lqha;",
+        "component10",
+        "()Lcom/payrails/android/cse/FutureUsage;",
+        "component11",
+        "copy",
+        "(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;)Lcom/payrails/android/cse/Instrument;",
+        "toString",
+        "hashCode",
+        "()I",
+        "other",
+        "",
+        "equals",
+        "(Ljava/lang/Object;)Z",
+        "self",
+        "Li14;",
+        "output",
+        "Lu9h;",
+        "serialDesc",
+        "",
+        "write$Self",
+        "(Lcom/payrails/android/cse/Instrument;Li14;Lu9h;)V",
+        "Ljava/util/UUID;",
+        "getId",
+        "getId$annotations",
+        "()V",
+        "Ljava/time/Instant;",
+        "getCreatedAt",
+        "getCreatedAt$annotations",
+        "getHolderId",
+        "getHolderId$annotations",
+        "Ljava/lang/String;",
+        "getHolderReference",
+        "Lcom/payrails/android/cse/PaymentMethodType;",
+        "getPaymentMethod",
+        "Lcom/payrails/android/cse/InstrumentStatus;",
+        "getStatus",
+        "getDescription",
+        "Lcom/payrails/android/cse/InstrumentData;",
+        "getData",
+        "Lqha;",
+        "getProviderData",
+        "Lcom/payrails/android/cse/FutureUsage;",
+        "getFutureUsage",
+        "getFutureUsage$annotations",
+        "getFingerprint",
+        "Companion",
+        "$serializer",
+        "cse_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field private static final $childSerializers:[Lopa;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[",
+            "Lopa;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/jvm/JvmField;
+    .end annotation
+.end field
+
+.field public static final Companion:Lcom/payrails/android/cse/Instrument$Companion;
+
+
+# instance fields
+.field private final createdAt:Ljava/time/Instant;
+
+.field private final data:Lcom/payrails/android/cse/InstrumentData;
+
+.field private final description:Ljava/lang/String;
+
+.field private final fingerprint:Ljava/lang/String;
+
+.field private final futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+.field private final holderId:Ljava/util/UUID;
+
+.field private final holderReference:Ljava/lang/String;
+
+.field private final id:Ljava/util/UUID;
+
+.field private final paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+.field private final providerData:Lqha;
+
+.field private final status:Lcom/payrails/android/cse/InstrumentStatus;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 5
+
+    .line 1
+    new-instance v0, Lcom/payrails/android/cse/Instrument$Companion;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/payrails/android/cse/Instrument$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/payrails/android/cse/Instrument;->Companion:Lcom/payrails/android/cse/Instrument$Companion;
+
+    .line 8
+    .line 9
+    sget-object v0, Lcom/payrails/android/cse/PaymentMethodType;->Companion:Lcom/payrails/android/cse/PaymentMethodType$Companion;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Lcom/payrails/android/cse/PaymentMethodType$Companion;->serializer()Lopa;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    sget-object v2, Lcom/payrails/android/cse/InstrumentStatus;->Companion:Lcom/payrails/android/cse/InstrumentStatus$Companion;
+
+    .line 16
+    .line 17
+    invoke-virtual {v2}, Lcom/payrails/android/cse/InstrumentStatus$Companion;->serializer()Lopa;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    const/16 v3, 0xb
+
+    .line 22
+    .line 23
+    new-array v3, v3, [Lopa;
+
+    .line 24
+    .line 25
+    const/4 v4, 0x0
+
+    .line 26
+    aput-object v1, v3, v4
+
+    .line 27
+    .line 28
+    const/4 v4, 0x1
+
+    .line 29
+    aput-object v1, v3, v4
+
+    .line 30
+    .line 31
+    const/4 v4, 0x2
+
+    .line 32
+    aput-object v1, v3, v4
+
+    .line 33
+    .line 34
+    const/4 v4, 0x3
+
+    .line 35
+    aput-object v1, v3, v4
+
+    .line 36
+    .line 37
+    const/4 v4, 0x4
+
+    .line 38
+    aput-object v0, v3, v4
+
+    .line 39
+    .line 40
+    const/4 v0, 0x5
+
+    .line 41
+    aput-object v2, v3, v0
+
+    .line 42
+    .line 43
+    const/4 v0, 0x6
+
+    .line 44
+    aput-object v1, v3, v0
+
+    .line 45
+    .line 46
+    const/4 v0, 0x7
+
+    .line 47
+    aput-object v1, v3, v0
+
+    .line 48
+    .line 49
+    const/16 v0, 0x8
+
+    .line 50
+    .line 51
+    aput-object v1, v3, v0
+
+    .line 52
+    .line 53
+    const/16 v0, 0x9
+
+    .line 54
+    .line 55
+    aput-object v1, v3, v0
+
+    .line 56
+    .line 57
+    const/16 v0, 0xa
+
+    .line 58
+    .line 59
+    aput-object v1, v3, v0
+
+    .line 60
+    .line 61
+    sput-object v3, Lcom/payrails/android/cse/Instrument;->$childSerializers:[Lopa;
+
+    .line 62
+    .line 63
+    return-void
+.end method
+
+.method public synthetic constructor <init>(ILjava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;Llah;)V
+    .locals 2
+    .param p2    # Ljava/util/UUID;
+        .annotation runtime Lfah;
+            with = Lcom/payrails/android/cse/serialization/UUIDSerializer;
+        .end annotation
+    .end param
+    .param p3    # Ljava/time/Instant;
+        .annotation runtime Lfah;
+            with = Lcom/payrails/android/cse/serialization/InstantSerializer;
+        .end annotation
+    .end param
+    .param p4    # Ljava/util/UUID;
+        .annotation runtime Lfah;
+            with = Lcom/payrails/android/cse/serialization/UUIDSerializer;
+        .end annotation
+    .end param
+    .param p11    # Lcom/payrails/android/cse/FutureUsage;
+        .annotation runtime Lfah;
+            with = Lcom/payrails/android/cse/serialization/FutureUsageSerializer;
+        .end annotation
+    .end param
+    .annotation runtime Lkotlin/Deprecated;
+    .end annotation
+
+    .line 1
+    and-int/lit16 p13, p1, 0xb7
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    const/16 v1, 0xb7
+
+    .line 5
+    .line 6
+    if-ne v1, p13, :cond_5
+
+    .line 7
+    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p2, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 12
+    .line 13
+    iput-object p3, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 14
+    .line 15
+    iput-object p4, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 16
+    .line 17
+    and-int/lit8 p2, p1, 0x8
+
+    .line 18
+    .line 19
+    if-nez p2, :cond_0
+
+    .line 20
+    .line 21
+    iput-object v0, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    iput-object p5, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    :goto_0
+    iput-object p6, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 27
+    .line 28
+    iput-object p7, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 29
+    .line 30
+    and-int/lit8 p2, p1, 0x40
+
+    .line 31
+    .line 32
+    if-nez p2, :cond_1
+
+    .line 33
+    .line 34
+    iput-object v0, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 35
+    .line 36
+    goto :goto_1
+
+    .line 37
+    :cond_1
+    iput-object p8, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 38
+    .line 39
+    :goto_1
+    iput-object p9, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 40
+    .line 41
+    and-int/lit16 p2, p1, 0x100
+
+    .line 42
+    .line 43
+    if-nez p2, :cond_2
+
+    .line 44
+    .line 45
+    iput-object v0, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 46
+    .line 47
+    goto :goto_2
+
+    .line 48
+    :cond_2
+    iput-object p10, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 49
+    .line 50
+    :goto_2
+    and-int/lit16 p2, p1, 0x200
+
+    .line 51
+    .line 52
+    if-nez p2, :cond_3
+
+    .line 53
+    .line 54
+    iput-object v0, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 55
+    .line 56
+    goto :goto_3
+
+    .line 57
+    :cond_3
+    iput-object p11, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 58
+    .line 59
+    :goto_3
+    and-int/lit16 p1, p1, 0x400
+
+    .line 60
+    .line 61
+    if-nez p1, :cond_4
+
+    .line 62
+    .line 63
+    iput-object v0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 64
+    .line 65
+    return-void
+
+    .line 66
+    :cond_4
+    iput-object p12, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 67
+    .line 68
+    return-void
+
+    .line 69
+    :cond_5
+    sget-object p0, Lcom/payrails/android/cse/Instrument$$serializer;->INSTANCE:Lcom/payrails/android/cse/Instrument$$serializer;
+
+    .line 70
+    .line 71
+    invoke-virtual {p0}, Lcom/payrails/android/cse/Instrument$$serializer;->getDescriptor()Lu9h;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p0
+
+    .line 75
+    invoke-static {p1, v1, p0}, Luc4;->i(IILu9h;)V
+
+    .line 76
+    .line 77
+    .line 78
+    throw v0
+.end method
+
+.method public constructor <init>(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 79
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 80
+    iput-object p1, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 81
+    iput-object p2, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 82
+    iput-object p3, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 83
+    iput-object p4, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 84
+    iput-object p5, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 85
+    iput-object p6, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 86
+    iput-object p7, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 87
+    iput-object p8, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 88
+    iput-object p9, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 89
+    iput-object p10, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 90
+    iput-object p11, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 1
+
+    and-int/lit8 p13, p12, 0x8
+
+    const/4 v0, 0x0
+
+    if-eqz p13, :cond_0
+
+    move-object p4, v0
+
+    :cond_0
+    and-int/lit8 p13, p12, 0x40
+
+    if-eqz p13, :cond_1
+
+    move-object p7, v0
+
+    :cond_1
+    and-int/lit16 p13, p12, 0x100
+
+    if-eqz p13, :cond_2
+
+    move-object p9, v0
+
+    :cond_2
+    and-int/lit16 p13, p12, 0x200
+
+    if-eqz p13, :cond_3
+
+    move-object p10, v0
+
+    :cond_3
+    and-int/lit16 p12, p12, 0x400
+
+    if-eqz p12, :cond_4
+
+    move-object p11, v0
+
+    .line 91
+    :cond_4
+    invoke-direct/range {p0 .. p11}, Lcom/payrails/android/cse/Instrument;-><init>(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static final synthetic access$get$childSerializers$cp()[Lopa;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/payrails/android/cse/Instrument;->$childSerializers:[Lopa;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static synthetic copy$default(Lcom/payrails/android/cse/Instrument;Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;ILjava/lang/Object;)Lcom/payrails/android/cse/Instrument;
+    .locals 0
+
+    .line 1
+    and-int/lit8 p13, p12, 0x1
+
+    .line 2
+    .line 3
+    if-eqz p13, :cond_0
+
+    .line 4
+    .line 5
+    iget-object p1, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 6
+    .line 7
+    :cond_0
+    and-int/lit8 p13, p12, 0x2
+
+    .line 8
+    .line 9
+    if-eqz p13, :cond_1
+
+    .line 10
+    .line 11
+    iget-object p2, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 12
+    .line 13
+    :cond_1
+    and-int/lit8 p13, p12, 0x4
+
+    .line 14
+    .line 15
+    if-eqz p13, :cond_2
+
+    .line 16
+    .line 17
+    iget-object p3, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 18
+    .line 19
+    :cond_2
+    and-int/lit8 p13, p12, 0x8
+
+    .line 20
+    .line 21
+    if-eqz p13, :cond_3
+
+    .line 22
+    .line 23
+    iget-object p4, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    :cond_3
+    and-int/lit8 p13, p12, 0x10
+
+    .line 26
+    .line 27
+    if-eqz p13, :cond_4
+
+    .line 28
+    .line 29
+    iget-object p5, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 30
+    .line 31
+    :cond_4
+    and-int/lit8 p13, p12, 0x20
+
+    .line 32
+    .line 33
+    if-eqz p13, :cond_5
+
+    .line 34
+    .line 35
+    iget-object p6, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 36
+    .line 37
+    :cond_5
+    and-int/lit8 p13, p12, 0x40
+
+    .line 38
+    .line 39
+    if-eqz p13, :cond_6
+
+    .line 40
+    .line 41
+    iget-object p7, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 42
+    .line 43
+    :cond_6
+    and-int/lit16 p13, p12, 0x80
+
+    .line 44
+    .line 45
+    if-eqz p13, :cond_7
+
+    .line 46
+    .line 47
+    iget-object p8, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 48
+    .line 49
+    :cond_7
+    and-int/lit16 p13, p12, 0x100
+
+    .line 50
+    .line 51
+    if-eqz p13, :cond_8
+
+    .line 52
+    .line 53
+    iget-object p9, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 54
+    .line 55
+    :cond_8
+    and-int/lit16 p13, p12, 0x200
+
+    .line 56
+    .line 57
+    if-eqz p13, :cond_9
+
+    .line 58
+    .line 59
+    iget-object p10, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 60
+    .line 61
+    :cond_9
+    and-int/lit16 p12, p12, 0x400
+
+    .line 62
+    .line 63
+    if-eqz p12, :cond_a
+
+    .line 64
+    .line 65
+    iget-object p11, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 66
+    .line 67
+    :cond_a
+    move-object p12, p10
+
+    .line 68
+    move-object p13, p11
+
+    .line 69
+    move-object p10, p8
+
+    .line 70
+    move-object p11, p9
+
+    .line 71
+    move-object p8, p6
+
+    .line 72
+    move-object p9, p7
+
+    .line 73
+    move-object p6, p4
+
+    .line 74
+    move-object p7, p5
+
+    .line 75
+    move-object p4, p2
+
+    .line 76
+    move-object p5, p3
+
+    .line 77
+    move-object p2, p0
+
+    .line 78
+    move-object p3, p1
+
+    .line 79
+    invoke-virtual/range {p2 .. p13}, Lcom/payrails/android/cse/Instrument;->copy(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;)Lcom/payrails/android/cse/Instrument;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object p0
+
+    .line 83
+    return-object p0
+.end method
+
+.method public static synthetic getCreatedAt$annotations()V
+    .locals 0
+    .annotation runtime Lfah;
+        with = Lcom/payrails/android/cse/serialization/InstantSerializer;
+    .end annotation
+
+    .line 1
+    return-void
+.end method
+
+.method public static synthetic getFutureUsage$annotations()V
+    .locals 0
+    .annotation runtime Lfah;
+        with = Lcom/payrails/android/cse/serialization/FutureUsageSerializer;
+    .end annotation
+
+    .line 1
+    return-void
+.end method
+
+.method public static synthetic getHolderId$annotations()V
+    .locals 0
+    .annotation runtime Lfah;
+        with = Lcom/payrails/android/cse/serialization/UUIDSerializer;
+    .end annotation
+
+    .line 1
+    return-void
+.end method
+
+.method public static synthetic getId$annotations()V
+    .locals 0
+    .annotation runtime Lfah;
+        with = Lcom/payrails/android/cse/serialization/UUIDSerializer;
+    .end annotation
+
+    .line 1
+    return-void
+.end method
+
+.method public static final synthetic write$Self(Lcom/payrails/android/cse/Instrument;Li14;Lu9h;)V
+    .locals 5
+    .annotation runtime Lkotlin/jvm/JvmStatic;
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/payrails/android/cse/Instrument;->$childSerializers:[Lopa;
+
+    .line 2
+    .line 3
+    sget-object v1, Lcom/payrails/android/cse/serialization/UUIDSerializer;->INSTANCE:Lcom/payrails/android/cse/serialization/UUIDSerializer;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 6
+    .line 7
+    const/4 v3, 0x0
+
+    .line 8
+    invoke-interface {p1, p2, v3, v1, v2}, Li14;->x(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v2, Lcom/payrails/android/cse/serialization/InstantSerializer;->INSTANCE:Lcom/payrails/android/cse/serialization/InstantSerializer;
+
+    .line 12
+    .line 13
+    iget-object v3, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 14
+    .line 15
+    const/4 v4, 0x1
+
+    .line 16
+    invoke-interface {p1, p2, v4, v2, v3}, Li14;->x(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    const/4 v2, 0x2
+
+    .line 20
+    iget-object v3, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 21
+    .line 22
+    invoke-interface {p1, p2, v2, v1, v3}, Li14;->x(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-interface {p1, p2}, Li14;->e(Lu9h;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v1
+
+    .line 29
+    if-eqz v1, :cond_0
+
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :cond_0
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 33
+    .line 34
+    if-eqz v1, :cond_1
+
+    .line 35
+    .line 36
+    :goto_0
+    sget-object v1, Lwfi;->a:Lwfi;
+
+    .line 37
+    .line 38
+    iget-object v2, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    const/4 v3, 0x3
+
+    .line 41
+    invoke-interface {p1, p2, v3, v1, v2}, Li14;->F(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 42
+    .line 43
+    .line 44
+    :cond_1
+    const/4 v1, 0x4
+
+    .line 45
+    aget-object v2, v0, v1
+
+    .line 46
+    .line 47
+    check-cast v2, Loah;
+
+    .line 48
+    .line 49
+    iget-object v3, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 50
+    .line 51
+    invoke-interface {p1, p2, v1, v2, v3}, Li14;->x(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 52
+    .line 53
+    .line 54
+    const/4 v1, 0x5
+
+    .line 55
+    aget-object v0, v0, v1
+
+    .line 56
+    .line 57
+    check-cast v0, Loah;
+
+    .line 58
+    .line 59
+    iget-object v2, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 60
+    .line 61
+    invoke-interface {p1, p2, v1, v0, v2}, Li14;->x(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-interface {p1, p2}, Li14;->e(Lu9h;)Z
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v0
+
+    .line 68
+    if-eqz v0, :cond_2
+
+    .line 69
+    .line 70
+    goto :goto_1
+
+    .line 71
+    :cond_2
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 72
+    .line 73
+    if-eqz v0, :cond_3
+
+    .line 74
+    .line 75
+    :goto_1
+    sget-object v0, Lwfi;->a:Lwfi;
+
+    .line 76
+    .line 77
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 78
+    .line 79
+    const/4 v2, 0x6
+
+    .line 80
+    invoke-interface {p1, p2, v2, v0, v1}, Li14;->F(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 81
+    .line 82
+    .line 83
+    :cond_3
+    sget-object v0, Lcom/payrails/android/cse/InstrumentData$$serializer;->INSTANCE:Lcom/payrails/android/cse/InstrumentData$$serializer;
+
+    .line 84
+    .line 85
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 86
+    .line 87
+    const/4 v2, 0x7
+
+    .line 88
+    invoke-interface {p1, p2, v2, v0, v1}, Li14;->x(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 89
+    .line 90
+    .line 91
+    invoke-interface {p1, p2}, Li14;->e(Lu9h;)Z
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v0
+
+    .line 95
+    if-eqz v0, :cond_4
+
+    .line 96
+    .line 97
+    goto :goto_2
+
+    .line 98
+    :cond_4
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 99
+    .line 100
+    if-eqz v0, :cond_5
+
+    .line 101
+    .line 102
+    :goto_2
+    sget-object v0, Luha;->a:Luha;
+
+    .line 103
+    .line 104
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 105
+    .line 106
+    const/16 v2, 0x8
+
+    .line 107
+    .line 108
+    invoke-interface {p1, p2, v2, v0, v1}, Li14;->F(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 109
+    .line 110
+    .line 111
+    :cond_5
+    invoke-interface {p1, p2}, Li14;->e(Lu9h;)Z
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v0
+
+    .line 115
+    if-eqz v0, :cond_6
+
+    .line 116
+    .line 117
+    goto :goto_3
+
+    .line 118
+    :cond_6
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 119
+    .line 120
+    if-eqz v0, :cond_7
+
+    .line 121
+    .line 122
+    :goto_3
+    sget-object v0, Lcom/payrails/android/cse/serialization/FutureUsageSerializer;->INSTANCE:Lcom/payrails/android/cse/serialization/FutureUsageSerializer;
+
+    .line 123
+    .line 124
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 125
+    .line 126
+    const/16 v2, 0x9
+
+    .line 127
+    .line 128
+    invoke-interface {p1, p2, v2, v0, v1}, Li14;->F(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 129
+    .line 130
+    .line 131
+    :cond_7
+    invoke-interface {p1, p2}, Li14;->e(Lu9h;)Z
+
+    .line 132
+    .line 133
+    .line 134
+    move-result v0
+
+    .line 135
+    if-eqz v0, :cond_8
+
+    .line 136
+    .line 137
+    goto :goto_4
+
+    .line 138
+    :cond_8
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 139
+    .line 140
+    if-eqz v0, :cond_9
+
+    .line 141
+    .line 142
+    :goto_4
+    sget-object v0, Lwfi;->a:Lwfi;
+
+    .line 143
+    .line 144
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 145
+    .line 146
+    const/16 v1, 0xa
+
+    .line 147
+    .line 148
+    invoke-interface {p1, p2, v1, v0, p0}, Li14;->F(Lu9h;ILoah;Ljava/lang/Object;)V
+
+    .line 149
+    .line 150
+    .line 151
+    :cond_9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final component1()Ljava/util/UUID;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component10()Lcom/payrails/android/cse/FutureUsage;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component11()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component2()Ljava/time/Instant;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component3()Ljava/util/UUID;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component4()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component5()Lcom/payrails/android/cse/PaymentMethodType;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component6()Lcom/payrails/android/cse/InstrumentStatus;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component7()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component8()Lcom/payrails/android/cse/InstrumentData;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component9()Lqha;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final copy(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;)Lcom/payrails/android/cse/Instrument;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 17
+    .line 18
+    .line 19
+    new-instance p0, Lcom/payrails/android/cse/Instrument;
+
+    .line 20
+    .line 21
+    invoke-direct/range {p0 .. p11}, Lcom/payrails/android/cse/Instrument;-><init>(Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;Ljava/lang/String;Lcom/payrails/android/cse/PaymentMethodType;Lcom/payrails/android/cse/InstrumentStatus;Ljava/lang/String;Lcom/payrails/android/cse/InstrumentData;Lqha;Lcom/payrails/android/cse/FutureUsage;Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-object p0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lcom/payrails/android/cse/Instrument;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lcom/payrails/android/cse/Instrument;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 14
+    .line 15
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 16
+    .line 17
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 27
+    .line 28
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-nez v1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 36
+    .line 37
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 38
+    .line 39
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v1
+
+    .line 43
+    if-nez v1, :cond_4
+
+    .line 44
+    .line 45
+    return v2
+
+    .line 46
+    :cond_4
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 47
+    .line 48
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 49
+    .line 50
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v1
+
+    .line 54
+    if-nez v1, :cond_5
+
+    .line 55
+    .line 56
+    return v2
+
+    .line 57
+    :cond_5
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 58
+    .line 59
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 60
+    .line 61
+    if-eq v1, v3, :cond_6
+
+    .line 62
+    .line 63
+    return v2
+
+    .line 64
+    :cond_6
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 65
+    .line 66
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 67
+    .line 68
+    if-eq v1, v3, :cond_7
+
+    .line 69
+    .line 70
+    return v2
+
+    .line 71
+    :cond_7
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 72
+    .line 73
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 74
+    .line 75
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v1
+
+    .line 79
+    if-nez v1, :cond_8
+
+    .line 80
+    .line 81
+    return v2
+
+    .line 82
+    :cond_8
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 83
+    .line 84
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 85
+    .line 86
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v1
+
+    .line 90
+    if-nez v1, :cond_9
+
+    .line 91
+    .line 92
+    return v2
+
+    .line 93
+    :cond_9
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 94
+    .line 95
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 96
+    .line 97
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 98
+    .line 99
+    .line 100
+    move-result v1
+
+    .line 101
+    if-nez v1, :cond_a
+
+    .line 102
+    .line 103
+    return v2
+
+    .line 104
+    :cond_a
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 105
+    .line 106
+    iget-object v3, p1, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 107
+    .line 108
+    if-eq v1, v3, :cond_b
+
+    .line 109
+    .line 110
+    return v2
+
+    .line 111
+    :cond_b
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 112
+    .line 113
+    iget-object p1, p1, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 114
+    .line 115
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 116
+    .line 117
+    .line 118
+    move-result p0
+
+    .line 119
+    if-nez p0, :cond_c
+
+    .line 120
+    .line 121
+    return v2
+
+    .line 122
+    :cond_c
+    return v0
+.end method
+
+.method public final getCreatedAt()Ljava/time/Instant;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getData()Lcom/payrails/android/cse/InstrumentData;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getDescription()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getFingerprint()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getFutureUsage()Lcom/payrails/android/cse/FutureUsage;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getHolderId()Ljava/util/UUID;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getHolderReference()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getId()Ljava/util/UUID;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getPaymentMethod()Lcom/payrails/android/cse/PaymentMethodType;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getProviderData()Lqha;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getStatus()Lcom/payrails/android/cse/InstrumentStatus;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/UUID;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/time/Instant;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Ljava/util/UUID;->hashCode()I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    add-int/2addr v0, v1
+
+    .line 25
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 26
+    .line 27
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    const/4 v2, 0x0
+
+    .line 30
+    if-nez v1, :cond_0
+
+    .line 31
+    .line 32
+    move v1, v2
+
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v1
+
+    .line 38
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 39
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 40
+    .line 41
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 42
+    .line 43
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v1
+
+    .line 47
+    add-int/2addr v1, v0
+
+    .line 48
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 49
+    .line 50
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    add-int/2addr v0, v1
+
+    .line 57
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 58
+    .line 59
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 60
+    .line 61
+    if-nez v1, :cond_1
+
+    .line 62
+    .line 63
+    move v1, v2
+
+    .line 64
+    goto :goto_1
+
+    .line 65
+    :cond_1
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v1
+
+    .line 69
+    :goto_1
+    add-int/2addr v0, v1
+
+    .line 70
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 71
+    .line 72
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 73
+    .line 74
+    invoke-virtual {v1}, Lcom/payrails/android/cse/InstrumentData;->hashCode()I
+
+    .line 75
+    .line 76
+    .line 77
+    move-result v1
+
+    .line 78
+    add-int/2addr v1, v0
+
+    .line 79
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 80
+    .line 81
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 82
+    .line 83
+    if-nez v0, :cond_2
+
+    .line 84
+    .line 85
+    move v0, v2
+
+    .line 86
+    goto :goto_2
+
+    .line 87
+    :cond_2
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v0
+
+    .line 91
+    :goto_2
+    add-int/2addr v1, v0
+
+    .line 92
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 93
+    .line 94
+    iget-object v0, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 95
+    .line 96
+    if-nez v0, :cond_3
+
+    .line 97
+    .line 98
+    move v0, v2
+
+    .line 99
+    goto :goto_3
+
+    .line 100
+    :cond_3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v0
+
+    .line 104
+    :goto_3
+    add-int/2addr v1, v0
+
+    .line 105
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 106
+    .line 107
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 108
+    .line 109
+    if-nez p0, :cond_4
+
+    .line 110
+    .line 111
+    goto :goto_4
+
+    .line 112
+    :cond_4
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
+
+    .line 113
+    .line 114
+    .line 115
+    move-result v2
+
+    .line 116
+    :goto_4
+    add-int/2addr v1, v2
+
+    .line 117
+    return v1
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Instrument(id="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->id:Ljava/util/UUID;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", createdAt="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->createdAt:Ljava/time/Instant;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", holderId="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->holderId:Ljava/util/UUID;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", holderReference="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->holderReference:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", paymentMethod="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->paymentMethod:Lcom/payrails/android/cse/PaymentMethodType;
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string v1, ", status="
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->status:Lcom/payrails/android/cse/InstrumentStatus;
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    const-string v1, ", description="
+
+    .line 64
+    .line 65
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 66
+    .line 67
+    .line 68
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->description:Ljava/lang/String;
+
+    .line 69
+    .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 71
+    .line 72
+    .line 73
+    const-string v1, ", data="
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->data:Lcom/payrails/android/cse/InstrumentData;
+
+    .line 79
+    .line 80
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 81
+    .line 82
+    .line 83
+    const-string v1, ", providerData="
+
+    .line 84
+    .line 85
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 86
+    .line 87
+    .line 88
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->providerData:Lqha;
+
+    .line 89
+    .line 90
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 91
+    .line 92
+    .line 93
+    const-string v1, ", futureUsage="
+
+    .line 94
+    .line 95
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    .line 98
+    iget-object v1, p0, Lcom/payrails/android/cse/Instrument;->futureUsage:Lcom/payrails/android/cse/FutureUsage;
+
+    .line 99
+    .line 100
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 101
+    .line 102
+    .line 103
+    const-string v1, ", fingerprint="
+
+    .line 104
+    .line 105
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 106
+    .line 107
+    .line 108
+    iget-object p0, p0, Lcom/payrails/android/cse/Instrument;->fingerprint:Ljava/lang/String;
+
+    .line 109
+    .line 110
+    const/16 v1, 0x29
+
+    .line 111
+    .line 112
+    invoke-static {v0, p0, v1}, Ldw2;->a(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object p0
+
+    .line 116
+    return-object p0
+.end method

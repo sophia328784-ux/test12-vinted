@@ -1,0 +1,44 @@
+package com.google.android.gms.internal.pal;
+
+import java.util.Arrays;
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzri {
+    private final zzrb zza;
+    private final List zzb;
+    private final Integer zzc;
+
+    public /* synthetic */ zzri(zzrb zzrbVar, List list, Integer num, zzrh zzrhVar) {
+        this.zza = zzrbVar;
+        this.zzb = list;
+        this.zzc = num;
+    }
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof zzri)) {
+            return false;
+        }
+        zzri zzriVar = (zzri) obj;
+        if (this.zza.equals(zzriVar.zza) && this.zzb.equals(zzriVar.zzb)) {
+            Integer num = this.zzc;
+            Integer num2 = zzriVar.zzc;
+            if (num == num2) {
+                return true;
+            }
+            if (num != null && num.equals(num2)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Arrays.hashCode(new Object[]{this.zza, this.zzb});
+    }
+
+    public final String toString() {
+        return String.format("(annotations=%s, entries=%s, primaryKeyId=%s)", this.zza, this.zzb, this.zzc);
+    }
+}

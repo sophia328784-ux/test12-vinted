@@ -1,0 +1,157 @@
+package com.vinted.analytics;
+
+import androidx.core.app.NotificationCompat;
+import com.applovin.sdk.AppLovinEventTypes;
+import defpackage.fb4;
+import kotlin.Metadata;
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+@Metadata(d1 = {"\u0000\u0011\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0003\b\u0087\u0001\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0011\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010\u0006\u001a\u0004\b\u0007\u0010\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#j\u0002\b$j\u0002\b%j\u0002\b&j\u0002\b'j\u0002\b(j\u0002\b)j\u0002\b*j\u0002\b+j\u0002\b,j\u0002\b-j\u0002\b.j\u0002\b/j\u0002\b0j\u0002\b1j\u0002\b2j\u0002\b3j\u0002\b4j\u0002\b5j\u0002\b6j\u0002\b7j\u0002\b8j\u0002\b9j\u0002\b:j\u0002\b;j\u0002\b<j\u0002\b=j\u0002\b>j\u0002\b?j\u0002\b@j\u0002\bAj\u0002\bBj\u0002\bCj\u0002\bDj\u0002\bEj\u0002\bFj\u0002\bGj\u0002\bHj\u0002\bIj\u0002\bJj\u0002\bKj\u0002\bLj\u0002\bMj\u0002\bNj\u0002\bOj\u0002\bPj\u0002\bQj\u0002\bRj\u0002\bSj\u0002\bTj\u0002\bUj\u0002\bVj\u0002\bWj\u0002\bXj\u0002\bYj\u0002\bZj\u0002\b[j\u0002\b\\j\u0002\b]j\u0002\b^j\u0002\b_j\u0002\b`j\u0002\baj\u0002\bbj\u0002\bcj\u0002\bdj\u0002\bej\u0002\bfj\u0002\bgj\u0002\bhj\u0002\bij\u0002\bjj\u0002\bkj\u0002\blj\u0002\bmj\u0002\bnj\u0002\boj\u0002\bpj\u0002\bqj\u0002\brj\u0002\bsj\u0002\btj\u0002\buj\u0002\bvj\u0002\bwj\u0002\bxj\u0002\byj\u0002\bzj\u0002\b{j\u0002\b|j\u0002\b}j\u0002\b~j\u0002\b\u007fj\u0003\b\u0080\u0001j\u0003\b\u0081\u0001j\u0003\b\u0082\u0001j\u0003\b\u0083\u0001j\u0003\b\u0084\u0001j\u0003\b\u0085\u0001j\u0003\b\u0086\u0001j\u0003\b\u0087\u0001j\u0003\b\u0088\u0001¨\u0006\u0089\u0001"}, d2 = {"Lcom/vinted/analytics/CommonContentSourceConstraints;", "", "Lfb4;", "proto", "<init>", "(Ljava/lang/String;ILfb4;)V", "Lfb4;", "getProto", "()Lfb4;", "accessories_banner", "assistant_items", "books_same_author", "books_same_book", "books_same_genre", "brand_suggestion", "bundle", "canonical_items", "catalog", "catalog_ad", "catalog_promoted_closets", "catalog_promoted_items", "collectibles_banner", "complementary_items", "dac7_banner", "designer_items_based_on_recent_purchases", "designer_ivs_banner", "designer_new_item_upload", "designer_recommended_items", "designer_shop_by_brand", "edit_price", "editorial", "electronics_general_banner", "electronics_highlights_banner", "electronics_items_by_categories", "electronics_laptops_banner", "electronics_mobile_phones_and_tablets_banner", "electronics_new_item_upload", "electronics_phones_and_tablets_banner", "electronics_recommended_brand_items", "electronics_recommended_items", "electronics_suggested_categories", "electronics_video_games_and_consoles_banner", "favorite_items", "favorite_promoted_items", "featured_collection", "feed_ad", "feed_designer_promoted_items", "feed_electronics_promoted_items", "feed_entertainment_new_items", "feed_entertainment_promoted_items", "feed_entertainment_recommended_items", "feed_hobbies_collectables_new_items", "feed_hobbies_collectables_promoted_items", "feed_hobbies_collectables_recommended_items", "feed_home_new_items", "feed_home_promoted_items", "feed_home_recommended_items", "feed_kids_new_items", "feed_kids_promoted_items", "feed_kids_recommended_items", "feed_men_new_items", "feed_men_promoted_items", "feed_men_recommended_items", "feed_pet_care_new_items", "feed_pet_care_recommended_items", "feed_sports_new_items", "feed_sports_promoted_items", "feed_sports_recommended_items", "feed_trending_recommended_items", "feed_women_new_items", "feed_women_promoted_items", "feed_women_recommended_items", "find_friends", "followed_brand_items", "followed_user_items", "followed_users", "galleried_items", "gallery_ad", "gallery_image", "high_value_electronics_banner", "homepage_block", "homepage_offer_accepted", "hvf_banner", "hvf_items", "hvf_promoted_items", "item_collection", "item_group", "items_based_on_recent_purchases", "ivs_banner", "lister_activation_banner", "marketing_items", "marketing_page", "mobile_phones_and_tablets_banner", "more_similar_items", "nearby_items", "new_seller_upload", "new_upload", "new_user_catalog_item", "new_user_popular_item", "new_user_sold_item", "new_user_upload", "news_feed", "other_user_items", "personalized_promoted_items", "popular_items", "popular_promoted_items", "price_range_brand_items", "price_range_category_items", NotificationCompat.CATEGORY_PROMO, "promoted_category_items", "promoted_closets", "promoted_closets_preview", "promoted_items", "promoted_members", "query_recommended_items", "random_items", "recently_viewed_items", "recommended_category_items", "recommended_items", "recommended_seller_upload", "saved_search_items", AppLovinEventTypes.USER_EXECUTED_SEARCH, "search_ad", "search_by_image", "search_promoted_closets", "search_promoted_items", "seasonal_thumbnails", "shopping_assistant", "similar_items", "spring_cleaning_banner", "user_discovery", "user_items", "verified_items", "verified_promoted_items", "video_games_and_consoles_banner", "video_items", "vinted_picks", "schemas"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public enum CommonContentSourceConstraints {
+    accessories_banner(fb4.ContentSourceConstraints_accessories_banner),
+    assistant_items(fb4.ContentSourceConstraints_assistant_items),
+    books_same_author(fb4.ContentSourceConstraints_books_same_author),
+    books_same_book(fb4.ContentSourceConstraints_books_same_book),
+    books_same_genre(fb4.ContentSourceConstraints_books_same_genre),
+    brand_suggestion(fb4.ContentSourceConstraints_brand_suggestion),
+    bundle(fb4.ContentSourceConstraints_bundle),
+    canonical_items(fb4.ContentSourceConstraints_canonical_items),
+    catalog(fb4.ContentSourceConstraints_catalog),
+    catalog_ad(fb4.ContentSourceConstraints_catalog_ad),
+    catalog_promoted_closets(fb4.ContentSourceConstraints_catalog_promoted_closets),
+    catalog_promoted_items(fb4.ContentSourceConstraints_catalog_promoted_items),
+    collectibles_banner(fb4.ContentSourceConstraints_collectibles_banner),
+    complementary_items(fb4.ContentSourceConstraints_complementary_items),
+    dac7_banner(fb4.ContentSourceConstraints_dac7_banner),
+    designer_items_based_on_recent_purchases(fb4.ContentSourceConstraints_designer_items_based_on_recent_purchases),
+    designer_ivs_banner(fb4.ContentSourceConstraints_designer_ivs_banner),
+    designer_new_item_upload(fb4.ContentSourceConstraints_designer_new_item_upload),
+    designer_recommended_items(fb4.ContentSourceConstraints_designer_recommended_items),
+    designer_shop_by_brand(fb4.ContentSourceConstraints_designer_shop_by_brand),
+    edit_price(fb4.ContentSourceConstraints_edit_price),
+    editorial(fb4.ContentSourceConstraints_editorial),
+    electronics_general_banner(fb4.ContentSourceConstraints_electronics_general_banner),
+    electronics_highlights_banner(fb4.ContentSourceConstraints_electronics_highlights_banner),
+    electronics_items_by_categories(fb4.ContentSourceConstraints_electronics_items_by_categories),
+    electronics_laptops_banner(fb4.ContentSourceConstraints_electronics_laptops_banner),
+    electronics_mobile_phones_and_tablets_banner(fb4.ContentSourceConstraints_electronics_mobile_phones_and_tablets_banner),
+    electronics_new_item_upload(fb4.ContentSourceConstraints_electronics_new_item_upload),
+    electronics_phones_and_tablets_banner(fb4.ContentSourceConstraints_electronics_phones_and_tablets_banner),
+    electronics_recommended_brand_items(fb4.ContentSourceConstraints_electronics_recommended_brand_items),
+    electronics_recommended_items(fb4.ContentSourceConstraints_electronics_recommended_items),
+    electronics_suggested_categories(fb4.ContentSourceConstraints_electronics_suggested_categories),
+    electronics_video_games_and_consoles_banner(fb4.ContentSourceConstraints_electronics_video_games_and_consoles_banner),
+    favorite_items(fb4.ContentSourceConstraints_favorite_items),
+    favorite_promoted_items(fb4.ContentSourceConstraints_favorite_promoted_items),
+    featured_collection(fb4.ContentSourceConstraints_featured_collection),
+    feed_ad(fb4.ContentSourceConstraints_feed_ad),
+    feed_designer_promoted_items(fb4.ContentSourceConstraints_feed_designer_promoted_items),
+    feed_electronics_promoted_items(fb4.ContentSourceConstraints_feed_electronics_promoted_items),
+    feed_entertainment_new_items(fb4.ContentSourceConstraints_feed_entertainment_new_items),
+    feed_entertainment_promoted_items(fb4.ContentSourceConstraints_feed_entertainment_promoted_items),
+    feed_entertainment_recommended_items(fb4.ContentSourceConstraints_feed_entertainment_recommended_items),
+    feed_hobbies_collectables_new_items(fb4.ContentSourceConstraints_feed_hobbies_collectables_new_items),
+    feed_hobbies_collectables_promoted_items(fb4.ContentSourceConstraints_feed_hobbies_collectables_promoted_items),
+    feed_hobbies_collectables_recommended_items(fb4.ContentSourceConstraints_feed_hobbies_collectables_recommended_items),
+    feed_home_new_items(fb4.ContentSourceConstraints_feed_home_new_items),
+    feed_home_promoted_items(fb4.ContentSourceConstraints_feed_home_promoted_items),
+    feed_home_recommended_items(fb4.ContentSourceConstraints_feed_home_recommended_items),
+    feed_kids_new_items(fb4.ContentSourceConstraints_feed_kids_new_items),
+    feed_kids_promoted_items(fb4.ContentSourceConstraints_feed_kids_promoted_items),
+    feed_kids_recommended_items(fb4.ContentSourceConstraints_feed_kids_recommended_items),
+    feed_men_new_items(fb4.ContentSourceConstraints_feed_men_new_items),
+    feed_men_promoted_items(fb4.ContentSourceConstraints_feed_men_promoted_items),
+    feed_men_recommended_items(fb4.ContentSourceConstraints_feed_men_recommended_items),
+    feed_pet_care_new_items(fb4.ContentSourceConstraints_feed_pet_care_new_items),
+    feed_pet_care_recommended_items(fb4.ContentSourceConstraints_feed_pet_care_recommended_items),
+    feed_sports_new_items(fb4.ContentSourceConstraints_feed_sports_new_items),
+    feed_sports_promoted_items(fb4.ContentSourceConstraints_feed_sports_promoted_items),
+    feed_sports_recommended_items(fb4.ContentSourceConstraints_feed_sports_recommended_items),
+    feed_trending_recommended_items(fb4.ContentSourceConstraints_feed_trending_recommended_items),
+    feed_women_new_items(fb4.ContentSourceConstraints_feed_women_new_items),
+    feed_women_promoted_items(fb4.ContentSourceConstraints_feed_women_promoted_items),
+    feed_women_recommended_items(fb4.ContentSourceConstraints_feed_women_recommended_items),
+    find_friends(fb4.ContentSourceConstraints_find_friends),
+    followed_brand_items(fb4.ContentSourceConstraints_followed_brand_items),
+    followed_user_items(fb4.ContentSourceConstraints_followed_user_items),
+    followed_users(fb4.ContentSourceConstraints_followed_users),
+    galleried_items(fb4.ContentSourceConstraints_galleried_items),
+    gallery_ad(fb4.ContentSourceConstraints_gallery_ad),
+    gallery_image(fb4.ContentSourceConstraints_gallery_image),
+    high_value_electronics_banner(fb4.ContentSourceConstraints_high_value_electronics_banner),
+    homepage_block(fb4.ContentSourceConstraints_homepage_block),
+    homepage_offer_accepted(fb4.ContentSourceConstraints_homepage_offer_accepted),
+    hvf_banner(fb4.ContentSourceConstraints_hvf_banner),
+    hvf_items(fb4.ContentSourceConstraints_hvf_items),
+    hvf_promoted_items(fb4.ContentSourceConstraints_hvf_promoted_items),
+    item_collection(fb4.ContentSourceConstraints_item_collection),
+    item_group(fb4.ContentSourceConstraints_item_group),
+    items_based_on_recent_purchases(fb4.ContentSourceConstraints_items_based_on_recent_purchases),
+    ivs_banner(fb4.ContentSourceConstraints_ivs_banner),
+    lister_activation_banner(fb4.ContentSourceConstraints_lister_activation_banner),
+    marketing_items(fb4.ContentSourceConstraints_marketing_items),
+    marketing_page(fb4.ContentSourceConstraints_marketing_page),
+    mobile_phones_and_tablets_banner(fb4.ContentSourceConstraints_mobile_phones_and_tablets_banner),
+    more_similar_items(fb4.ContentSourceConstraints_more_similar_items),
+    nearby_items(fb4.ContentSourceConstraints_nearby_items),
+    new_seller_upload(fb4.ContentSourceConstraints_new_seller_upload),
+    new_upload(fb4.ContentSourceConstraints_new_upload),
+    new_user_catalog_item(fb4.ContentSourceConstraints_new_user_catalog_item),
+    new_user_popular_item(fb4.ContentSourceConstraints_new_user_popular_item),
+    new_user_sold_item(fb4.ContentSourceConstraints_new_user_sold_item),
+    new_user_upload(fb4.ContentSourceConstraints_new_user_upload),
+    news_feed(fb4.ContentSourceConstraints_news_feed),
+    other_user_items(fb4.ContentSourceConstraints_other_user_items),
+    personalized_promoted_items(fb4.ContentSourceConstraints_personalized_promoted_items),
+    popular_items(fb4.ContentSourceConstraints_popular_items),
+    popular_promoted_items(fb4.ContentSourceConstraints_popular_promoted_items),
+    price_range_brand_items(fb4.ContentSourceConstraints_price_range_brand_items),
+    price_range_category_items(fb4.ContentSourceConstraints_price_range_category_items),
+    promo(fb4.ContentSourceConstraints_promo),
+    promoted_category_items(fb4.ContentSourceConstraints_promoted_category_items),
+    promoted_closets(fb4.ContentSourceConstraints_promoted_closets),
+    promoted_closets_preview(fb4.ContentSourceConstraints_promoted_closets_preview),
+    promoted_items(fb4.ContentSourceConstraints_promoted_items),
+    promoted_members(fb4.ContentSourceConstraints_promoted_members),
+    query_recommended_items(fb4.ContentSourceConstraints_query_recommended_items),
+    random_items(fb4.ContentSourceConstraints_random_items),
+    recently_viewed_items(fb4.ContentSourceConstraints_recently_viewed_items),
+    recommended_category_items(fb4.ContentSourceConstraints_recommended_category_items),
+    recommended_items(fb4.ContentSourceConstraints_recommended_items),
+    recommended_seller_upload(fb4.ContentSourceConstraints_recommended_seller_upload),
+    saved_search_items(fb4.ContentSourceConstraints_saved_search_items),
+    search(fb4.ContentSourceConstraints_search),
+    search_ad(fb4.ContentSourceConstraints_search_ad),
+    search_by_image(fb4.ContentSourceConstraints_search_by_image),
+    search_promoted_closets(fb4.ContentSourceConstraints_search_promoted_closets),
+    search_promoted_items(fb4.ContentSourceConstraints_search_promoted_items),
+    seasonal_thumbnails(fb4.ContentSourceConstraints_seasonal_thumbnails),
+    shopping_assistant(fb4.ContentSourceConstraints_shopping_assistant),
+    similar_items(fb4.ContentSourceConstraints_similar_items),
+    spring_cleaning_banner(fb4.ContentSourceConstraints_spring_cleaning_banner),
+    user_discovery(fb4.ContentSourceConstraints_user_discovery),
+    user_items(fb4.ContentSourceConstraints_user_items),
+    verified_items(fb4.ContentSourceConstraints_verified_items),
+    verified_promoted_items(fb4.ContentSourceConstraints_verified_promoted_items),
+    video_games_and_consoles_banner(fb4.ContentSourceConstraints_video_games_and_consoles_banner),
+    video_items(fb4.ContentSourceConstraints_video_items),
+    vinted_picks(fb4.ContentSourceConstraints_vinted_picks);
+
+    private static final /* synthetic */ EnumEntries $ENTRIES = EnumEntriesKt.a(values());
+    private final fb4 proto;
+
+    CommonContentSourceConstraints(fb4 fb4Var) {
+        this.proto = fb4Var;
+    }
+
+    public static EnumEntries<CommonContentSourceConstraints> getEntries() {
+        return $ENTRIES;
+    }
+
+    public final fb4 getProto() {
+        return this.proto;
+    }
+}

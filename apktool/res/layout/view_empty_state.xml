@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vinted.views.containers.VintedPlainCell android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.vinted.views.containers.VintedLinearLayout android:orientation="vertical" android:id="@id/view_empty_state_info_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:showDividers="middle" app:vinted_divider_type="spacer">
+            <com.vinted.views.common.VintedIconView android:layout_gravity="center" android:id="@id/view_empty_state_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vinted_scaling="contain" />
+            <com.vinted.views.common.VintedDecorativeAnimationView android:layout_gravity="center" android:id="@id/view_empty_state_animation_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.vinted.views.common.VintedTextView android:id="@id/view_empty_state_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.vinted.views.common.VintedTextView android:id="@id/view_empty_state_body" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.vinted.views.common.VintedButton android:layout_gravity="center" android:id="@id/view_empty_state_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vinted_text="Perform action" />
+        </com.vinted.views.containers.VintedLinearLayout>
+    </com.vinted.views.containers.VintedPlainCell>
+</ScrollView>

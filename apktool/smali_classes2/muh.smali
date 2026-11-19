@@ -1,0 +1,86 @@
+.class public final Lmuh;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Lte7;
+
+
+# instance fields
+.field public final a:Ljava/lang/Object;
+
+.field public final b:Lfcf;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Object;Lfcf;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lfcf;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    iput-object p1, p0, Lmuh;->a:Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    iput-object p2, p0, Lmuh;->b:Lfcf;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lkuh;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lmuh;->b:Lfcf;
+
+    .line 4
+    .line 5
+    invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    iget-object p0, p0, Lmuh;->a:Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    invoke-direct {v0, p0, v1}, Lkuh;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object v0
+.end method

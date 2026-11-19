@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vinted.views.organisms.dialog.MaxHeightScrollView android:id="@id/modal_scroll_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/modal_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.vinted.views.common.VintedImageView android:id="@id/modal_image" android:layout_width="match_parent" android:layout_height="wrap_content" app:vinted_scaling="cover" />
+        <com.vinted.views.containers.VintedPlainCell android:id="@id/modal_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.vinted.views.common.VintedTextView android:id="@id/modal_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:vinted_text_alignment="center" app:vinted_text_type="heading" />
+            <com.vinted.views.common.VintedSpacerView android:id="@id/modal_content_spacer" android:layout_width="match_parent" android:layout_height="wrap_content" app:vinted_spacer_size="large" />
+            <com.vinted.views.common.VintedTextView android:id="@id/modal_body" android:layout_width="match_parent" android:layout_height="wrap_content" app:vinted_text_type="body" />
+        </com.vinted.views.containers.VintedPlainCell>
+        <Space android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.vinted.views.containers.VintedPlainCell android:id="@id/modal_footer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.vinted.views.containers.VintedLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:showDividers="middle" app:vinted_divider_type="spacer" app:vinted_spacer_size="large">
+                <com.vinted.views.common.VintedButton android:id="@id/modal_primary_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:vinted_button_style="filled" />
+                <com.vinted.views.common.VintedButton android:id="@id/modal_secondary_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:vinted_button_style="flat" />
+            </com.vinted.views.containers.VintedLinearLayout>
+        </com.vinted.views.containers.VintedPlainCell>
+    </LinearLayout>
+</com.vinted.views.organisms.dialog.MaxHeightScrollView>

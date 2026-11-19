@@ -1,0 +1,118 @@
+.class public Lzj8;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# instance fields
+.field public a:[I
+
+.field public b:Z
+
+.field public c:I
+
+.field public d:Lvj8;
+
+.field public final e:Ljava/util/ArrayList;
+
+.field public f:I
+
+.field public g:I
+
+.field public h:Z
+
+.field public i:I
+
+.field public j:I
+
+.field public k:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lzj8;->a:[I
+
+    .line 6
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    iput-boolean v0, p0, Lzj8;->b:Z
+
+    .line 9
+    .line 10
+    iput v0, p0, Lzj8;->c:I
+
+    .line 11
+    .line 12
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 13
+    .line 14
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object v0, p0, Lzj8;->e:Ljava/util/ArrayList;
+
+    .line 18
+    .line 19
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lzj8;->g:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final b()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lzj8;->c:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final c()I
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lzj8;->b:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final d()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lzj8;->f:I
+
+    .line 2
+    .line 3
+    return p0
+.end method

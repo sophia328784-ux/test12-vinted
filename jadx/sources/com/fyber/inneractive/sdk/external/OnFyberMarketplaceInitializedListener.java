@@ -1,0 +1,16 @@
+package com.fyber.inneractive.sdk.external;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public interface OnFyberMarketplaceInitializedListener {
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public enum FyberInitStatus {
+        SUCCESSFULLY,
+        FAILED_NO_KITS_DETECTED,
+        FAILED,
+        INVALID_APP_ID
+    }
+
+    void onFyberMarketplaceInitialized(FyberInitStatus fyberInitStatus);
+}

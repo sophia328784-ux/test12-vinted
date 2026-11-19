@@ -1,0 +1,33 @@
+package com.google.android.gms.maps.model;
+
+import android.os.RemoteException;
+import com.google.android.gms.common.internal.Preconditions;
+import defpackage.pmn;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public final class MapCapabilities {
+    private final com.google.android.gms.internal.maps.zzag zza;
+
+    public MapCapabilities(com.google.android.gms.internal.maps.zzag zzagVar) {
+        this.zza = (com.google.android.gms.internal.maps.zzag) Preconditions.checkNotNull(zzagVar);
+    }
+
+    public boolean isAdvancedMarkersAvailable() {
+        try {
+            return this.zza.zzd();
+        } catch (RemoteException e) {
+            pmn.c(e);
+            return false;
+        }
+    }
+
+    public boolean isDataDrivenStylingAvailable() {
+        try {
+            return this.zza.zze();
+        } catch (RemoteException e) {
+            pmn.c(e);
+            return false;
+        }
+    }
+}

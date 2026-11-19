@@ -1,0 +1,49 @@
+package defpackage;
+
+import android.view.View;
+import android.view.ViewTreeObserver;
+import kotlin.jvm.functions.Function0;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public final class q97 implements View.OnAttachStateChangeListener, ViewTreeObserver.OnGlobalLayoutListener {
+    public boolean a;
+    public final /* synthetic */ View b;
+    public final /* synthetic */ Function0 c;
+
+    public q97(View view, Function0 function0) {
+        this.b = view;
+        this.c = function0;
+        view.addOnAttachStateChangeListener(this);
+        if (this.a || !view.isAttachedToWindow()) {
+            return;
+        }
+        view.getViewTreeObserver().addOnGlobalLayoutListener(this);
+        this.a = true;
+    }
+
+    @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
+    public final void onGlobalLayout() {
+        this.c.invoke();
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public final void onViewAttachedToWindow(View view) {
+        if (this.a) {
+            return;
+        }
+        View view2 = this.b;
+        if (view2.isAttachedToWindow()) {
+            view2.getViewTreeObserver().addOnGlobalLayoutListener(this);
+            this.a = true;
+        }
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public final void onViewDetachedFromWindow(View view) {
+        if (this.a) {
+            this.b.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+            this.a = false;
+        }
+    }
+}

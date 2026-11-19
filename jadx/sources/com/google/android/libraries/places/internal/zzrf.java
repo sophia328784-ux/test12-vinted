@@ -1,0 +1,16 @@
+package com.google.android.libraries.places.internal;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+final class zzrf extends zzrc {
+    private static final zzrc zza = new zzrf();
+    private final zzrg zzb = new zzre(null);
+
+    public static final zzrc zzb() {
+        return zza;
+    }
+
+    public final String toString() {
+        return "No-op Provider";
+    }
+}

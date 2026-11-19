@@ -1,0 +1,29 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.common.util.concurrent.ListenableFuture;
+import java.util.concurrent.Callable;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzexy implements zzfdi {
+    private final zzhdi zza;
+
+    public zzexy(zzhdi zzhdiVar) {
+        this.zza = zzhdiVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    public final ListenableFuture zza() {
+        return this.zza.submit(new Callable(this) { // from class: com.google.android.gms.internal.ads.zzexx
+            @Override // java.util.concurrent.Callable
+            public final /* synthetic */ Object call() {
+                return new zzexz(com.google.android.gms.ads.internal.zzt.zzk().currentTimeMillis() - com.google.android.gms.ads.internal.zzt.zzh().zzp().zzi().zzb());
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    public final int zzb() {
+        return 55;
+    }
+}

@@ -1,0 +1,26 @@
+package kotlin.streams.jdk8;
+
+import java.util.Iterator;
+import java.util.stream.IntStream;
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.sequences.Sequence;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+@Metadata(d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010(\n\u0000*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001J\u0010\u0010\u0002\u001a\b\u0012\u0004\u0012\u00028\u00000\u0003H\u0096\u0082\u0004¨\u0006\u0004¸\u0006\u0000"}, d2 = {"kotlin/sequences/SequencesKt__SequencesKt$Sequence$1", "Lkotlin/sequences/Sequence;", "iterator", "", "kotlin-stdlib"}, k = 1, mv = {2, 4, 0}, xi = 48)
+@SourceDebugExtension
+public final class StreamsKt$asSequence$$inlined$Sequence$2 implements Sequence<Integer> {
+    final /* synthetic */ IntStream $this_asSequence$inlined;
+
+    public StreamsKt$asSequence$$inlined$Sequence$2(IntStream intStream) {
+        this.$this_asSequence$inlined = intStream;
+    }
+
+    @Override // kotlin.sequences.Sequence
+    public Iterator<Integer> iterator() {
+        Iterator<Integer> it = this.$this_asSequence$inlined.iterator();
+        it.getClass();
+        return it;
+    }
+}

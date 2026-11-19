@@ -1,0 +1,21 @@
+package com.fyber.marketplace.fairbid.bridge;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public enum MarketplaceAdLoadError {
+    RESPONSE_VALIDATION_FAILED("Response validation failed"),
+    FAILED_TO_PARSE_AD_CONTENT("Failed to parse ad content"),
+    FAILED_TO_LOAD_AD("Failed to load the ad "),
+    FMP_NOT_READY_TO_LOAD_ADS("FMP Configuration not available or invalid. Ads cannot be loaded"),
+    UNSUPPORTED_AD_TYPE("FMP does not know how to load the received creative type");
+
+    private String errorMessage;
+
+    MarketplaceAdLoadError(String str) {
+        this.errorMessage = str;
+    }
+
+    public String getErrorMessage() {
+        return this.errorMessage;
+    }
+}

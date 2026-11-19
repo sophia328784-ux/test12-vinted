@@ -1,0 +1,24 @@
+package androidx.media3.exoplayer.image;
+
+import android.graphics.Bitmap;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public interface ImageOutput {
+    public static final a a = new a();
+
+    void a();
+
+    void onImageAvailable(long j, Bitmap bitmap);
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public class a implements ImageOutput {
+        @Override // androidx.media3.exoplayer.image.ImageOutput
+        public final void a() {
+        }
+
+        @Override // androidx.media3.exoplayer.image.ImageOutput
+        public final void onImageAvailable(long j, Bitmap bitmap) {
+        }
+    }
+}

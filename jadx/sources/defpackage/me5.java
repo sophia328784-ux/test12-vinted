@@ -1,0 +1,26 @@
+package defpackage;
+
+import com.vinted.shared.currency.DecimalsMode;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+public abstract /* synthetic */ class me5 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[DecimalsMode.values().length];
+        try {
+            iArr[DecimalsMode.NONE.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[DecimalsMode.STRIP_TRAILING_ZEROS.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            iArr[DecimalsMode.ALWAYS.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        a = iArr;
+    }
+}

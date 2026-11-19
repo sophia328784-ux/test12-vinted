@@ -1,0 +1,26 @@
+package defpackage;
+
+import android.graphics.ColorSpace;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public final class pq3 {
+    static {
+        new pq3();
+    }
+
+    private pq3() {
+    }
+
+    public static final ColorSpace a(lq3 lq3Var) {
+        sq3.a.getClass();
+        if (Intrinsics.c(lq3Var, sq3.w)) {
+            return ColorSpace.get(ColorSpace.Named.BT2020_HLG);
+        }
+        if (Intrinsics.c(lq3Var, sq3.x)) {
+            return ColorSpace.get(ColorSpace.Named.BT2020_PQ);
+        }
+        return null;
+    }
+}

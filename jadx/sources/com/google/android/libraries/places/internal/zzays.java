@@ -1,0 +1,24 @@
+package com.google.android.libraries.places.internal;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+final class zzays extends zzayk {
+    private final zzayk zza;
+    private final zzayp zzb;
+
+    public /* synthetic */ zzays(zzayk zzaykVar, zzayp zzaypVar, zzayr zzayrVar) {
+        this.zza = zzaykVar;
+        zzmt.zzc(zzaypVar, "interceptor");
+        this.zzb = zzaypVar;
+    }
+
+    @Override // com.google.android.libraries.places.internal.zzayk
+    public final zzayo zza(zzbcl zzbclVar, zzayj zzayjVar) {
+        return this.zzb.zza(zzbclVar, zzayjVar, this.zza);
+    }
+
+    @Override // com.google.android.libraries.places.internal.zzayk
+    public final String zzb() {
+        return this.zza.zzb();
+    }
+}

@@ -1,0 +1,14 @@
+package defpackage;
+
+import com.fyber.inneractive.sdk.external.InneractiveMediationDefs;
+import com.mparticle.kits.ReportingMessage;
+import com.vinted.shared.featureflags.metrics.FeatureFlagsConfigAgeMetrics;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public class mgh {
+    public static final mu2 a = mu2.n(FeatureFlagsConfigAgeMetrics.AGE_UNIT, ReportingMessage.MessageType.EVENT, ReportingMessage.MessageType.OPT_OUT, "nm", InneractiveMediationDefs.GENDER_MALE, "hd");
+
+    private mgh() {
+    }
+}

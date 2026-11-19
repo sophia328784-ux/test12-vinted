@@ -1,0 +1,93 @@
+package com.vinted.shared.session.preferences;
+
+import com.vinted.core.preferences.v2.Preference;
+import com.vinted.core.preferences.v2.VintedPreferencesProvider;
+import com.vinted.core.preferences.v2.internal.PreferenceProviderWrapperImpl;
+import com.vinted.core.preferences.v2.internal.VintedPreferencesProviderImpl;
+import com.vinted.shared.session.preferences.token.ApiToken;
+import com.vinted.shared.session.preferences.token.ApiTokenProvider;
+import defpackage.fcf;
+import defpackage.opa;
+import defpackage.te7;
+import defpackage.wm9;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u00002\u00020\u0001:\u0001\u0007B\u0017\b\u0007\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002¢\u0006\u0004\b\u0005\u0010\u0006¨\u0006\b"}, d2 = {"Lcom/vinted/shared/session/preferences/ApiTokenProviderImpl;", "Lcom/vinted/shared/session/preferences/token/ApiTokenProvider;", "Lcom/vinted/core/preferences/v2/VintedPreferencesProvider;", "Lcom/vinted/shared/session/preferences/SessionPreferences;", "vintedPreferencesProvider", "<init>", "(Lcom/vinted/core/preferences/v2/VintedPreferencesProvider;)V", "a", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+@SourceDebugExtension
+public final class ApiTokenProviderImpl implements ApiTokenProvider {
+    public final VintedPreferencesProvider<SessionPreferences> vintedPreferencesProvider;
+
+    @wm9
+    public ApiTokenProviderImpl(VintedPreferencesProvider<SessionPreferences> vintedPreferencesProvider) {
+        vintedPreferencesProvider.getClass();
+        this.vintedPreferencesProvider = vintedPreferencesProvider;
+    }
+
+    public final ApiToken getApiTokenBlocking() {
+        PreferenceProviderWrapperImpl.Companion companion = PreferenceProviderWrapperImpl.Companion;
+        VintedPreferencesProvider<SessionPreferences> vintedPreferencesProvider = this.vintedPreferencesProvider;
+        Preference<ApiToken, ApiToken> preference = ((SessionPreferences) ((VintedPreferencesProviderImpl) vintedPreferencesProvider).preferences).apiToken;
+        opa opaVarSerializer = ApiToken.INSTANCE.serializer();
+        companion.getClass();
+        return (ApiToken) PreferenceProviderWrapperImpl.Companion.create(preference, opaVarSerializer, vintedPreferencesProvider).getBlocking();
+    }
+
+    public final void setApiTokenBlocking(ApiToken apiToken) {
+        apiToken.getClass();
+        PreferenceProviderWrapperImpl.Companion companion = PreferenceProviderWrapperImpl.Companion;
+        VintedPreferencesProvider<SessionPreferences> vintedPreferencesProvider = this.vintedPreferencesProvider;
+        Preference<ApiToken, ApiToken> preference = ((SessionPreferences) ((VintedPreferencesProviderImpl) vintedPreferencesProvider).preferences).apiToken;
+        opa opaVarSerializer = ApiToken.INSTANCE.serializer();
+        companion.getClass();
+        PreferenceProviderWrapperImpl preferenceProviderWrapperImplCreate = PreferenceProviderWrapperImpl.Companion.create(preference, opaVarSerializer, vintedPreferencesProvider);
+        Long lValueOf = Long.valueOf(System.currentTimeMillis());
+        long j = apiToken.expiresIn;
+        String str = apiToken.tokenType;
+        String str2 = apiToken.accessToken;
+        String str3 = apiToken.scope;
+        String str4 = apiToken.refreshToken;
+        str.getClass();
+        str2.getClass();
+        str3.getClass();
+        str4.getClass();
+        preferenceProviderWrapperImplCreate.setBlocking(new ApiToken(j, str, str2, str3, str4, lValueOf));
+    }
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public static final class a implements te7 {
+        public static final C3535a b = new C3535a(null);
+        public final fcf a;
+
+        public a(fcf fcfVar, DefaultConstructorMarker defaultConstructorMarker) {
+            this.a = fcfVar;
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            VintedPreferencesProvider vintedPreferencesProvider = (VintedPreferencesProvider) this.a.invoke();
+            b.getClass();
+            vintedPreferencesProvider.getClass();
+            return new ApiTokenProviderImpl(vintedPreferencesProvider);
+        }
+
+        /* JADX INFO: renamed from: com.vinted.shared.session.preferences.ApiTokenProviderImpl$a$a, reason: collision with other inner class name */
+        /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+        public static final class C3535a {
+            public /* synthetic */ C3535a(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            public static a a(fcf fcfVar) {
+                fcfVar.getClass();
+                return new a(fcfVar, null);
+            }
+
+            private C3535a() {
+            }
+        }
+    }
+}

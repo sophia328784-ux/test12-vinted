@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">1</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="isLightTheme">?android:attr/isLightTheme</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen">
+    </style>
+    <style name="Theme.AppCompat.Translucent" parent="@style/Theme.AppCompat">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="UploadPickerBottomSheet" parent="@style/BaseBottomSheetFragment">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="enableEdgeToEdge">true</item>
+    </style>
+    <style name="Vinted.AlertDialog" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/v_sys_theme_greyscale_level_2</item>
+        <item name="android:textColor">@color/v_sys_theme_greyscale_level_1</item>
+        <item name="android:colorControlNormal">@color/v_sys_theme_greyscale_level_2</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="buttonBarButtonStyle">@style/DialogButtonStyle</item>
+        <item name="colorAccent">@color/v_sys_theme_primary_default</item>
+        <item name="textColorAlertDialogListItem">@color/v_sys_theme_greyscale_level_2</item>
+    </style>
+</resources>

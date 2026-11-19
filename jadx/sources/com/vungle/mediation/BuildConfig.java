@@ -1,0 +1,10 @@
+package com.vungle.mediation;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public final class BuildConfig {
+    public static final String ADAPTER_VERSION = "7.7.1.0";
+    public static final String BUILD_TYPE = "release";
+    public static final boolean DEBUG = false;
+    public static final String LIBRARY_PACKAGE_NAME = "com.vungle.mediation";
+}

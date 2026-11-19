@@ -1,0 +1,90 @@
+.class Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl$4;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Lecf;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;->initialize(Lcom/checkout/base/usecase/UseCase;Lcom/checkout/base/usecase/UseCase;Lcom/checkout/logging/Logger;Ljava/util/List;Lcom/checkout/frames/screen/paymentform/model/PrefillData;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lecf;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;
+
+
+# direct methods
+.method public constructor <init>(Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl$4;->this$0:Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public get()Lcom/checkout/frames/di/component/CardNumberViewModelSubComponent$Builder;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/checkout/frames/di/component/DaggerFramesDIComponent$CardNumberViewModelSubComponentBuilder;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl$4;->this$0:Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;->c(Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;)Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    invoke-direct {v0, p0, v1}, Lcom/checkout/frames/di/component/DaggerFramesDIComponent$CardNumberViewModelSubComponentBuilder;-><init>(Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 0
+
+    .line 14
+    invoke-virtual {p0}, Lcom/checkout/frames/di/component/DaggerFramesDIComponent$FramesDIComponentImpl$4;->get()Lcom/checkout/frames/di/component/CardNumberViewModelSubComponent$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method

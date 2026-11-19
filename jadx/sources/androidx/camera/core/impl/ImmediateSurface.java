@@ -1,0 +1,26 @@
+package androidx.camera.core.impl;
+
+import android.util.Size;
+import android.view.Surface;
+import androidx.camera.core.impl.utils.futures.Futures;
+import com.google.common.util.concurrent.ListenableFuture;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public final class ImmediateSurface extends DeferrableSurface {
+    private final Surface mSurface;
+
+    public ImmediateSurface(Surface surface, Size size, int i) {
+        super(size, i);
+        this.mSurface = surface;
+    }
+
+    @Override // androidx.camera.core.impl.DeferrableSurface
+    public ListenableFuture<Surface> provideSurface() {
+        return Futures.immediateFuture(this.mSurface);
+    }
+
+    public ImmediateSurface(Surface surface) {
+        this.mSurface = surface;
+    }
+}

@@ -1,0 +1,80 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class sjf {
+    public static int design_bottom_navigation_item = 2131558502;
+    public static int design_bottom_sheet_dialog = 2131558503;
+    public static int design_layout_snackbar = 2131558504;
+    public static int design_layout_snackbar_include = 2131558505;
+    public static int design_layout_tab_icon = 2131558506;
+    public static int design_layout_tab_text = 2131558507;
+    public static int design_menu_item_action_area = 2131558508;
+    public static int design_navigation_item = 2131558509;
+    public static int design_navigation_item_header = 2131558510;
+    public static int design_navigation_item_separator = 2131558511;
+    public static int design_navigation_item_subheader = 2131558512;
+    public static int design_navigation_menu = 2131558513;
+    public static int design_navigation_menu_item = 2131558514;
+    public static int design_text_input_end_icon = 2131558515;
+    public static int design_text_input_start_icon = 2131558516;
+    public static int m3_alert_dialog = 2131558582;
+    public static int m3_alert_dialog_actions = 2131558583;
+    public static int m3_alert_dialog_title = 2131558584;
+    public static int m3_auto_complete_simple_item = 2131558585;
+    public static int m3_button_group_overflow_button = 2131558586;
+    public static int m3_navigation_menu_divider = 2131558587;
+    public static int m3_navigation_menu_subheader = 2131558588;
+    public static int m3_overflow_linear_layout_overflow_button = 2131558589;
+    public static int m3_side_sheet_dialog = 2131558590;
+    public static int m3expressive_alert_dialog = 2131558591;
+    public static int m3expressive_alert_dialog_title = 2131558592;
+    public static int material_chip_input_combo = 2131558594;
+    public static int material_clock_display = 2131558595;
+    public static int material_clock_display_divider = 2131558596;
+    public static int material_clock_period_toggle = 2131558597;
+    public static int material_clock_period_toggle_land = 2131558598;
+    public static int material_clockface_textview = 2131558599;
+    public static int material_clockface_view = 2131558600;
+    public static int material_radial_view_group = 2131558601;
+    public static int material_textinput_timepicker = 2131558602;
+    public static int material_time_chip = 2131558603;
+    public static int material_time_input = 2131558604;
+    public static int material_timepicker = 2131558605;
+    public static int material_timepicker_dialog = 2131558606;
+    public static int material_timepicker_textinput_display = 2131558607;
+    public static int mtrl_alert_dialog = 2131558673;
+    public static int mtrl_alert_dialog_actions = 2131558674;
+    public static int mtrl_alert_dialog_title = 2131558675;
+    public static int mtrl_alert_select_dialog_item = 2131558676;
+    public static int mtrl_alert_select_dialog_multichoice = 2131558677;
+    public static int mtrl_alert_select_dialog_singlechoice = 2131558678;
+    public static int mtrl_auto_complete_simple_item = 2131558679;
+    public static int mtrl_calendar_day = 2131558680;
+    public static int mtrl_calendar_day_of_week = 2131558681;
+    public static int mtrl_calendar_days_of_week = 2131558682;
+    public static int mtrl_calendar_horizontal = 2131558683;
+    public static int mtrl_calendar_month = 2131558684;
+    public static int mtrl_calendar_month_labeled = 2131558685;
+    public static int mtrl_calendar_month_navigation = 2131558686;
+    public static int mtrl_calendar_months = 2131558687;
+    public static int mtrl_calendar_vertical = 2131558688;
+    public static int mtrl_calendar_year = 2131558689;
+    public static int mtrl_layout_snackbar = 2131558690;
+    public static int mtrl_layout_snackbar_include = 2131558691;
+    public static int mtrl_navigation_rail_item = 2131558692;
+    public static int mtrl_picker_actions = 2131558693;
+    public static int mtrl_picker_dialog = 2131558694;
+    public static int mtrl_picker_fullscreen = 2131558695;
+    public static int mtrl_picker_header_dialog = 2131558696;
+    public static int mtrl_picker_header_fullscreen = 2131558697;
+    public static int mtrl_picker_header_selection_text = 2131558698;
+    public static int mtrl_picker_header_title_text = 2131558699;
+    public static int mtrl_picker_header_toggle = 2131558700;
+    public static int mtrl_picker_text_input_date = 2131558701;
+    public static int mtrl_picker_text_input_date_range = 2131558702;
+    public static int mtrl_search_bar = 2131558703;
+    public static int mtrl_search_view = 2131558704;
+
+    private sjf() {
+    }
+}

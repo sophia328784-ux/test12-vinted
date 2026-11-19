@@ -1,0 +1,23 @@
+package defpackage;
+
+import androidx.lifecycle.compose.LifecycleStartStopEffectScope;
+import androidx.lifecycle.compose.LifecycleStopOrDisposeEffectResult;
+import com.vinted.feature.shipping.address.ShippingAddressAction;
+import com.vinted.feature.shipping.address.ShippingAddressViewModel;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes8.dex */
+public final class dkh implements LifecycleStopOrDisposeEffectResult {
+    final /* synthetic */ ShippingAddressViewModel $viewModel$inlined;
+    final /* synthetic */ LifecycleStartStopEffectScope this$0;
+
+    public dkh(LifecycleStartStopEffectScope lifecycleStartStopEffectScope, ShippingAddressViewModel shippingAddressViewModel) {
+        this.this$0 = lifecycleStartStopEffectScope;
+        this.$viewModel$inlined = shippingAddressViewModel;
+    }
+
+    @Override // androidx.lifecycle.compose.LifecycleStopOrDisposeEffectResult
+    public void runStopOrDisposeEffect() {
+        this.$viewModel$inlined.handleAction(ShippingAddressAction.Stop.INSTANCE);
+    }
+}

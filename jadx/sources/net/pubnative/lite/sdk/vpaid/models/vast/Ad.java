@@ -1,0 +1,51 @@
+package net.pubnative.lite.sdk.vpaid.models.vast;
+
+import net.pubnative.lite.sdk.vpaid.xml.Attribute;
+import net.pubnative.lite.sdk.vpaid.xml.Tag;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes11.dex */
+public class Ad {
+
+    @Attribute
+    private String adType;
+
+    @Attribute
+    private String conditionalAd;
+
+    @Attribute
+    private String id;
+
+    @Tag
+    private InLine inLine;
+
+    @Attribute
+    private String sequence;
+
+    @Tag
+    private Wrapper wrapper;
+
+    public String getAdType() {
+        return this.adType;
+    }
+
+    public String getConditionalAd() {
+        return this.conditionalAd;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
+    public InLine getInLine() {
+        return this.inLine;
+    }
+
+    public String getSequence() {
+        return this.sequence;
+    }
+
+    public Wrapper getWrapper() {
+        return this.wrapper;
+    }
+}

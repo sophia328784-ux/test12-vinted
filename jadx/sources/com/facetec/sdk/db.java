@@ -1,0 +1,19 @@
+package com.facetec.sdk;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+enum db {
+    CAMERA_PERMISSION,
+    INITIAL_FACE_SCAN_GET_READY,
+    FACE_SCAN_UNZOOMED,
+    FACE_SCAN_ZOOMED,
+    RETRY_SIDE_BY_SIDE,
+    RETRY_GET_READY,
+    ID_SCAN_START,
+    NFC_START,
+    RESULT_UPLOAD,
+    RESULT_OCR,
+    RESULT_ADDITIONAL_REVIEW,
+    SECURING_CAMERA,
+    RESULT_ID_FEEDBACK
+}

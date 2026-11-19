@@ -1,0 +1,84 @@
+package com.vinted.feature.conversation.domain.interactors;
+
+import com.vinted.core.activitybound.ActivityBoundDispatcher;
+import com.vinted.core.navigation.BackNavigationHandler;
+import com.vinted.feature.conversation.analytics.ConversationAnalytics;
+import com.vinted.feature.conversation.analytics.ConversationAnalyticsImpl;
+import com.vinted.feature.item.navigator.ItemNavigator;
+import com.vinted.feature.orderdetails.navigator.OrderDetailsNavigator;
+import defpackage.fcf;
+import defpackage.te7;
+import defpackage.wm9;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes8.dex */
+@Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u00002\u00020\u0001:\u0001\rB;\b\u0007\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u0002\u0012\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\t0\u0002¢\u0006\u0004\b\u000b\u0010\f¨\u0006\u000e"}, d2 = {"Lcom/vinted/feature/conversation/domain/interactors/ConversationItemOrderDetailsInteractor;", "", "Lcom/vinted/core/activitybound/ActivityBoundDispatcher;", "Lcom/vinted/core/navigation/BackNavigationHandler;", "backNavigationHandler", "Lcom/vinted/feature/conversation/analytics/ConversationAnalytics;", "conversationAnalytics", "Lcom/vinted/feature/item/navigator/ItemNavigator;", "itemNavigator", "Lcom/vinted/feature/orderdetails/navigator/OrderDetailsNavigator;", "orderDetailsNavigator", "<init>", "(Lcom/vinted/core/activitybound/ActivityBoundDispatcher;Lcom/vinted/feature/conversation/analytics/ConversationAnalytics;Lcom/vinted/core/activitybound/ActivityBoundDispatcher;Lcom/vinted/core/activitybound/ActivityBoundDispatcher;)V", "a", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public final class ConversationItemOrderDetailsInteractor {
+    public final ActivityBoundDispatcher<BackNavigationHandler> backNavigationHandler;
+    public final ConversationAnalytics conversationAnalytics;
+    public final ActivityBoundDispatcher<ItemNavigator> itemNavigator;
+    public final ActivityBoundDispatcher<OrderDetailsNavigator> orderDetailsNavigator;
+
+    @wm9
+    public ConversationItemOrderDetailsInteractor(ActivityBoundDispatcher<BackNavigationHandler> activityBoundDispatcher, ConversationAnalytics conversationAnalytics, ActivityBoundDispatcher<ItemNavigator> activityBoundDispatcher2, ActivityBoundDispatcher<OrderDetailsNavigator> activityBoundDispatcher3) {
+        activityBoundDispatcher.getClass();
+        conversationAnalytics.getClass();
+        activityBoundDispatcher2.getClass();
+        activityBoundDispatcher3.getClass();
+        this.backNavigationHandler = activityBoundDispatcher;
+        this.conversationAnalytics = conversationAnalytics;
+        this.itemNavigator = activityBoundDispatcher2;
+        this.orderDetailsNavigator = activityBoundDispatcher3;
+    }
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public static final class a implements te7 {
+        public static final C1018a e = new C1018a(null);
+        public final fcf a;
+        public final fcf b;
+        public final fcf c;
+        public final fcf d;
+
+        public a(fcf fcfVar, fcf fcfVar2, fcf fcfVar3, fcf fcfVar4, DefaultConstructorMarker defaultConstructorMarker) {
+            this.a = fcfVar;
+            this.b = fcfVar2;
+            this.c = fcfVar3;
+            this.d = fcfVar4;
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            ActivityBoundDispatcher activityBoundDispatcher = (ActivityBoundDispatcher) this.a.invoke();
+            ConversationAnalytics conversationAnalytics = (ConversationAnalytics) this.b.invoke();
+            ActivityBoundDispatcher activityBoundDispatcher2 = (ActivityBoundDispatcher) this.c.invoke();
+            ActivityBoundDispatcher activityBoundDispatcher3 = (ActivityBoundDispatcher) this.d.invoke();
+            e.getClass();
+            activityBoundDispatcher.getClass();
+            conversationAnalytics.getClass();
+            activityBoundDispatcher2.getClass();
+            activityBoundDispatcher3.getClass();
+            return new ConversationItemOrderDetailsInteractor(activityBoundDispatcher, conversationAnalytics, activityBoundDispatcher2, activityBoundDispatcher3);
+        }
+
+        /* JADX INFO: renamed from: com.vinted.feature.conversation.domain.interactors.ConversationItemOrderDetailsInteractor$a$a, reason: collision with other inner class name */
+        /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+        public static final class C1018a {
+            public /* synthetic */ C1018a(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            public static a a(fcf fcfVar, ConversationAnalyticsImpl.a aVar, fcf fcfVar2, fcf fcfVar3) {
+                fcfVar.getClass();
+                aVar.getClass();
+                fcfVar2.getClass();
+                fcfVar3.getClass();
+                return new a(fcfVar, aVar, fcfVar2, fcfVar3, null);
+            }
+
+            private C1018a() {
+            }
+        }
+    }
+}

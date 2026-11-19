@@ -1,0 +1,26 @@
+package com.google.android.gms.internal.measurement;
+
+import android.app.Activity;
+import android.os.RemoteException;
+import com.google.android.gms.common.internal.Preconditions;
+import java.util.Objects;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes.dex */
+final class zzex extends zzeo {
+    final /* synthetic */ Activity zza;
+    final /* synthetic */ zzey zzb;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public zzex(zzey zzeyVar, Activity activity) {
+        super(zzeyVar.zza, true);
+        this.zza = activity;
+        Objects.requireNonNull(zzeyVar);
+        this.zzb = zzeyVar;
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzeo
+    public final void zza() throws RemoteException {
+        ((zzcp) Preconditions.checkNotNull(this.zzb.zza.zzS())).onActivityDestroyedByScionActivityInfo(zzdd.zza(this.zza), this.zzj);
+    }
+}

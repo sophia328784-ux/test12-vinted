@@ -1,0 +1,47 @@
+.class public interface abstract annotation Lhka;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Lhka;
+        access = .enum Lgka;->AUTO:Lgka;
+        defaultValue = ""
+        index = -0x1
+        isRequired = .enum Lcod;->DEFAULT:Lcod;
+        namespace = ""
+        required = false
+        value = ""
+    .end subannotation
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+
+# virtual methods
+.method public abstract access()Lgka;
+.end method
+
+.method public abstract defaultValue()Ljava/lang/String;
+.end method
+
+.method public abstract index()I
+.end method
+
+.method public abstract isRequired()Lcod;
+.end method
+
+.method public abstract namespace()Ljava/lang/String;
+.end method
+
+.method public abstract required()Z
+.end method
+
+.method public abstract value()Ljava/lang/String;
+.end method

@@ -1,0 +1,60 @@
+.class public final Llcm;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic a:Lkotlin/jvm/functions/Function1;
+
+.field public final synthetic b:Lcom/ondato/sdk/usecase/document/DocumentType;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lcom/ondato/sdk/usecase/document/DocumentType;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Llcm;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Llcm;->b:Lcom/ondato/sdk/usecase/document/DocumentType;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Llcm;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Llcm;->b:Lcom/ondato/sdk/usecase/document/DocumentType;
+
+    .line 4
+    .line 5
+    invoke-interface {v0, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 9
+    .line 10
+    return-object p0
+.end method

@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.maps;
+
+import android.os.IInterface;
+import android.os.RemoteException;
+import androidx.annotation.Nullable;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public interface zzu extends IInterface {
+    String zzd() throws RemoteException;
+
+    String zze() throws RemoteException;
+
+    void zzf(zzal zzalVar) throws RemoteException;
+
+    void zzg(zzal zzalVar) throws RemoteException;
+
+    void zzh(@Nullable zzat zzatVar) throws RemoteException;
+
+    boolean zzi() throws RemoteException;
+}

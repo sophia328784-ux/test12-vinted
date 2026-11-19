@@ -1,0 +1,20 @@
+package com.fyber.inneractive.sdk.config;
+
+import java.util.HashMap;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public final class l {
+    public final HashMap a = new HashMap();
+
+    public final boolean a() {
+        try {
+            if (this.a.containsKey("dsos")) {
+                return Boolean.parseBoolean((String) this.a.get("dsos"));
+            }
+            return false;
+        } catch (Exception unused) {
+            return false;
+        }
+    }
+}

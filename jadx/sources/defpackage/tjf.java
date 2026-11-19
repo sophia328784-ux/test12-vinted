@@ -1,0 +1,82 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class tjf {
+    public static int abc_action_bar_title_item = 2131558412;
+    public static int abc_action_bar_up_container = 2131558413;
+    public static int abc_action_menu_item_layout = 2131558414;
+    public static int abc_action_menu_layout = 2131558415;
+    public static int abc_action_mode_bar = 2131558416;
+    public static int abc_action_mode_close_item_material = 2131558417;
+    public static int abc_activity_chooser_view = 2131558418;
+    public static int abc_activity_chooser_view_list_item = 2131558419;
+    public static int abc_alert_dialog_button_bar_material = 2131558420;
+    public static int abc_alert_dialog_material = 2131558421;
+    public static int abc_alert_dialog_title_material = 2131558422;
+    public static int abc_cascading_menu_item_layout = 2131558423;
+    public static int abc_dialog_title_material = 2131558424;
+    public static int abc_expanded_menu_layout = 2131558425;
+    public static int abc_list_menu_item_checkbox = 2131558426;
+    public static int abc_list_menu_item_icon = 2131558427;
+    public static int abc_list_menu_item_layout = 2131558428;
+    public static int abc_list_menu_item_radio = 2131558429;
+    public static int abc_popup_menu_header_item_layout = 2131558430;
+    public static int abc_popup_menu_item_layout = 2131558431;
+    public static int abc_screen_content_include = 2131558432;
+    public static int abc_screen_simple = 2131558433;
+    public static int abc_screen_simple_overlay_action_mode = 2131558434;
+    public static int abc_screen_toolbar = 2131558435;
+    public static int abc_search_dropdown_item_icons_2line = 2131558436;
+    public static int abc_search_view = 2131558437;
+    public static int abc_select_dialog_material = 2131558438;
+    public static int abc_tooltip = 2131558439;
+    public static int custom_dialog = 2131558500;
+    public static int design_bottom_navigation_item = 2131558502;
+    public static int design_layout_snackbar = 2131558504;
+    public static int design_menu_item_action_area = 2131558508;
+    public static int design_navigation_item = 2131558509;
+    public static int design_navigation_item_header = 2131558510;
+    public static int design_navigation_item_separator = 2131558511;
+    public static int design_navigation_item_subheader = 2131558512;
+    public static int design_navigation_menu = 2131558513;
+    public static int design_navigation_menu_item = 2131558514;
+    public static int design_text_input_end_icon = 2131558515;
+    public static int design_text_input_start_icon = 2131558516;
+    public static int hsdp_service_prism_with_loading_indicator = 2131558558;
+    public static int hsdp_shim_activity = 2131558559;
+    public static int ime_base_split_test_activity = 2131558573;
+    public static int ime_secondary_split_test_activity = 2131558574;
+    public static int m3_alert_dialog = 2131558582;
+    public static int m3_alert_dialog_actions = 2131558583;
+    public static int m3_alert_dialog_title = 2131558584;
+    public static int m3_auto_complete_simple_item = 2131558585;
+    public static int m3_button_group_overflow_button = 2131558586;
+    public static int m3_navigation_menu_divider = 2131558587;
+    public static int m3_navigation_menu_subheader = 2131558588;
+    public static int m3_overflow_linear_layout_overflow_button = 2131558589;
+    public static int m3expressive_alert_dialog = 2131558591;
+    public static int m3expressive_alert_dialog_title = 2131558592;
+    public static int mtrl_alert_dialog = 2131558673;
+    public static int mtrl_alert_dialog_actions = 2131558674;
+    public static int mtrl_alert_dialog_title = 2131558675;
+    public static int mtrl_alert_select_dialog_item = 2131558676;
+    public static int mtrl_alert_select_dialog_multichoice = 2131558677;
+    public static int mtrl_alert_select_dialog_singlechoice = 2131558678;
+    public static int mtrl_auto_complete_simple_item = 2131558679;
+    public static int mtrl_layout_snackbar = 2131558690;
+    public static int mtrl_navigation_rail_item = 2131558692;
+    public static int notification_action = 2131558705;
+    public static int notification_action_tombstone = 2131558706;
+    public static int notification_template_custom_big = 2131558713;
+    public static int notification_template_icon_group = 2131558714;
+    public static int notification_template_part_chronometer = 2131558718;
+    public static int notification_template_part_time = 2131558719;
+    public static int sdk_loading_panel = 2131558815;
+    public static int select_dialog_item_material = 2131558817;
+    public static int select_dialog_multichoice_material = 2131558818;
+    public static int select_dialog_singlechoice_material = 2131558819;
+    public static int support_simple_spinner_dropdown_item = 2131558825;
+
+    private tjf() {
+    }
+}

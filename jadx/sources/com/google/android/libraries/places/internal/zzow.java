@@ -1,0 +1,45 @@
+package com.google.android.libraries.places.internal;
+
+import java.util.ListIterator;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+abstract class zzow extends zzov implements ListIterator {
+    public zzow(ListIterator listIterator) {
+        super(listIterator);
+    }
+
+    @Override // java.util.ListIterator
+    public final void add(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.Iterator, java.util.ListIterator] */
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        return this.zzb.hasPrevious();
+    }
+
+    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.Iterator, java.util.ListIterator] */
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        return this.zzb.nextIndex();
+    }
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [java.util.Iterator, java.util.ListIterator] */
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        return zza(this.zzb.previous());
+    }
+
+    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.Iterator, java.util.ListIterator] */
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        return this.zzb.previousIndex();
+    }
+
+    @Override // java.util.ListIterator
+    public final void set(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+}

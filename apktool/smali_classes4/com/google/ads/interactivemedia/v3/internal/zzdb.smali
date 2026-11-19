@@ -1,0 +1,84 @@
+.class final Lcom/google/ads/interactivemedia/v3/internal/zzdb;
+.super Landroid/content/BroadcastReceiver;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const-string p1, "android.media.action.HDMI_AUDIO_PLUG"
+
+    .line 6
+    .line 7
+    if-ne p0, p1, :cond_1
+
+    .line 8
+    .line 9
+    const-string p0, "android.media.extra.AUDIO_PLUG_STATE"
+
+    .line 10
+    .line 11
+    const/4 p1, -0x1
+
+    .line 12
+    invoke-virtual {p2, p0, p1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p0
+
+    .line 16
+    const/4 p1, 0x1
+
+    .line 17
+    if-nez p0, :cond_0
+
+    .line 18
+    .line 19
+    sput-byte p1, Lcom/google/ads/interactivemedia/v3/internal/zzdc;->a:B
+
+    .line 20
+    .line 21
+    return-void
+
+    .line 22
+    :cond_0
+    if-ne p0, p1, :cond_1
+
+    .line 23
+    .line 24
+    const/4 p0, 0x2
+
+    .line 25
+    sput-byte p0, Lcom/google/ads/interactivemedia/v3/internal/zzdc;->a:B
+
+    .line 26
+    .line 27
+    :cond_1
+    return-void
+.end method

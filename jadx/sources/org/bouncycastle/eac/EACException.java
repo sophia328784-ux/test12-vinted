@@ -1,0 +1,20 @@
+package org.bouncycastle.eac;
+
+/* JADX INFO: loaded from: classes11.dex */
+public class EACException extends Exception {
+    public final Throwable a;
+
+    public EACException(String str, Throwable th) {
+        super(str);
+        this.a = th;
+    }
+
+    @Override // java.lang.Throwable
+    public final Throwable getCause() {
+        return this.a;
+    }
+
+    public EACException(String str) {
+        super(str);
+    }
+}

@@ -1,0 +1,86 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class ukf {
+    public static int Adyen = 2132017153;
+    public static int AdyenCheckout = 2132017154;
+    public static int AdyenCheckout_AddressForm = 2132017155;
+    public static int AdyenCheckout_AddressForm_HeaderTextAppearance = 2132017156;
+    public static int AdyenCheckout_AddressInput = 2132017157;
+    public static int AdyenCheckout_AddressInput_Optional = 2132017158;
+    public static int AdyenCheckout_AddressLookup = 2132017159;
+    public static int AdyenCheckout_AddressLookup_Button_Manual = 2132017160;
+    public static int AdyenCheckout_AddressLookup_Button_Submit = 2132017161;
+    public static int AdyenCheckout_AddressLookup_Empty_Description = 2132017162;
+    public static int AdyenCheckout_AddressLookup_Empty_Title = 2132017163;
+    public static int AdyenCheckout_AddressLookup_InitialDisclaimer_Description = 2132017164;
+    public static int AdyenCheckout_AddressLookup_InitialDisclaimer_Title = 2132017165;
+    public static int AdyenCheckout_AddressLookup_Item_Description = 2132017166;
+    public static int AdyenCheckout_AddressLookup_Item_Header = 2132017167;
+    public static int AdyenCheckout_AddressLookup_Loading = 2132017168;
+    public static int AdyenCheckout_AddressLookup_Query = 2132017169;
+    public static int AdyenCheckout_ApartmentSuiteInput = 2132017170;
+    public static int AdyenCheckout_ApartmentSuiteInput_Optional = 2132017171;
+    public static int AdyenCheckout_BottomSheet = 2132017174;
+    public static int AdyenCheckout_BottomSheetDialogTheme = 2132017177;
+    public static int AdyenCheckout_BottomSheet_NoWindowEnterDialogAnimation = 2132017175;
+    public static int AdyenCheckout_BottomSheet_ShapeAppearance = 2132017176;
+    public static int AdyenCheckout_Button = 2132017178;
+    public static int AdyenCheckout_Button_Colored = 2132017179;
+    public static int AdyenCheckout_Button_Primary = 2132017180;
+    public static int AdyenCheckout_Button_Secondary = 2132017181;
+    public static int AdyenCheckout_CheckBox = 2132017182;
+    public static int AdyenCheckout_CheckBoxTheme = 2132017183;
+    public static int AdyenCheckout_CityInput = 2132017184;
+    public static int AdyenCheckout_CityInput_Optional = 2132017185;
+    public static int AdyenCheckout_CityTownInput = 2132017186;
+    public static int AdyenCheckout_CityTownInput_Optional = 2132017187;
+    public static int AdyenCheckout_CustomTabs = 2132017188;
+    public static int AdyenCheckout_DropdownTextInputEditText = 2132017189;
+    public static int AdyenCheckout_DropdownTextInputLayout = 2132017190;
+    public static int AdyenCheckout_DropdownTextInputLayout_CountryInput = 2132017191;
+    public static int AdyenCheckout_DropdownTextInputLayout_ProvinceTerritoryInput = 2132017192;
+    public static int AdyenCheckout_DropdownTextInputLayout_StatesInput = 2132017193;
+    public static int AdyenCheckout_HouseNumberInput = 2132017194;
+    public static int AdyenCheckout_HouseNumberInput_Optional = 2132017195;
+    public static int AdyenCheckout_HyperTextView = 2132017196;
+    public static int AdyenCheckout_Image = 2132017197;
+    public static int AdyenCheckout_Image_Logo = 2132017198;
+    public static int AdyenCheckout_Image_Logo_Large = 2132017199;
+    public static int AdyenCheckout_Image_Logo_Small = 2132017200;
+    public static int AdyenCheckout_ListItemText = 2132017201;
+    public static int AdyenCheckout_PaymentInProgressView = 2132017202;
+    public static int AdyenCheckout_PaymentInProgressView_CancelButton = 2132017203;
+    public static int AdyenCheckout_PaymentInProgressView_DescriptionTextView = 2132017204;
+    public static int AdyenCheckout_PaymentInProgressView_ProgressBar = 2132017205;
+    public static int AdyenCheckout_PaymentInProgressView_TitleTextView = 2132017206;
+    public static int AdyenCheckout_PostalCodeInput = 2132017207;
+    public static int AdyenCheckout_PostalCodeInput_Optional = 2132017208;
+    public static int AdyenCheckout_ProcessingPaymentView = 2132017209;
+    public static int AdyenCheckout_ProcessingPaymentView_ProgressBar = 2132017210;
+    public static int AdyenCheckout_ProcessingPaymentView_WaitingDescriptionTextView = 2132017211;
+    public static int AdyenCheckout_ProvinceTerritoryInput = 2132017212;
+    public static int AdyenCheckout_ProvinceTerritoryInput_Optional = 2132017213;
+    public static int AdyenCheckout_RadioButton = 2132017222;
+    public static int AdyenCheckout_RadioButtonTheme = 2132017223;
+    public static int AdyenCheckout_RecyclerListItem = 2132017224;
+    public static int AdyenCheckout_SimpleTextItemTextView = 2132017225;
+    public static int AdyenCheckout_SpinnerListItem = 2132017226;
+    public static int AdyenCheckout_StreetInput = 2132017227;
+    public static int AdyenCheckout_StreetInput_Optional = 2132017228;
+    public static int AdyenCheckout_Switch = 2132017229;
+    public static int AdyenCheckout_SwitchTheme = 2132017230;
+    public static int AdyenCheckout_TextAppearance = 2132017231;
+    public static int AdyenCheckout_TextAppearance_Primary = 2132017232;
+    public static int AdyenCheckout_TextAppearance_Secondary = 2132017233;
+    public static int AdyenCheckout_TextAppearance_Tertiary = 2132017234;
+    public static int AdyenCheckout_TextInputEditText = 2132017235;
+    public static int AdyenCheckout_TextInputLayout = 2132017236;
+    public static int AdyenCheckout_Translucent = 2132017237;
+    public static int AdyenCheckout_ZipCodeInput = 2132017259;
+    public static int AdyenCheckout_ZipCodeInput_Optional = 2132017260;
+    public static int AppTheme = 2132017273;
+
+    private ukf() {
+    }
+}

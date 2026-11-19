@@ -1,0 +1,12 @@
+package com.fyber.inneractive.sdk.util;
+
+import android.view.View;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public final class p0 implements View.OnLongClickListener {
+    @Override // android.view.View.OnLongClickListener
+    public final boolean onLongClick(View view) {
+        return true;
+    }
+}

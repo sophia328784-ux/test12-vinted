@@ -1,0 +1,146 @@
+package com.vinted.analytics;
+
+import defpackage.pvk;
+import kotlin.Metadata;
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+@Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\b~\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0011\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010\u0006\u001a\u0004\b\u0007\u0010\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#j\u0002\b$j\u0002\b%j\u0002\b&j\u0002\b'j\u0002\b(j\u0002\b)j\u0002\b*j\u0002\b+j\u0002\b,j\u0002\b-j\u0002\b.j\u0002\b/j\u0002\b0j\u0002\b1j\u0002\b2j\u0002\b3j\u0002\b4j\u0002\b5j\u0002\b6j\u0002\b7j\u0002\b8j\u0002\b9j\u0002\b:j\u0002\b;j\u0002\b<j\u0002\b=j\u0002\b>j\u0002\b?j\u0002\b@j\u0002\bAj\u0002\bBj\u0002\bCj\u0002\bDj\u0002\bEj\u0002\bFj\u0002\bGj\u0002\bHj\u0002\bIj\u0002\bJj\u0002\bKj\u0002\bLj\u0002\bMj\u0002\bNj\u0002\bOj\u0002\bPj\u0002\bQj\u0002\bRj\u0002\bSj\u0002\bTj\u0002\bUj\u0002\bVj\u0002\bWj\u0002\bXj\u0002\bYj\u0002\bZj\u0002\b[j\u0002\b\\j\u0002\b]j\u0002\b^j\u0002\b_j\u0002\b`j\u0002\baj\u0002\bbj\u0002\bcj\u0002\bdj\u0002\bej\u0002\bfj\u0002\bgj\u0002\bhj\u0002\bij\u0002\bjj\u0002\bkj\u0002\blj\u0002\bmj\u0002\bnj\u0002\boj\u0002\bpj\u0002\bqj\u0002\brj\u0002\bsj\u0002\btj\u0002\buj\u0002\bvj\u0002\bwj\u0002\bxj\u0002\byj\u0002\bzj\u0002\b{j\u0002\b|j\u0002\b}j\u0002\b~j\u0002\b\u007f¨\u0006\u0080\u0001"}, d2 = {"Lcom/vinted/analytics/UserViewTargets;", "", "Lpvk;", "proto", "<init>", "(Ljava/lang/String;ILpvk;)V", "Lpvk;", "getProto", "()Lpvk;", "ad_box", "ad_personalization_toggle", "app_rating_dialog", "brand_cluster_section", "bump_precheckout_review_order_action", "bump_promotion", "bundle_discount_settings", "campaign_landing_page", "carrier_disable_feedback", "catalog_grid", "catalog_list", "catalog_popular_catalog", "cookie_and_ad_personalization_banner", "cp_reminder", "crm_in_app_message_carousel_slide", "crm_message_video", "cta_prompt", "didnt_receive_email", "drop_off_point", "editorial_campaign_banner", "electronics_verification_buyer", "electronics_verification_eligible", "electronics_verification_seller", "email_confirmation", "email_confirmed", "evs_pop_up_dialog", "extend_shipping_deadline", "facebook_like_button", "favorite_button", "feed_personalization_banner", "feedback", "filtered_items_block_chip", "free_bump_bottom_banner", "free_bump_success_message", "free_bump_top_card", "free_return_label_modal", "generate_outfit", "get_instant_mobile_notifications_banner", "homepage_icon_modal", "impression_banner", "inbox_push_opt_in", "kyc_banner", "label_type_selection", "learn_more", "listing_increase_banner", "local_search_suggestion", "measurements_info", "message_action", "more_similar_items_card_cta", "mv_visibility_banner", "my_favorites_grid", "my_favorites_list", "my_items_grid", "my_items_list", "newsletter_subscription_banner", "notification", "nps_survey", "onboarding_modal_card", "onboarding_video", "opposite_conversation_user_on_holiday", "pending_balance", "personalisation_history_item", "personalization_banner_after_feed", "photo_picker_info_banner", "photo_tips", "physical_auth_buyer", "physical_auth_eligible", "physical_auth_seller", "pricing_calculation_error", "pricing_info_note", "promotional_listing_banner", "recommended_items_grid", "return_order", "sca_start_modal", "see_drop_off_points", "see_whole_closet_cta", "select_parcel_size", "sell_tab_banner", "sell_tab_survey", "seller_after_sale_instructions", "seller_after_transaction_complete_instructions", "seller_after_upload_instructions", "seller_banner", "seller_feedbacks", "seller_funnel_welcome_slide", "seller_insights_blocks", "ship_fast_badge_description", "shipping_discount_details", "shipping_price", "shop_bundle", "social_proof_banner", "start", "taxpayers_balance_block_modal", "taxpayers_dac7_banner", "taxpayers_dac7_special_verification_banner", "taxpayers_report", "taxpayers_sales_block_modal", "taxpayers_special_verification_balance_block_modal", "taxpayers_tax_rules", "taxpayers_tax_rules_stories", "taxpayers_tax_rules_testimonial", "translation_hint", "upload_onboarding_carousel_card", "user_last_seen", "username_change_disabled", "value_select_modal", "verification_completed", "verify", "video", "video_story", "video_story_feed", "video_story_upload", "view_all_user_items_card_cta", "view_favourites_banner", "wallet_pay_in_success", "wallet_setup_success", "warranty_eligible", "warranty_info", "warranty_search_banner", "schemas"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public enum UserViewTargets {
+    ad_box(pvk.ViewTargets_ad_box),
+    ad_personalization_toggle(pvk.ViewTargets_ad_personalization_toggle),
+    app_rating_dialog(pvk.ViewTargets_app_rating_dialog),
+    brand_cluster_section(pvk.ViewTargets_brand_cluster_section),
+    bump_precheckout_review_order_action(pvk.ViewTargets_bump_precheckout_review_order_action),
+    bump_promotion(pvk.ViewTargets_bump_promotion),
+    bundle_discount_settings(pvk.ViewTargets_bundle_discount_settings),
+    campaign_landing_page(pvk.ViewTargets_campaign_landing_page),
+    carrier_disable_feedback(pvk.ViewTargets_carrier_disable_feedback),
+    catalog_grid(pvk.ViewTargets_catalog_grid),
+    catalog_list(pvk.ViewTargets_catalog_list),
+    catalog_popular_catalog(pvk.ViewTargets_catalog_popular_catalog),
+    cookie_and_ad_personalization_banner(pvk.ViewTargets_cookie_and_ad_personalization_banner),
+    cp_reminder(pvk.ViewTargets_cp_reminder),
+    crm_in_app_message_carousel_slide(pvk.ViewTargets_crm_in_app_message_carousel_slide),
+    crm_message_video(pvk.ViewTargets_crm_message_video),
+    cta_prompt(pvk.ViewTargets_cta_prompt),
+    didnt_receive_email(pvk.ViewTargets_didnt_receive_email),
+    drop_off_point(pvk.ViewTargets_drop_off_point),
+    editorial_campaign_banner(pvk.ViewTargets_editorial_campaign_banner),
+    electronics_verification_buyer(pvk.ViewTargets_electronics_verification_buyer),
+    electronics_verification_eligible(pvk.ViewTargets_electronics_verification_eligible),
+    electronics_verification_seller(pvk.ViewTargets_electronics_verification_seller),
+    email_confirmation(pvk.ViewTargets_email_confirmation),
+    email_confirmed(pvk.ViewTargets_email_confirmed),
+    evs_pop_up_dialog(pvk.ViewTargets_evs_pop_up_dialog),
+    extend_shipping_deadline(pvk.ViewTargets_extend_shipping_deadline),
+    facebook_like_button(pvk.ViewTargets_facebook_like_button),
+    favorite_button(pvk.ViewTargets_favorite_button),
+    feed_personalization_banner(pvk.ViewTargets_feed_personalization_banner),
+    feedback(pvk.ViewTargets_feedback),
+    filtered_items_block_chip(pvk.ViewTargets_filtered_items_block_chip),
+    free_bump_bottom_banner(pvk.ViewTargets_free_bump_bottom_banner),
+    free_bump_success_message(pvk.ViewTargets_free_bump_success_message),
+    free_bump_top_card(pvk.ViewTargets_free_bump_top_card),
+    free_return_label_modal(pvk.ViewTargets_free_return_label_modal),
+    generate_outfit(pvk.ViewTargets_generate_outfit),
+    get_instant_mobile_notifications_banner(pvk.ViewTargets_get_instant_mobile_notifications_banner),
+    homepage_icon_modal(pvk.ViewTargets_homepage_icon_modal),
+    impression_banner(pvk.ViewTargets_impression_banner),
+    inbox_push_opt_in(pvk.ViewTargets_inbox_push_opt_in),
+    kyc_banner(pvk.ViewTargets_kyc_banner),
+    label_type_selection(pvk.ViewTargets_label_type_selection),
+    learn_more(pvk.ViewTargets_learn_more),
+    listing_increase_banner(pvk.ViewTargets_listing_increase_banner),
+    local_search_suggestion(pvk.ViewTargets_local_search_suggestion),
+    measurements_info(pvk.ViewTargets_measurements_info),
+    message_action(pvk.ViewTargets_message_action),
+    more_similar_items_card_cta(pvk.ViewTargets_more_similar_items_card_cta),
+    mv_visibility_banner(pvk.ViewTargets_mv_visibility_banner),
+    my_favorites_grid(pvk.ViewTargets_my_favorites_grid),
+    my_favorites_list(pvk.ViewTargets_my_favorites_list),
+    my_items_grid(pvk.ViewTargets_my_items_grid),
+    my_items_list(pvk.ViewTargets_my_items_list),
+    newsletter_subscription_banner(pvk.ViewTargets_newsletter_subscription_banner),
+    notification(pvk.ViewTargets_notification),
+    nps_survey(pvk.ViewTargets_nps_survey),
+    onboarding_modal_card(pvk.ViewTargets_onboarding_modal_card),
+    onboarding_video(pvk.ViewTargets_onboarding_video),
+    opposite_conversation_user_on_holiday(pvk.ViewTargets_opposite_conversation_user_on_holiday),
+    pending_balance(pvk.ViewTargets_pending_balance),
+    personalisation_history_item(pvk.ViewTargets_personalisation_history_item),
+    personalization_banner_after_feed(pvk.ViewTargets_personalization_banner_after_feed),
+    photo_picker_info_banner(pvk.ViewTargets_photo_picker_info_banner),
+    photo_tips(pvk.ViewTargets_photo_tips),
+    physical_auth_buyer(pvk.ViewTargets_physical_auth_buyer),
+    physical_auth_eligible(pvk.ViewTargets_physical_auth_eligible),
+    physical_auth_seller(pvk.ViewTargets_physical_auth_seller),
+    pricing_calculation_error(pvk.ViewTargets_pricing_calculation_error),
+    pricing_info_note(pvk.ViewTargets_pricing_info_note),
+    promotional_listing_banner(pvk.ViewTargets_promotional_listing_banner),
+    recommended_items_grid(pvk.ViewTargets_recommended_items_grid),
+    return_order(pvk.ViewTargets_return_order),
+    sca_start_modal(pvk.ViewTargets_sca_start_modal),
+    see_drop_off_points(pvk.ViewTargets_see_drop_off_points),
+    see_whole_closet_cta(pvk.ViewTargets_see_whole_closet_cta),
+    select_parcel_size(pvk.ViewTargets_select_parcel_size),
+    sell_tab_banner(pvk.ViewTargets_sell_tab_banner),
+    sell_tab_survey(pvk.ViewTargets_sell_tab_survey),
+    seller_after_sale_instructions(pvk.ViewTargets_seller_after_sale_instructions),
+    seller_after_transaction_complete_instructions(pvk.ViewTargets_seller_after_transaction_complete_instructions),
+    seller_after_upload_instructions(pvk.ViewTargets_seller_after_upload_instructions),
+    seller_banner(pvk.ViewTargets_seller_banner),
+    seller_feedbacks(pvk.ViewTargets_seller_feedbacks),
+    seller_funnel_welcome_slide(pvk.ViewTargets_seller_funnel_welcome_slide),
+    seller_insights_blocks(pvk.ViewTargets_seller_insights_blocks),
+    ship_fast_badge_description(pvk.ViewTargets_ship_fast_badge_description),
+    shipping_discount_details(pvk.ViewTargets_shipping_discount_details),
+    shipping_price(pvk.ViewTargets_shipping_price),
+    shop_bundle(pvk.ViewTargets_shop_bundle),
+    social_proof_banner(pvk.ViewTargets_social_proof_banner),
+    start(pvk.ViewTargets_start),
+    taxpayers_balance_block_modal(pvk.ViewTargets_taxpayers_balance_block_modal),
+    taxpayers_dac7_banner(pvk.ViewTargets_taxpayers_dac7_banner),
+    taxpayers_dac7_special_verification_banner(pvk.ViewTargets_taxpayers_dac7_special_verification_banner),
+    taxpayers_report(pvk.ViewTargets_taxpayers_report),
+    taxpayers_sales_block_modal(pvk.ViewTargets_taxpayers_sales_block_modal),
+    taxpayers_special_verification_balance_block_modal(pvk.ViewTargets_taxpayers_special_verification_balance_block_modal),
+    taxpayers_tax_rules(pvk.ViewTargets_taxpayers_tax_rules),
+    taxpayers_tax_rules_stories(pvk.ViewTargets_taxpayers_tax_rules_stories),
+    taxpayers_tax_rules_testimonial(pvk.ViewTargets_taxpayers_tax_rules_testimonial),
+    translation_hint(pvk.ViewTargets_translation_hint),
+    upload_onboarding_carousel_card(pvk.ViewTargets_upload_onboarding_carousel_card),
+    user_last_seen(pvk.ViewTargets_user_last_seen),
+    username_change_disabled(pvk.ViewTargets_username_change_disabled),
+    value_select_modal(pvk.ViewTargets_value_select_modal),
+    verification_completed(pvk.ViewTargets_verification_completed),
+    verify(pvk.ViewTargets_verify),
+    video(pvk.ViewTargets_video),
+    video_story(pvk.ViewTargets_video_story),
+    video_story_feed(pvk.ViewTargets_video_story_feed),
+    video_story_upload(pvk.ViewTargets_video_story_upload),
+    view_all_user_items_card_cta(pvk.ViewTargets_view_all_user_items_card_cta),
+    view_favourites_banner(pvk.ViewTargets_view_favourites_banner),
+    wallet_pay_in_success(pvk.ViewTargets_wallet_pay_in_success),
+    wallet_setup_success(pvk.ViewTargets_wallet_setup_success),
+    warranty_eligible(pvk.ViewTargets_warranty_eligible),
+    warranty_info(pvk.ViewTargets_warranty_info),
+    warranty_search_banner(pvk.ViewTargets_warranty_search_banner);
+
+    private static final /* synthetic */ EnumEntries $ENTRIES = EnumEntriesKt.a(values());
+    private final pvk proto;
+
+    UserViewTargets(pvk pvkVar) {
+        this.proto = pvkVar;
+    }
+
+    public static EnumEntries<UserViewTargets> getEntries() {
+        return $ENTRIES;
+    }
+
+    public final pvk getProto() {
+        return this.proto;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_vinted_loader_x_large__0_res_0x7f0800cd">
+    <target
+        android:name="progressBar"
+        android:animation="@animator/loader_trim_end_animation"/>
+    <target
+        android:name="progressBarContainer"
+        android:animation="@animator/loader_rotation_animation"/>
+</animated-vector>

@@ -1,0 +1,20 @@
+package com.vinted.feature.shipping.checkout.plugins.pickupdetails;
+
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes9.dex */
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u000e\u0010\u0004\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"Lcom/vinted/feature/shipping/checkout/plugins/pickupdetails/PickUpDetailsTags;", "", "<init>", "()V", "CONTAINER", "", "EMPTY_STATE", "FILLED_STATE", "SPEEDX_SWITCH_BANNER", "VERIFICATION_ROW", "VALUE_PROPOSITION_ROW", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public final class PickUpDetailsTags {
+    public static final int $stable = 0;
+    public static final String CONTAINER = "PICK_UP_DETAILS_CONTAINER";
+    public static final String EMPTY_STATE = "PICK_UP_DETAILS_EMPTY_STATE";
+    public static final String FILLED_STATE = "PICK_UP_DETAILS_FILLED_STATE";
+    public static final PickUpDetailsTags INSTANCE = new PickUpDetailsTags();
+    public static final String SPEEDX_SWITCH_BANNER = "PICK_UP_DETAILS_SPEEDX_SWITCH_BANNER";
+    public static final String VALUE_PROPOSITION_ROW = "shipping_point_information_value_proposition_row";
+    public static final String VERIFICATION_ROW = "shipping_point_information_authenticity_row";
+
+    private PickUpDetailsTags() {
+    }
+}

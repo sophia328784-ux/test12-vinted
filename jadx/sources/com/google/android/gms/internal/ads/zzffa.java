@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
+import com.google.common.util.concurrent.ListenableFuture;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+final class zzffa implements zzfdi {
+    private final JSONObject zza;
+
+    public zzffa(Context context) {
+        this.zza = zzcbr.zzc(context, VersionInfoParcel.forPackage());
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    public final ListenableFuture zza() {
+        return ((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zznF)).booleanValue() ? zzhcy.zza(zzfey.zza) : zzhcy.zza(new zzfdg() { // from class: com.google.android.gms.internal.ads.zzfez
+            @Override // com.google.android.gms.internal.ads.zzfdg
+            public final /* synthetic */ void zza(Object obj) {
+                this.zza.zzc((JSONObject) obj);
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdi
+    public final int zzb() {
+        return 46;
+    }
+
+    public final /* synthetic */ void zzc(JSONObject jSONObject) {
+        try {
+            jSONObject.put("gms_sdk_env", this.zza);
+        } catch (JSONException unused) {
+            com.google.android.gms.ads.internal.util.zze.zza("Failed putting version constants.");
+        }
+    }
+}

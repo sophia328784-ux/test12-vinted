@@ -1,0 +1,81 @@
+package com.vinted.feature.item.pluginization.plugins.sellerbadgesinfo;
+
+import com.vinted.feature.item.api.entity.ItemPluginType;
+import com.vinted.feature.item.pluginization.ItemPlugin;
+import com.vinted.feature.item.pluginization.capabilities.stateprovision.ItemPluginStateCapability;
+import com.vinted.feature.item.pluginization.capabilities.ui.compose.ViewCapability;
+import com.vinted.feature.item.pluginization.plugins.sellerbadgesinfo.ItemSellerBadgesInfoPlugin;
+import com.vinted.feature.item.pluginization.plugins.sellerbadgesinfo.api.entity.ItemSellerBadgesInfoPluginData;
+import com.vinted.feature.sellerbadges.projet.SellerBadgesListRender;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.PropertyReference1Impl;
+import kotlin.reflect.KProperty;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes9.dex */
+@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Lcom/vinted/feature/item/pluginization/plugins/sellerbadgesinfo/ItemSellerBadgesInfoPlugin;", "Lcom/vinted/feature/item/pluginization/ItemPlugin;", "Lcom/vinted/feature/item/pluginization/plugins/sellerbadgesinfo/api/entity/ItemSellerBadgesInfoPluginData;", "initialData", "Lcom/vinted/feature/sellerbadges/projet/SellerBadgesListRender;", "sellerBadgesListRender", "<init>", "(Lcom/vinted/feature/item/pluginization/plugins/sellerbadgesinfo/api/entity/ItemSellerBadgesInfoPluginData;Lcom/vinted/feature/sellerbadges/projet/SellerBadgesListRender;)V", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public final class ItemSellerBadgesInfoPlugin extends ItemPlugin {
+    public static final /* synthetic */ KProperty[] a = {new PropertyReference1Impl(ItemSellerBadgesInfoPlugin.class, "stateCapability", "getStateCapability()Lcom/vinted/feature/item/pluginization/capabilities/stateprovision/ItemPluginStateCapability;", 0), new PropertyReference1Impl(ItemSellerBadgesInfoPlugin.class, "viewCapability", "getViewCapability()Lcom/vinted/feature/item/pluginization/capabilities/ui/compose/ViewCapability;", 0)};
+    public final ItemSellerBadgesInfoPluginData initialData;
+    public final ItemSellerBadgesInfoPluginType pluginType;
+    public final SellerBadgesListRender sellerBadgesListRender;
+    public final ItemPlugin.Capability stateCapability$delegate;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ItemSellerBadgesInfoPlugin(ItemSellerBadgesInfoPluginData itemSellerBadgesInfoPluginData, SellerBadgesListRender sellerBadgesListRender) {
+        super(itemSellerBadgesInfoPluginData);
+        itemSellerBadgesInfoPluginData.getClass();
+        sellerBadgesListRender.getClass();
+        this.initialData = itemSellerBadgesInfoPluginData;
+        this.sellerBadgesListRender = sellerBadgesListRender;
+        this.pluginType = ItemSellerBadgesInfoPluginType.INSTANCE;
+        final byte b = 0;
+        this.stateCapability$delegate = new ItemPlugin.Capability(this, new Function0(this) { // from class: h7a
+            public final /* synthetic */ ItemSellerBadgesInfoPlugin b;
+
+            {
+                this.b = this;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                byte b2 = b;
+                ItemSellerBadgesInfoPlugin itemSellerBadgesInfoPlugin = this.b;
+                switch (b2) {
+                    case 0:
+                        return new ItemPluginStateCapability(itemSellerBadgesInfoPlugin.initialData);
+                    default:
+                        KProperty[] kPropertyArr = ItemSellerBadgesInfoPlugin.a;
+                        return new ViewCapability(itemSellerBadgesInfoPlugin.placementDescriptor, null, null, false, false, new lw3(-1753187361, true, new nv8((Object) itemSellerBadgesInfoPlugin, (byte) 28)), 30, null);
+                }
+            }
+        });
+        final byte b2 = 1;
+        new ItemPlugin.Capability(this, new Function0(this) { // from class: h7a
+            public final /* synthetic */ ItemSellerBadgesInfoPlugin b;
+
+            {
+                this.b = this;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                byte b3 = b2;
+                ItemSellerBadgesInfoPlugin itemSellerBadgesInfoPlugin = this.b;
+                switch (b3) {
+                    case 0:
+                        return new ItemPluginStateCapability(itemSellerBadgesInfoPlugin.initialData);
+                    default:
+                        KProperty[] kPropertyArr = ItemSellerBadgesInfoPlugin.a;
+                        return new ViewCapability(itemSellerBadgesInfoPlugin.placementDescriptor, null, null, false, false, new lw3(-1753187361, true, new nv8((Object) itemSellerBadgesInfoPlugin, (byte) 28)), 30, null);
+                }
+            }
+        });
+    }
+
+    @Override // com.vinted.feature.item.pluginization.ItemPlugin
+    public final ItemPluginType getPluginType() {
+        return this.pluginType;
+    }
+}

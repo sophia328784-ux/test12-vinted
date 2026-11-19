@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+final /* synthetic */ class zzhke implements zzhoc {
+    static final /* synthetic */ zzhke zza = new zzhke();
+
+    private /* synthetic */ zzhke() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhoc
+    public final /* synthetic */ zzhow zza(zzhfj zzhfjVar) {
+        return zzhkf.zzb((zzhhd) zzhfjVar);
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/tv_network_name" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/tv_sdk_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/tv_supported_sdk_versions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/tv_interstitial_time_limit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/tv_rewarded_time_limit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/ah_success_green" android:id="@id/tv_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+</LinearLayout>

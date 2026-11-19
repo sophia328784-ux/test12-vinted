@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.ads;
+
+import defpackage.ff0;
+import java.util.Objects;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzhwh extends zzhym {
+    private final zzhwg zza;
+
+    private zzhwh(zzhwg zzhwgVar) {
+        this.zza = zzhwgVar;
+    }
+
+    public static zzhwh zzb(zzhwg zzhwgVar) {
+        return new zzhwh(zzhwgVar);
+    }
+
+    public final boolean equals(Object obj) {
+        return (obj instanceof zzhwh) && ((zzhwh) obj).zza == this.zza;
+    }
+
+    public final int hashCode() {
+        return Objects.hash(zzhwh.class, this.zza);
+    }
+
+    public final String toString() {
+        String string = this.zza.toString();
+        return ff0.c(new StringBuilder(string.length() + 30), "Ed25519 Parameters (variant: ", string, ")");
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhfj
+    public final boolean zza() {
+        return this.zza != zzhwg.zzd;
+    }
+
+    public final zzhwg zzc() {
+        return this.zza;
+    }
+}

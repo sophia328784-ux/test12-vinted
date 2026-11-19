@@ -1,0 +1,40 @@
+package com.google.android.libraries.places.internal;
+
+import defpackage.b2;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+final class zznm extends zznp {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public zznm(Comparable comparable) {
+        super(comparable);
+        comparable.getClass();
+    }
+
+    @Override // com.google.android.libraries.places.internal.zznp
+    public final int hashCode() {
+        return ~this.zza.hashCode();
+    }
+
+    public final String toString() {
+        return b2.a("/", this.zza.toString(), "\\");
+    }
+
+    @Override // com.google.android.libraries.places.internal.zznp
+    public final void zzc(StringBuilder sb) {
+        sb.append('(');
+        sb.append(this.zza);
+    }
+
+    @Override // com.google.android.libraries.places.internal.zznp
+    public final void zzd(StringBuilder sb) {
+        sb.append(this.zza);
+        sb.append(']');
+    }
+
+    @Override // com.google.android.libraries.places.internal.zznp
+    public final boolean zze(Comparable comparable) {
+        int i = zzok.zzc;
+        return this.zza.compareTo(comparable) < 0;
+    }
+}

@@ -1,0 +1,24 @@
+package bo.app;
+
+import defpackage.muk;
+import defpackage.r89;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public enum ng implements r89 {
+    SUBSCRIBED,
+    UNSUBSCRIBED;
+
+    @Override // defpackage.r89
+    public final Object forJsonPut() {
+        int iOrdinal = ordinal();
+        if (iOrdinal == 0) {
+            return "subscribed";
+        }
+        if (iOrdinal == 1) {
+            return "unsubscribed";
+        }
+        muk.q();
+        return null;
+    }
+}

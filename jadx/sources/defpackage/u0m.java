@@ -1,0 +1,11 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+public final class u0m {
+    public static final u0m a = new u0m();
+
+    public static String a(String str) {
+        return b2.a("https://docs.google.com/viewer?url=", str, "&noreload=true&embedded=true");
+    }
+}

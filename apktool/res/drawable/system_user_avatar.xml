@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="288.0dp" android:width="288.0dp" android:viewportWidth="288.0" android:viewportHeight="288.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$system_user_avatar__0" android:pathData="M0,0h288v288h-288z" />
+    <path android:fillColor="#ffffff" android:pathData="M203.94,60.41C202.02,60.41 199.69,62.04 193.42,67.56C191.2,68.38 188.77,67.76 185.93,72.15C169.95,95.33 157.5,182.01 146.88,207.02C144.75,196.2 140.3,125.75 138.58,106.46C138.38,102.88 138.79,98.39 138.79,95.74C138.79,77.97 134.94,68.99 117.33,68.99C108.43,68.99 99.63,72.25 94.97,78.18C92.75,81.24 91.94,83.49 91.94,89C91.94,125.86 100.64,186.3 110.35,225.71C113.39,238.06 124.32,240.41 134.64,240.41C139.49,240.41 144.35,239.8 151.23,236.33C175.11,224.59 181.48,192.53 187.65,161.39C188.77,155.77 194.33,128.61 196.96,114.32C200.5,94.82 204.55,72.77 206.98,64.7C207.79,62.25 206.27,60.41 203.94,60.41Z" />
+</vector>

@@ -1,0 +1,69 @@
+package com.vinted.feature.vaspromotioncardsecosystem.entrypoint;
+
+import com.vinted.core.activitybound.ActivityBoundDispatcher;
+import com.vinted.core.viewmodel.VintedViewModel;
+import com.vinted.feature.vaspromotioncardsecosystem.VasPromotionCardsNavigator;
+import com.vinted.feature.vaspromotioncardsecosystem.analytics.VasPromotionAnalytics;
+import defpackage.fcf;
+import defpackage.te7;
+import defpackage.wm9;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u00002\u00020\u0001:\u0001\tB\u001f\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\u0004\b\u0007\u0010\b¨\u0006\n"}, d2 = {"Lcom/vinted/feature/vaspromotioncardsecosystem/entrypoint/VasEntryPointRowViewModel;", "Lcom/vinted/core/viewmodel/VintedViewModel;", "Lcom/vinted/feature/vaspromotioncardsecosystem/analytics/VasPromotionAnalytics;", "vasPromotionAnalytics", "Lcom/vinted/core/activitybound/ActivityBoundDispatcher;", "Lcom/vinted/feature/vaspromotioncardsecosystem/VasPromotionCardsNavigator;", "vasPromotionCardsNavigator", "<init>", "(Lcom/vinted/feature/vaspromotioncardsecosystem/analytics/VasPromotionAnalytics;Lcom/vinted/core/activitybound/ActivityBoundDispatcher;)V", "a", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public final class VasEntryPointRowViewModel extends VintedViewModel {
+    public final VasPromotionAnalytics vasPromotionAnalytics;
+    public final ActivityBoundDispatcher<VasPromotionCardsNavigator> vasPromotionCardsNavigator;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    @wm9
+    public VasEntryPointRowViewModel(VasPromotionAnalytics vasPromotionAnalytics, ActivityBoundDispatcher<VasPromotionCardsNavigator> activityBoundDispatcher) {
+        super(null, 1, 0 == true ? 1 : 0);
+        vasPromotionAnalytics.getClass();
+        activityBoundDispatcher.getClass();
+        this.vasPromotionAnalytics = vasPromotionAnalytics;
+        this.vasPromotionCardsNavigator = activityBoundDispatcher;
+    }
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public static final class a implements te7 {
+        public static final C2904a c = new C2904a(null);
+        public final fcf a;
+        public final fcf b;
+
+        public a(fcf fcfVar, fcf fcfVar2, DefaultConstructorMarker defaultConstructorMarker) {
+            this.a = fcfVar;
+            this.b = fcfVar2;
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            VasPromotionAnalytics vasPromotionAnalytics = (VasPromotionAnalytics) this.a.invoke();
+            ActivityBoundDispatcher activityBoundDispatcher = (ActivityBoundDispatcher) this.b.invoke();
+            c.getClass();
+            vasPromotionAnalytics.getClass();
+            activityBoundDispatcher.getClass();
+            return new VasEntryPointRowViewModel(vasPromotionAnalytics, activityBoundDispatcher);
+        }
+
+        /* JADX INFO: renamed from: com.vinted.feature.vaspromotioncardsecosystem.entrypoint.VasEntryPointRowViewModel$a$a, reason: collision with other inner class name */
+        /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+        public static final class C2904a {
+            public /* synthetic */ C2904a(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            public static a a(VasPromotionAnalytics.a aVar, fcf fcfVar) {
+                aVar.getClass();
+                fcfVar.getClass();
+                return new a(aVar, fcfVar, null);
+            }
+
+            private C2904a() {
+            }
+        }
+    }
+}

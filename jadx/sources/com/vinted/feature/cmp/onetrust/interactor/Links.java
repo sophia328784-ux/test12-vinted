@@ -1,0 +1,140 @@
+package com.vinted.feature.cmp.onetrust.interactor;
+
+import com.onetrust.otpublishers.headless.Public.Keys.OTUXParamsKeys;
+import defpackage.bre;
+import defpackage.fah;
+import defpackage.h14;
+import defpackage.i14;
+import defpackage.lah;
+import defpackage.muk;
+import defpackage.opa;
+import defpackage.r75;
+import defpackage.u9h;
+import defpackage.uc4;
+import defpackage.we8;
+import defpackage.zp6;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes8.dex */
+@fah
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0087\b\u0018\u0000 \u000b2\u00020\u0001:\u0002\f\u000bB\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005B%\b\u0010\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b¢\u0006\u0004\b\u0004\u0010\n¨\u0006\r"}, d2 = {"Lcom/vinted/feature/cmp/onetrust/interactor/Links;", "", "Lcom/vinted/feature/cmp/onetrust/interactor/PolicyLink;", OTUXParamsKeys.OT_UX_LINK_POLICY_LINK, "<init>", "(Lcom/vinted/feature/cmp/onetrust/interactor/PolicyLink;)V", "", "seen0", "Llah;", "serializationConstructorMarker", "(ILcom/vinted/feature/cmp/onetrust/interactor/PolicyLink;Llah;)V", "Companion", "a", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public final /* data */ class Links {
+
+    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public final PolicyLink policyLink;
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public static final /* synthetic */ class a implements we8 {
+        public static final a a;
+        private static final u9h descriptor;
+
+        static {
+            a aVar = new a();
+            a = aVar;
+            bre breVar = new bre("com.vinted.feature.cmp.onetrust.interactor.Links", aVar, 1);
+            breVar.j(OTUXParamsKeys.OT_UX_LINK_POLICY_LINK, false);
+            descriptor = breVar;
+        }
+
+        private a() {
+        }
+
+        @Override // defpackage.we8
+        public final opa[] childSerializers() {
+            return new opa[]{PolicyLink.a.a};
+        }
+
+        @Override // defpackage.ns5
+        public final Object deserialize(r75 r75Var) {
+            r75Var.getClass();
+            u9h u9hVar = descriptor;
+            h14 h14VarC = r75Var.c(u9hVar);
+            lah lahVar = null;
+            boolean z = true;
+            int i = 0;
+            PolicyLink policyLink = null;
+            while (z) {
+                int iQ = h14VarC.q(u9hVar);
+                if (iQ == -1) {
+                    z = false;
+                } else {
+                    if (iQ != 0) {
+                        muk.d(iQ);
+                        return null;
+                    }
+                    policyLink = (PolicyLink) h14VarC.s(u9hVar, 0, PolicyLink.a.a, policyLink);
+                    i = 1;
+                }
+            }
+            h14VarC.b(u9hVar);
+            return new Links(i, policyLink, lahVar);
+        }
+
+        @Override // defpackage.oah, defpackage.ns5
+        public final u9h getDescriptor() {
+            return descriptor;
+        }
+
+        @Override // defpackage.oah
+        public final void serialize(zp6 zp6Var, Object obj) {
+            Links links = (Links) obj;
+            links.getClass();
+            u9h u9hVar = descriptor;
+            i14 i14VarC = zp6Var.c(u9hVar);
+            i14VarC.x(u9hVar, 0, PolicyLink.a.a, links.policyLink);
+            i14VarC.b(u9hVar);
+        }
+    }
+
+    public /* synthetic */ Links(int i, PolicyLink policyLink, lah lahVar) {
+        if (1 == (i & 1)) {
+            this.policyLink = policyLink;
+        } else {
+            uc4.i(i, 1, a.a.getDescriptor());
+            throw null;
+        }
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof Links) && Intrinsics.c(this.policyLink, ((Links) obj).policyLink);
+    }
+
+    public final PolicyLink getPolicyLink() {
+        return this.policyLink;
+    }
+
+    public final int hashCode() {
+        return this.policyLink.hashCode();
+    }
+
+    public final String toString() {
+        return "Links(policyLink=" + this.policyLink + ")";
+    }
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0013\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Lcom/vinted/feature/cmp/onetrust/interactor/Links$Companion;", "", "<init>", "()V", "Lopa;", "Lcom/vinted/feature/cmp/onetrust/interactor/Links;", "serializer", "()Lopa;", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final opa serializer() {
+            return a.a;
+        }
+
+        private Companion() {
+        }
+    }
+
+    public Links(PolicyLink policyLink) {
+        policyLink.getClass();
+        this.policyLink = policyLink;
+    }
+}

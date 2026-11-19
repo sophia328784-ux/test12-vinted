@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vinted.views.containers.VintedPlainCell android:layout_width="match_parent" android:layout_height="wrap_content" app:vinted_cell_theme="transparent" app:vinted_cell_type="navigating"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vinted.views.common.VintedTextView android:id="@id/select_input_item_text" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</com.vinted.views.containers.VintedPlainCell>

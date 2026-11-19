@@ -1,0 +1,44 @@
+.class public Lzwf;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static a(Landroid/app/RemoteInput;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/app/RemoteInput;->getEditChoicesBeforeSending()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static b(Landroid/app/RemoteInput$Builder;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/RemoteInput$Builder;->setEditChoicesBeforeSending(I)Landroid/app/RemoteInput$Builder;
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_loading__44" android:duration="960" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 65.986,106.174C 65.986,106.174 65.486,106.424 65.486,106.424" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_loading__45" android:duration="720" android:startOffset="960" android:propertyName="translateXY" android:pathData="M 65.486,106.424C 65.486,106.424 65.486,106.424 65.486,106.424" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_loading__46" android:duration="560" android:startOffset="1680" android:propertyName="translateXY" android:pathData="M 65.486,106.424C 65.486,106.424 68.486,106.424 68.486,106.424" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_loading__47" android:duration="640" android:startOffset="2240" android:propertyName="translateXY" android:pathData="M 68.486,106.424C 68.486,106.424 68.486,106.424 68.486,106.424" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_loading__48" android:duration="1480" android:startOffset="2880" android:propertyName="translateXY" android:pathData="M 68.486,106.424C 68.486,106.424 65.986,106.174 65.986,106.174" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

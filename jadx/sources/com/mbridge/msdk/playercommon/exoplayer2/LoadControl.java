@@ -1,0 +1,27 @@
+package com.mbridge.msdk.playercommon.exoplayer2;
+
+import com.mbridge.msdk.playercommon.exoplayer2.source.TrackGroupArray;
+import com.mbridge.msdk.playercommon.exoplayer2.trackselection.TrackSelectionArray;
+import com.mbridge.msdk.playercommon.exoplayer2.upstream.Allocator;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+public interface LoadControl {
+    Allocator getAllocator();
+
+    long getBackBufferDurationUs();
+
+    void onPrepared();
+
+    void onReleased();
+
+    void onStopped();
+
+    void onTracksSelected(Renderer[] rendererArr, TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray);
+
+    boolean retainBackBufferFromKeyframe();
+
+    boolean shouldContinueLoading(long j, float f);
+
+    boolean shouldStartPlayback(long j, float f, boolean z);
+}

@@ -1,0 +1,131 @@
+.class public abstract Lcom/google/android/gms/common/api/internal/zai;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# instance fields
+.field public final zac:I
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Lcom/google/android/gms/common/api/internal/zai;->zac:I
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static synthetic zai(Landroid/os/RemoteException;)Lcom/google/android/gms/common/api/Status;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    const-string v1, ": "
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p0
+
+    .line 30
+    new-instance v0, Lcom/google/android/gms/common/api/Status;
+
+    .line 31
+    .line 32
+    const/16 v1, 0x13
+
+    .line 33
+    .line 34
+    invoke-direct {v0, v1, p0}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
+
+    .line 35
+    .line 36
+    .line 37
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public abstract zad(Lcom/google/android/gms/common/api/Status;)V
+    .param p1    # Lcom/google/android/gms/common/api/Status;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract zae(Ljava/lang/Exception;)V
+    .param p1    # Ljava/lang/Exception;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract zaf(Lcom/google/android/gms/common/api/internal/zaaa;Z)V
+    .param p1    # Lcom/google/android/gms/common/api/internal/zaaa;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract zag(Lcom/google/android/gms/common/api/internal/zabk;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/DeadObjectException;
+        }
+    .end annotation
+.end method

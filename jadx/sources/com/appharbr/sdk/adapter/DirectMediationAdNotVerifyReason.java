@@ -1,0 +1,14 @@
+package com.appharbr.sdk.adapter;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes11.dex */
+public enum DirectMediationAdNotVerifyReason {
+    TIMEOUT,
+    AD_VALIDATED_ON_DISPLAY,
+    AD_NETWORK_NOT_SUPPORTED,
+    ADAPTER_VERSION_MISMATCH,
+    NOT_ANALYZED_HOUSE_CAMPAIGN,
+    NOT_ANALYZED_SDK_NOT_INITIALIZED,
+    NOT_ANALYZED_INITIALIZATION_IN_PROGRESS,
+    NOT_ANALYZED_POLICY_UNAVAILABLE
+}

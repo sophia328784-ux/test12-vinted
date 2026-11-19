@@ -1,0 +1,21 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public final class uf9 implements gs8 {
+    public final boolean a;
+
+    public uf9(boolean z) {
+        this.a = z;
+    }
+
+    @Override // defpackage.gs8
+    public final boolean a(tuh tuhVar) {
+        return this.a;
+    }
+
+    @Override // defpackage.gs8
+    public final boolean b() {
+        return this.a;
+    }
+}

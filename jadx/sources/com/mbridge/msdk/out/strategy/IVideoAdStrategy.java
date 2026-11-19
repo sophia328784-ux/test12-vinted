@@ -1,0 +1,41 @@
+package com.mbridge.msdk.out.strategy;
+
+import android.app.Activity;
+import com.mbridge.msdk.newinterstitial.out.NewInterstitialListener;
+import com.mbridge.msdk.video.bt.module.orglistener.g;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes6.dex */
+public interface IVideoAdStrategy extends IBaseVideoAdStrategy {
+    void clearBitmapCache();
+
+    boolean isReady();
+
+    void load();
+
+    @Override // com.mbridge.msdk.out.strategy.IBaseVideoAdStrategy
+    void loadFormSelfFilling();
+
+    void setIVRewardEnable(int i, double d);
+
+    void setIVRewardEnable(int i, int i2);
+
+    void setInterstitialVideoListener(NewInterstitialListener newInterstitialListener);
+
+    @Override // com.mbridge.msdk.out.strategy.IBaseVideoAdStrategy
+    void setRewardPlus(boolean z);
+
+    void setRewardVideoListener(g gVar);
+
+    void show();
+
+    void show(Activity activity);
+
+    void show(Activity activity, String str);
+
+    void show(Activity activity, String str, String str2);
+
+    void show(String str);
+
+    void show(String str, String str2);
+}

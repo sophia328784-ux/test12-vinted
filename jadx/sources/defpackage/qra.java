@@ -1,0 +1,22 @@
+package defpackage;
+
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+public final class qra implements pai {
+    public static final qra a = new qra();
+
+    private qra() {
+    }
+
+    @Override // defpackage.pai
+    public final void a(tah tahVar, Object obj, r2c r2cVar) {
+        tahVar.A(ora.a, (List) obj, vra.a, r2cVar);
+    }
+
+    @Override // defpackage.pai
+    public final int b(Object obj, r2c r2cVar) {
+        return qai.f(ora.a, (List) obj, vra.a, r2cVar);
+    }
+}

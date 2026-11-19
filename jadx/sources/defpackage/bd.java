@@ -1,0 +1,30 @@
+package defpackage;
+
+import com.adjust.sdk.ActivityHandler;
+import com.adjust.sdk.IRunActivityHandler;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class bd implements IRunActivityHandler {
+    public final /* synthetic */ byte a;
+    public final /* synthetic */ String b;
+    public final /* synthetic */ String c;
+
+    public /* synthetic */ bd(byte b, String str, String str2) {
+        this.a = b;
+        this.b = str;
+        this.c = str2;
+    }
+
+    @Override // com.adjust.sdk.IRunActivityHandler
+    public final void run(ActivityHandler activityHandler) {
+        switch (this.a) {
+            case 0:
+                activityHandler.addGlobalPartnerParameterI(this.b, this.c);
+                break;
+            default:
+                activityHandler.addGlobalCallbackParameterI(this.b, this.c);
+                break;
+        }
+    }
+}

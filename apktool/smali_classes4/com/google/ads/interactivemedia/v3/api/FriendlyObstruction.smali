@@ -1,0 +1,20 @@
+.class public interface abstract Lcom/google/ads/interactivemedia/v3/api/FriendlyObstruction;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# virtual methods
+.method public abstract getDetailedReason()Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end method
+
+.method public abstract getPurpose()Lcom/google/ads/interactivemedia/v3/api/FriendlyObstructionPurpose;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end method
+
+.method public abstract getView()Landroid/view/View;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end method

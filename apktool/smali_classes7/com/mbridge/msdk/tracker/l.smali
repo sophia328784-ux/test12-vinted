@@ -1,0 +1,14 @@
+.class interface abstract Lcom/mbridge/msdk/tracker/l;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# virtual methods
+.method public abstract a(Lcom/mbridge/msdk/tracker/e;)V
+.end method
+
+.method public abstract a()[J
+.end method
+
+.method public abstract b(Lcom/mbridge/msdk/tracker/e;)V
+.end method

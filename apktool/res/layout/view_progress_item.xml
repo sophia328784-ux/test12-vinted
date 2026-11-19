@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/view_progress_item_line_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <View android:id="@id/view_progress_item_line_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/view_progress_item_line" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/view_progress_item_content_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.vinted.views.common.VintedTextView android:id="@id/view_progress_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.vinted.views.common.VintedTextView android:id="@id/view_progress_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_progress_item_body_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.vinted.views.common.VintedSpacerView android:id="@id/view_progress_item_bottom_spacer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.vinted.views.common.VintedIconButton android:id="@id/view_progress_item_suffix_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

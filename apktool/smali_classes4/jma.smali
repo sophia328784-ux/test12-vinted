@@ -1,0 +1,42 @@
+.class public interface abstract annotation Ljma;
+.super Ljava/lang/Object;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Ljma;
+        defaultImpl = Ljma;
+        include = .enum Lfma;->PROPERTY:Lfma;
+        property = ""
+        requireTypeIdForSubtypes = .enum Lcod;->DEFAULT:Lcod;
+        visible = false
+    .end subannotation
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+
+# virtual methods
+.method public abstract defaultImpl()Ljava/lang/Class;
+.end method
+
+.method public abstract include()Lfma;
+.end method
+
+.method public abstract property()Ljava/lang/String;
+.end method
+
+.method public abstract requireTypeIdForSubtypes()Lcod;
+.end method
+
+.method public abstract use()Lgma;
+.end method
+
+.method public abstract visible()Z
+.end method

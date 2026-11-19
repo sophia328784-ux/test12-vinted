@@ -1,0 +1,971 @@
+.class public final Lhsf;
+.super Lmsh;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# instance fields
+.field public final j:Lmfa;
+
+.field public final k:Lmfa;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+    .locals 9
+
+    .line 1
+    invoke-static {p5}, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v5
+
+    .line 5
+    move-object v0, p0
+
+    .line 6
+    move-object v1, p1
+
+    .line 7
+    move-object v2, p2
+
+    .line 8
+    move-object v3, p3
+
+    .line 9
+    move-object v4, p4
+
+    .line 10
+    move-object/from16 v6, p7
+
+    .line 11
+    .line 12
+    move-object/from16 v7, p8
+
+    .line 13
+    .line 14
+    move/from16 v8, p9
+
+    .line 15
+    .line 16
+    invoke-direct/range {v0 .. v8}, Ltrj;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;ILjava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 17
+    .line 18
+    .line 19
+    iput-object p5, p0, Lhsf;->j:Lmfa;
+
+    .line 20
+    .line 21
+    if-nez p6, :cond_0
+
+    .line 22
+    .line 23
+    move-object p6, p0
+
+    .line 24
+    :cond_0
+    iput-object p6, p0, Lhsf;->k:Lmfa;
+
+    .line 25
+    .line 26
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic B()Lmfa;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lhsf;->L()Lhsf;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final C(Ljava/lang/Object;)Lmfa;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v1, Lhsf;
+
+    .line 7
+    .line 8
+    iget-object v8, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iget-boolean v10, p0, Lmfa;->e:Z
+
+    .line 11
+    .line 12
+    iget-object v2, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    iget-object v3, p0, Ltrj;->h:Lwrj;
+
+    .line 15
+    .line 16
+    iget-object v4, p0, Ltrj;->f:Lmfa;
+
+    .line 17
+    .line 18
+    iget-object v5, p0, Ltrj;->g:[Lmfa;
+
+    .line 19
+    .line 20
+    iget-object v6, p0, Lhsf;->j:Lmfa;
+
+    .line 21
+    .line 22
+    iget-object v7, p0, Lhsf;->k:Lmfa;
+
+    .line 23
+    .line 24
+    move-object v9, p1
+
+    .line 25
+    invoke-direct/range {v1 .. v10}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-object v1
+.end method
+
+.method public final D(Ljava/lang/Object;)Lmfa;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v1, Lhsf;
+
+    .line 7
+    .line 8
+    iget-object v9, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iget-boolean v10, p0, Lmfa;->e:Z
+
+    .line 11
+    .line 12
+    iget-object v2, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    iget-object v3, p0, Ltrj;->h:Lwrj;
+
+    .line 15
+    .line 16
+    iget-object v4, p0, Ltrj;->f:Lmfa;
+
+    .line 17
+    .line 18
+    iget-object v5, p0, Ltrj;->g:[Lmfa;
+
+    .line 19
+    .line 20
+    iget-object v6, p0, Lhsf;->j:Lmfa;
+
+    .line 21
+    .line 22
+    iget-object v7, p0, Lhsf;->k:Lmfa;
+
+    .line 23
+    .line 24
+    move-object v8, p1
+
+    .line 25
+    invoke-direct/range {v1 .. v10}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-object v1
+.end method
+
+.method public final G()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object v1, p0, Lhsf;->j:Lmfa;
+
+    .line 13
+    .line 14
+    if-eqz v1, :cond_0
+
+    .line 15
+    .line 16
+    const/4 v2, 0x1
+
+    .line 17
+    invoke-virtual {p0, v2}, Ltrj;->F(I)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    if-eqz p0, :cond_0
+
+    .line 22
+    .line 23
+    const/16 p0, 0x3c
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Lb5g;->h()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p0
+
+    .line 32
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 33
+    .line 34
+    .line 35
+    const/16 p0, 0x3e
+
+    .line 36
+    .line 37
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    .line 40
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object p0
+
+    .line 44
+    return-object p0
+.end method
+
+.method public final bridge synthetic I()Lmsh;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lhsf;->L()Lhsf;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final J(Ljava/lang/Object;)Lmsh;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v1, Lhsf;
+
+    .line 7
+    .line 8
+    iget-object v8, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iget-boolean v10, p0, Lmfa;->e:Z
+
+    .line 11
+    .line 12
+    iget-object v2, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    iget-object v3, p0, Ltrj;->h:Lwrj;
+
+    .line 15
+    .line 16
+    iget-object v4, p0, Ltrj;->f:Lmfa;
+
+    .line 17
+    .line 18
+    iget-object v5, p0, Ltrj;->g:[Lmfa;
+
+    .line 19
+    .line 20
+    iget-object v6, p0, Lhsf;->j:Lmfa;
+
+    .line 21
+    .line 22
+    iget-object v7, p0, Lhsf;->k:Lmfa;
+
+    .line 23
+    .line 24
+    move-object v9, p1
+
+    .line 25
+    invoke-direct/range {v1 .. v10}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-object v1
+.end method
+
+.method public final K(Ljava/lang/Object;)Lmsh;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v1, Lhsf;
+
+    .line 7
+    .line 8
+    iget-object v9, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iget-boolean v10, p0, Lmfa;->e:Z
+
+    .line 11
+    .line 12
+    iget-object v2, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    iget-object v3, p0, Ltrj;->h:Lwrj;
+
+    .line 15
+    .line 16
+    iget-object v4, p0, Ltrj;->f:Lmfa;
+
+    .line 17
+    .line 18
+    iget-object v5, p0, Ltrj;->g:[Lmfa;
+
+    .line 19
+    .line 20
+    iget-object v6, p0, Lhsf;->j:Lmfa;
+
+    .line 21
+    .line 22
+    iget-object v7, p0, Lhsf;->k:Lmfa;
+
+    .line 23
+    .line 24
+    move-object v8, p1
+
+    .line 25
+    invoke-direct/range {v1 .. v10}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-object v1
+.end method
+
+.method public final L()Lhsf;
+    .locals 11
+
+    .line 1
+    iget-boolean v0, p0, Lmfa;->e:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v1, Lhsf;
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lhsf;->j:Lmfa;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, Lmfa;->B()Lmfa;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v6
+
+    .line 14
+    iget-object v9, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    const/4 v10, 0x1
+
+    .line 17
+    iget-object v2, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 18
+    .line 19
+    iget-object v3, p0, Ltrj;->h:Lwrj;
+
+    .line 20
+    .line 21
+    iget-object v4, p0, Ltrj;->f:Lmfa;
+
+    .line 22
+    .line 23
+    iget-object v5, p0, Ltrj;->g:[Lmfa;
+
+    .line 24
+    .line 25
+    iget-object v7, p0, Lhsf;->k:Lmfa;
+
+    .line 26
+    .line 27
+    iget-object v8, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    invoke-direct/range {v1 .. v10}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 30
+    .line 31
+    .line 32
+    return-object v1
+.end method
+
+.method public final d()Lmfa;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lhsf;->j:Lmfa;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x1
+
+    .line 4
+    return p0
+
+    .line 5
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 6
+    if-nez p1, :cond_1
+
+    .line 7
+    .line 8
+    return v0
+
+    .line 9
+    :cond_1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    const-class v2, Lhsf;
+
+    .line 14
+    .line 15
+    if-eq v1, v2, :cond_2
+
+    .line 16
+    .line 17
+    return v0
+
+    .line 18
+    :cond_2
+    check-cast p1, Lhsf;
+
+    .line 19
+    .line 20
+    iget-object v1, p1, Lmfa;->a:Ljava/lang/Class;
+
+    .line 21
+    .line 22
+    iget-object v2, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    if-eq v1, v2, :cond_3
+
+    .line 25
+    .line 26
+    return v0
+
+    .line 27
+    :cond_3
+    iget-object p0, p0, Lhsf;->j:Lmfa;
+
+    .line 28
+    .line 29
+    iget-object p1, p1, Lhsf;->j:Lmfa;
+
+    .line 30
+    .line 31
+    invoke-virtual {p0, p1}, Lmfa;->equals(Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result p0
+
+    .line 35
+    return p0
+.end method
+
+.method public final g()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
+.end method
+
+.method public final k()Lmfa;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lhsf;->j:Lmfa;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final l(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x1
+
+    .line 4
+    invoke-static {p0, p1, v0}, Ltrj;->E(Ljava/lang/Class;Ljava/lang/StringBuilder;Z)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-object p1
+.end method
+
+.method public final m(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-static {v0, p1, v1}, Ltrj;->E(Ljava/lang/Class;Ljava/lang/StringBuilder;Z)V
+
+    .line 5
+    .line 6
+    .line 7
+    const/16 v0, 0x3c
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object p0, p0, Lhsf;->j:Lmfa;
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Lmfa;->m(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    const-string p1, ">;"
+
+    .line 19
+    .line 20
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    return-object p0
+.end method
+
+.method public final o()Lmfa;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lhsf;->j:Lmfa;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    const/16 v0, 0x28
+
+    .line 2
+    .line 3
+    const-string v1, "[reference type, class "
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Lga1;->a(ILjava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {p0}, Lhsf;->G()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    const/16 v1, 0x3c
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    iget-object p0, p0, Lhsf;->j:Lmfa;
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string p0, ">]"
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p0
+
+    .line 35
+    return-object p0
+.end method
+
+.method public final x(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;)Lmfa;
+    .locals 10
+
+    .line 1
+    new-instance v0, Lhsf;
+
+    .line 2
+    .line 3
+    iget-object v8, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    iget-boolean v9, p0, Lmfa;->e:Z
+
+    .line 6
+    .line 7
+    iget-object v2, p0, Ltrj;->h:Lwrj;
+
+    .line 8
+    .line 9
+    iget-object v5, p0, Lhsf;->j:Lmfa;
+
+    .line 10
+    .line 11
+    iget-object v6, p0, Lhsf;->k:Lmfa;
+
+    .line 12
+    .line 13
+    iget-object v7, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    move-object v1, p1
+
+    .line 16
+    move-object v3, p3
+
+    .line 17
+    move-object v4, p4
+
+    .line 18
+    invoke-direct/range {v0 .. v9}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-object v0
+.end method
+
+.method public final y(Lmfa;)Lmfa;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lhsf;->j:Lmfa;
+
+    .line 2
+    .line 3
+    if-ne v0, p1, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v1, Lhsf;
+
+    .line 7
+    .line 8
+    iget-object v9, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iget-boolean v10, p0, Lmfa;->e:Z
+
+    .line 11
+    .line 12
+    iget-object v2, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    iget-object v3, p0, Ltrj;->h:Lwrj;
+
+    .line 15
+    .line 16
+    iget-object v4, p0, Ltrj;->f:Lmfa;
+
+    .line 17
+    .line 18
+    iget-object v5, p0, Ltrj;->g:[Lmfa;
+
+    .line 19
+    .line 20
+    iget-object v7, p0, Lhsf;->k:Lmfa;
+
+    .line 21
+    .line 22
+    iget-object v8, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    move-object v6, p1
+
+    .line 25
+    invoke-direct/range {v1 .. v10}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-object v1
+.end method
+
+.method public final z(Lftj;)Lmfa;
+    .locals 12
+
+    .line 1
+    iget-object v0, p0, Lhsf;->j:Lmfa;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    if-ne p1, v1, :cond_0
+
+    .line 6
+    .line 7
+    return-object p0
+
+    .line 8
+    :cond_0
+    new-instance v2, Lhsf;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p1}, Lmfa;->C(Ljava/lang/Object;)Lmfa;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v7
+
+    .line 14
+    iget-object v10, p0, Lmfa;->d:Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    iget-boolean v11, p0, Lmfa;->e:Z
+
+    .line 17
+    .line 18
+    iget-object v3, p0, Lmfa;->a:Ljava/lang/Class;
+
+    .line 19
+    .line 20
+    iget-object v4, p0, Ltrj;->h:Lwrj;
+
+    .line 21
+    .line 22
+    iget-object v5, p0, Ltrj;->f:Lmfa;
+
+    .line 23
+    .line 24
+    iget-object v6, p0, Ltrj;->g:[Lmfa;
+
+    .line 25
+    .line 26
+    iget-object v8, p0, Lhsf;->k:Lmfa;
+
+    .line 27
+    .line 28
+    iget-object v9, p0, Lmfa;->c:Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    invoke-direct/range {v2 .. v11}, Lhsf;-><init>(Ljava/lang/Class;Lwrj;Lmfa;[Lmfa;Lmfa;Lmfa;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-object v2
+.end method

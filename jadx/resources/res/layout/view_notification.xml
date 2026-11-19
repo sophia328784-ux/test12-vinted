@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vinted.views.containers.VintedPlainCell xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vinted_notification_container"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:vinted_cell_style="narrow"
+    app:vinted_cell_theme="transparent">
+    <com.vinted.views.containers.VintedCardView
+        android:id="@+id/view_notification_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vinted.views.containers.VintedCell
+            android:id="@+id/view_notification_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.vinted.views.containers.VintedLinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/view_notification_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:showDividers="middle"
+                app:vinted_divider_type="spacer"
+                app:vinted_spacer_size="medium">
+                <com.vinted.views.common.VintedIconView
+                    android:layout_gravity="center"
+                    android:id="@+id/view_notification_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.vinted.views.common.VintedTextView
+                    android:ellipsize="end"
+                    android:layout_gravity="center"
+                    android:id="@+id/view_notification_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_weight="1"/>
+            </com.vinted.views.containers.VintedLinearLayout>
+        </com.vinted.views.containers.VintedCell>
+    </com.vinted.views.containers.VintedCardView>
+</com.vinted.views.containers.VintedPlainCell>

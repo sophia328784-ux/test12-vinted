@@ -1,0 +1,34 @@
+package io.reactivex.internal.disposables;
+
+import io.reactivex.disposables.Disposable;
+import io.reactivex.exceptions.Exceptions;
+import io.reactivex.functions.Cancellable;
+import io.reactivex.plugins.RxJavaPlugins;
+import java.util.concurrent.atomic.AtomicReference;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes2.dex */
+public final class CancellableDisposable extends AtomicReference<Cancellable> implements Disposable {
+    public CancellableDisposable(Cancellable cancellable) {
+        super(cancellable);
+    }
+
+    @Override // io.reactivex.disposables.Disposable
+    public final void dispose() {
+        Cancellable andSet;
+        if (get() == null || (andSet = getAndSet(null)) == null) {
+            return;
+        }
+        try {
+            andSet.cancel();
+        } catch (Exception e) {
+            Exceptions.b(e);
+            RxJavaPlugins.b(e);
+        }
+    }
+
+    @Override // io.reactivex.disposables.Disposable
+    public final boolean isDisposed() {
+        return get() == null;
+    }
+}

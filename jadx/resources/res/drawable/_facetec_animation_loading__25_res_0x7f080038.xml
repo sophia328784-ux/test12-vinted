@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__26_res_0x7f080039"
+        android:duration="960"
+        android:startOffset="0"
+        android:propertyName="translateXY"
+        android:pathData="M 89.47,106.174C 89.47,106.174 88.97,106.424 88.97,106.424"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__27_res_0x7f08003a"
+        android:duration="720"
+        android:startOffset="960"
+        android:propertyName="translateXY"
+        android:pathData="M 88.97,106.424C 88.97,106.424 88.97,106.424 88.97,106.424"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__28_res_0x7f08003b"
+        android:duration="560"
+        android:startOffset="1680"
+        android:propertyName="translateXY"
+        android:pathData="M 88.97,106.424C 88.97,106.424 90.97,106.424 90.97,106.424"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__29_res_0x7f08003c"
+        android:duration="640"
+        android:startOffset="2240"
+        android:propertyName="translateXY"
+        android:pathData="M 90.97,106.424C 90.97,106.424 90.97,106.424 90.97,106.424"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__30_res_0x7f08003e"
+        android:duration="1480"
+        android:startOffset="2880"
+        android:propertyName="translateXY"
+        android:pathData="M 90.97,106.424C 90.97,106.424 89.47,106.174 89.47,106.174"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+</set>

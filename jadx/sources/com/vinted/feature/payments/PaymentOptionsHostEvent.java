@@ -1,0 +1,50 @@
+package com.vinted.feature.payments;
+
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes9.dex */
+public interface PaymentOptionsHostEvent {
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bÇ\n\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"com/vinted/feature/payments/PaymentOptionsHostEvent$RequestPaymentOptionSelection", "Lcom/vinted/feature/payments/PaymentOptionsHostEvent;", "<init>", "()V", "public"}, k = 1, mv = {2, 3, 0}, xi = 48)
+    public final /* data */ class RequestPaymentOptionSelection implements PaymentOptionsHostEvent {
+        public static final RequestPaymentOptionSelection INSTANCE = new RequestPaymentOptionSelection();
+
+        private RequestPaymentOptionSelection() {
+        }
+
+        public final boolean equals(Object obj) {
+            return this == obj || (obj instanceof RequestPaymentOptionSelection);
+        }
+
+        public final int hashCode() {
+            return 601925580;
+        }
+
+        public final String toString() {
+            return "RequestPaymentOptionSelection";
+        }
+    }
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bÇ\n\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"com/vinted/feature/payments/PaymentOptionsHostEvent$ShowValidation", "Lcom/vinted/feature/payments/PaymentOptionsHostEvent;", "<init>", "()V", "public"}, k = 1, mv = {2, 3, 0}, xi = 48)
+    public final /* data */ class ShowValidation implements PaymentOptionsHostEvent {
+        public static final ShowValidation INSTANCE = new ShowValidation();
+
+        private ShowValidation() {
+        }
+
+        public final boolean equals(Object obj) {
+            return this == obj || (obj instanceof ShowValidation);
+        }
+
+        public final int hashCode() {
+            return -945181654;
+        }
+
+        public final String toString() {
+            return "ShowValidation";
+        }
+    }
+}

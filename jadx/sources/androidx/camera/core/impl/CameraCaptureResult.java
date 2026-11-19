@@ -1,0 +1,92 @@
+package androidx.camera.core.impl;
+
+import android.hardware.camera2.CaptureResult;
+import androidx.camera.core.impl.utils.ExifData;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public interface CameraCaptureResult {
+
+    /* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+    public static final class EmptyCameraCaptureResult implements CameraCaptureResult {
+        public static CameraCaptureResult create() {
+            return new EmptyCameraCaptureResult();
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CameraCaptureMetaData.AeMode getAeMode() {
+            return CameraCaptureMetaData.AeMode.UNKNOWN;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CameraCaptureMetaData.AeState getAeState() {
+            return CameraCaptureMetaData.AeState.UNKNOWN;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CameraCaptureMetaData.AfMode getAfMode() {
+            return CameraCaptureMetaData.AfMode.UNKNOWN;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CameraCaptureMetaData.AfState getAfState() {
+            return CameraCaptureMetaData.AfState.UNKNOWN;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CameraCaptureMetaData.AwbMode getAwbMode() {
+            return CameraCaptureMetaData.AwbMode.UNKNOWN;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CameraCaptureMetaData.AwbState getAwbState() {
+            return CameraCaptureMetaData.AwbState.UNKNOWN;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CaptureResult getCaptureResult() {
+            return null;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public CameraCaptureMetaData.FlashState getFlashState() {
+            return CameraCaptureMetaData.FlashState.UNKNOWN;
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public TagBundle getTagBundle() {
+            return TagBundle.emptyBundle();
+        }
+
+        @Override // androidx.camera.core.impl.CameraCaptureResult
+        public long getTimestamp() {
+            return -1L;
+        }
+    }
+
+    CameraCaptureMetaData.AeMode getAeMode();
+
+    CameraCaptureMetaData.AeState getAeState();
+
+    CameraCaptureMetaData.AfMode getAfMode();
+
+    CameraCaptureMetaData.AfState getAfState();
+
+    CameraCaptureMetaData.AwbMode getAwbMode();
+
+    CameraCaptureMetaData.AwbState getAwbState();
+
+    default CaptureResult getCaptureResult() {
+        return null;
+    }
+
+    CameraCaptureMetaData.FlashState getFlashState();
+
+    TagBundle getTagBundle();
+
+    long getTimestamp();
+
+    default void populateExifData(ExifData.Builder builder) {
+        builder.setFlashState(getFlashState());
+    }
+}

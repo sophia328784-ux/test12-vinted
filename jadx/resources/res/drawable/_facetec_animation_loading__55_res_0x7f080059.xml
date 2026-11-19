@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__56_res_0x7f08005a"
+        android:duration="960"
+        android:startOffset="0"
+        android:propertyName="translateXY"
+        android:pathData="M 82.199,126.497C 82.199,126.497 81.949,126.497 81.949,126.497"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__57_res_0x7f08005b"
+        android:duration="720"
+        android:startOffset="960"
+        android:propertyName="translateXY"
+        android:pathData="M 81.949,126.497C 81.949,126.497 81.949,126.497 81.949,126.497"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__58_res_0x7f08005c"
+        android:duration="560"
+        android:startOffset="1680"
+        android:propertyName="translateXY"
+        android:pathData="M 81.949,126.497C 81.949,126.497 83.699,125.997 83.699,125.997"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__59_res_0x7f08005d"
+        android:duration="640"
+        android:startOffset="2240"
+        android:propertyName="translateXY"
+        android:pathData="M 83.699,125.997C 83.699,125.997 83.699,125.997 83.699,125.997"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_facetec_animation_loading__60_res_0x7f08005f"
+        android:duration="1480"
+        android:startOffset="2880"
+        android:propertyName="translateXY"
+        android:pathData="M 83.699,125.997C 83.699,125.997 82.199,126.497 82.199,126.497"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+</set>

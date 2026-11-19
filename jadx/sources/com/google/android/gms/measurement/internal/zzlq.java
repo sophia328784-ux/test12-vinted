@@ -1,0 +1,76 @@
+package com.google.android.gms.measurement.internal;
+
+import android.annotation.TargetApi;
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.ComponentName;
+import android.os.PersistableBundle;
+import com.google.android.gms.common.internal.Preconditions;
+import com.rokt.modelmapper.mappers.ExperienceModelMapperImpl;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes.dex */
+public final class zzlq extends zzg {
+    private JobScheduler zza;
+
+    public zzlq(zzic zzicVar) {
+        super(zzicVar);
+    }
+
+    @Override // com.google.android.gms.measurement.internal.zzg
+    public final boolean zze() {
+        return true;
+    }
+
+    @Override // com.google.android.gms.measurement.internal.zzg
+    @TargetApi(24)
+    public final void zzf() {
+        this.zza = (JobScheduler) this.zzu.zzaZ().getSystemService("jobscheduler");
+    }
+
+    @TargetApi(24)
+    public final void zzh(long j) {
+        zzb();
+        zzg();
+        JobScheduler jobScheduler = this.zza;
+        if (jobScheduler != null && jobScheduler.getPendingJob(zzi()) != null) {
+            this.zzu.zzaW().zzk().zza("[sgtm] There's an existing pending job, skip this schedule.");
+            return;
+        }
+        com.google.android.gms.internal.measurement.zzin zzinVarZzj = zzj();
+        com.google.android.gms.internal.measurement.zzin zzinVar = com.google.android.gms.internal.measurement.zzin.CLIENT_UPLOAD_ELIGIBLE;
+        zzic zzicVar = this.zzu;
+        if (zzinVarZzj != zzinVar) {
+            zzicVar.zzaW().zzk().zzb("[sgtm] Not eligible for Scion upload", zzinVarZzj.name());
+            return;
+        }
+        zzicVar.zzaW().zzk().zzb("[sgtm] Scheduling Scion upload, millis", Long.valueOf(j));
+        PersistableBundle persistableBundle = new PersistableBundle();
+        persistableBundle.putString(ExperienceModelMapperImpl.KEY_ACTION, "com.google.android.gms.measurement.SCION_UPLOAD");
+        zzicVar.zzaW().zzk().zzb("[sgtm] Scion upload job scheduled with result", ((JobScheduler) Preconditions.checkNotNull(this.zza)).schedule(new JobInfo.Builder(zzi(), new ComponentName(zzicVar.zzaZ(), "com.google.android.gms.measurement.AppMeasurementJobService")).setRequiredNetworkType(1).setMinimumLatency(j).setOverrideDeadline(j + j).setExtras(persistableBundle).build()) == 1 ? "SUCCESS" : "FAILURE");
+    }
+
+    public final int zzi() {
+        return "measurement-client".concat(String.valueOf(this.zzu.zzaZ().getPackageName())).hashCode();
+    }
+
+    public final com.google.android.gms.internal.measurement.zzin zzj() {
+        zzb();
+        zzg();
+        if (this.zza == null) {
+            return com.google.android.gms.internal.measurement.zzin.MISSING_JOB_SCHEDULER;
+        }
+        zzic zzicVar = this.zzu;
+        if (!zzicVar.zzc().zzx()) {
+            return com.google.android.gms.internal.measurement.zzin.NOT_ENABLED_IN_MANIFEST;
+        }
+        zzic zzicVar2 = this.zzu;
+        if (zzicVar2.zzv().zzn() < 119000) {
+            return com.google.android.gms.internal.measurement.zzin.SDK_TOO_OLD;
+        }
+        if (zzpp.zzT(zzicVar.zzaZ(), "com.google.android.gms.measurement.AppMeasurementJobService")) {
+            return !zzicVar2.zzt().zzK() ? com.google.android.gms.internal.measurement.zzin.NON_PLAY_MODE : com.google.android.gms.internal.measurement.zzin.CLIENT_UPLOAD_ELIGIBLE;
+        }
+        return com.google.android.gms.internal.measurement.zzin.MEASUREMENT_SERVICE_NOT_ENABLED;
+    }
+}

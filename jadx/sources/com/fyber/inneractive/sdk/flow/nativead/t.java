@@ -1,0 +1,31 @@
+package com.fyber.inneractive.sdk.flow.nativead;
+
+import android.net.Uri;
+import com.fyber.inneractive.sdk.network.f0;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes4.dex */
+public final class t implements f0 {
+    public final com.fyber.inneractive.sdk.response.nativead.f a;
+    public final s b;
+
+    public t(com.fyber.inneractive.sdk.response.nativead.f fVar, s sVar) {
+        this.a = fVar;
+        this.b = sVar;
+    }
+
+    @Override // com.fyber.inneractive.sdk.network.f0
+    public final void a(Object obj, Exception exc, boolean z) {
+        Uri uri = (Uri) obj;
+        if (exc instanceof com.fyber.inneractive.sdk.network.g) {
+            return;
+        }
+        if (exc != null || uri == null) {
+            this.b.a(null, exc, this.a);
+            return;
+        }
+        s sVar = this.b;
+        com.fyber.inneractive.sdk.response.nativead.f fVar = this.a;
+        sVar.a(new g(fVar.a, uri), null, fVar);
+    }
+}

@@ -1,0 +1,85 @@
+.class public Lc5b;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# static fields
+.field public static final a:Lc5b;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lc5b;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lc5b;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lc5b;->a:Lc5b;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlin/reflect/jvm/internal/impl/load/java/structure/JavaMember;
+
+    .line 2
+    .line 3
+    sget p0, Lkotlin/reflect/jvm/internal/impl/load/java/lazy/descriptors/LazyJavaClassMemberScope;->v:I
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-interface {p1}, Lkotlin/reflect/jvm/internal/impl/load/java/structure/JavaModifierListOwner;->b()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+
+    .line 12
+    xor-int/lit8 p0, p0, 0x1
+
+    .line 13
+    .line 14
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    return-object p0
+.end method

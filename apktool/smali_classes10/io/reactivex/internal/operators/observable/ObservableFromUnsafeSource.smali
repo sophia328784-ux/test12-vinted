@@ -1,0 +1,62 @@
+.class public final Lio/reactivex/internal/operators/observable/ObservableFromUnsafeSource;
+.super Lio/reactivex/Observable;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lio/reactivex/Observable<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lio/reactivex/ObservableSource;
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/ObservableSource;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/ObservableSource<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableFromUnsafeSource;->a:Lio/reactivex/ObservableSource;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final subscribeActual(Lio/reactivex/Observer;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/reactivex/internal/operators/observable/ObservableFromUnsafeSource;->a:Lio/reactivex/ObservableSource;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

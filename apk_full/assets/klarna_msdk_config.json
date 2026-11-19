@@ -1,0 +1,1940 @@
+{
+    "meta": {
+        "version": "v2.9.0-0f2ac6bad8f",
+        "updated": "2026-07-08T07:45:20.834Z",
+        "schema": "v2"
+    },
+    "config": {
+        "sdkVersions": {
+            "android": {
+                "versionName": "2.11.5"
+            },
+            "ios": {
+                "versionName": "2.11.7"
+            }
+        },
+        "assets": [
+            {
+                "name": "sdk-init-script",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging",
+                            "playground",
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.klarnacdn.net",
+                            "path": "/mobile-sdk/wrapper-init-script/v1/script/WrapperInitScript.js"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "sdk-message-bridge",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging",
+                            "playground",
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.klarnacdn.net",
+                            "path": "/mobile-sdk/mobile-js-snippet/v1/app.min.js"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "kp-payments-wrapper",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging",
+                            "playground",
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.klarnacdn.net",
+                            "path": "/mobile-sdk/klarna-mobile-sdk-payments-wrapper-v2/v1/index.html"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "postpurchase-wrapper",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging",
+                            "playground",
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.klarnacdn.net",
+                            "path": "/mobile-sdk/klarna-mobile-sdk-postpurchase-wrapper/v1/index.html"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "express-button-fullscreen",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/express-button/c2a1bfb/fullscreen.html"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/express-button/c2a1bfb/fullscreen.html"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "s3.int.klarna.net",
+                            "path": "/instant-shopping/express-button/b6a36ed/fullscreen.html"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "web-sdk-wrapper",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging",
+                            "playground",
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.klarnacdn.net",
+                            "path": "/mobile-sdk/klarna-mobile-sdk-web-sdk-wrapper/v1/index.html"
+                        }
+                    }
+                ]
+            }
+        ],
+        "analytics": [
+            {
+                "name": "klarna-evt-v1",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "eu.klarnaevt.com",
+                            "path": "/v1/in-app"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "eu.playground.klarnaevt.com",
+                            "path": "/v1/in-app"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "frontend-event-router-eu.staging.c2c.klarna.net",
+                            "path": "/v1/in-app"
+                        }
+                    }
+                ]
+            }
+        ],
+        "apis": [
+            {
+                "name": "ctr-global-api",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/global"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/global"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/global"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ctr-regional-api",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/eu"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/na"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/oc"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/eu"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/na"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/oc"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/eu"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/na"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/oc"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "osm-get-placement",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/eu/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/na/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/oc/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/eu/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/na/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/oc/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/eu/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/na/cma/v3/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/oc/cma/v3/messaging"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "osm-api",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/eu/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/na/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.klarna.com",
+                            "path": "/oc/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/eu/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/na/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "js.playground.klarna.com",
+                            "path": "/oc/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/eu/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/na/cma/v4/messaging"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "x.nonprod.us1.js.klarna.net",
+                            "path": "/oc/cma/v4/messaging"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "siwk-oidc-issuer",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.klarna.com",
+                            "path": "/"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.playground.klarna.com",
+                            "path": "/"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu",
+                            "na",
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.nonprod.klarna.net",
+                            "path": "/"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "siwk-oidc-idp",
+                "urls": [
+                    {
+                        "isFallback": true,
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.klarna.com",
+                            "path": "/eu/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.klarna.com",
+                            "path": "/na/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "production"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.klarna.com",
+                            "path": "/oc/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.playground.klarna.com",
+                            "path": "/eu/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.playground.klarna.com",
+                            "path": "/na/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "playground"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.playground.klarna.com",
+                            "path": "/oc/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "eu"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.nonprod.klarna.net",
+                            "path": "/eu/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "na"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.nonprod.klarna.net",
+                            "path": "/na/lp/idp/.well-known/openid-configuration"
+                        }
+                    },
+                    {
+                        "alternatives": [
+                            "aws",
+                            "azure"
+                        ],
+                        "environments": [
+                            "staging"
+                        ],
+                        "regions": [
+                            "oc"
+                        ],
+                        "endpoint": {
+                            "scheme": "https",
+                            "host": "login.nonprod.klarna.net",
+                            "path": "/oc/lp/idp/.well-known/openid-configuration"
+                        }
+                    }
+                ]
+            }
+        ],
+        "featureToggles": {
+            "cardScanning": {
+                "enabled": true
+            },
+            "osm": {
+                "enabled": true
+            },
+            "analytics": {
+                "logLevel": "info",
+                "log-level": "info"
+            },
+            "blacklistUrls": [],
+            "authenticationBrowser": {
+                "whitelistedUrls": [
+                    "^https://pay\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.test\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.nonprod\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarna\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnacdn\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnaservices\\.com([/?#].*)?$"
+                ]
+            },
+            "network": {
+                "allowList": [
+                    "^https://js\\.dev\\.kustomcheckout\\.net([/?#].*)?$",
+                    "^https://js\\.test\\.kustomcheckout\\.net([/?#].*)?$",
+                    "^https://js\\.playground\\.kustom\\.co([/?#].*)?$",
+                    "^https://js\\.live\\.kustom\\.co([/?#].*)?$",
+                    "^https://x\\.klarnacdn\\.net([/?#].*)?$",
+                    "^https://eu\\.playground\\.klarnaevt\\.com([/?#].*)?$",
+                    "^https://frontend-event-router-eu\\.staging\\.c2c\\.klarna\\.net([/?#].*)?$",
+                    "^https://eu\\.klarnaevt\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://s3\\.int\\.klarna\\.net([/?#].*)?$",
+                    "^https://x\\.nonprod\\.us1\\.js\\.klarna\\.net([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.nonprod\\.klarna\\.net([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://osm\\.klarnaservices\\.com([/?#].*)?$"
+                ]
+            },
+            "canMakePayment": {
+                "supportedCurrencyCountryCombos": [
+                    {
+                        "currency": "AUD",
+                        "countries": [
+                            "AU"
+                        ]
+                    },
+                    {
+                        "currency": "EUR",
+                        "countries": [
+                            "AT",
+                            "BE",
+                            "DE",
+                            "ES",
+                            "FI",
+                            "FR",
+                            "GR",
+                            "IE",
+                            "IT",
+                            "NL",
+                            "PT"
+                        ]
+                    },
+                    {
+                        "currency": "CAD",
+                        "countries": [
+                            "CA"
+                        ]
+                    },
+                    {
+                        "currency": "CZK",
+                        "countries": [
+                            "CZ"
+                        ]
+                    },
+                    {
+                        "currency": "DKK",
+                        "countries": [
+                            "DK"
+                        ]
+                    },
+                    {
+                        "currency": "HUF",
+                        "countries": [
+                            "HU"
+                        ]
+                    },
+                    {
+                        "currency": "MXN",
+                        "countries": [
+                            "MX"
+                        ]
+                    },
+                    {
+                        "currency": "NZD",
+                        "countries": [
+                            "NZ"
+                        ]
+                    },
+                    {
+                        "currency": "NOK",
+                        "countries": [
+                            "NO"
+                        ]
+                    },
+                    {
+                        "currency": "PLN",
+                        "countries": [
+                            "PL"
+                        ]
+                    },
+                    {
+                        "currency": "RON",
+                        "countries": [
+                            "RO"
+                        ]
+                    },
+                    {
+                        "currency": "SEK",
+                        "countries": [
+                            "SE"
+                        ]
+                    },
+                    {
+                        "currency": "CHF",
+                        "countries": [
+                            "CH"
+                        ]
+                    },
+                    {
+                        "currency": "GBP",
+                        "countries": [
+                            "GB"
+                        ]
+                    },
+                    {
+                        "currency": "USD",
+                        "countries": [
+                            "US"
+                        ]
+                    },
+                    {
+                        "currency": "JPY",
+                        "countries": [
+                            "JP"
+                        ]
+                    }
+                ]
+            },
+            "regionMapping": {
+                "currencies": {
+                    "USD": "na",
+                    "CAD": "na",
+                    "MXN": "na",
+                    "EUR": "eu",
+                    "CZK": "eu",
+                    "DKK": "eu",
+                    "HUF": "eu",
+                    "NOK": "eu",
+                    "PLN": "eu",
+                    "RON": "eu",
+                    "SEK": "eu",
+                    "CHF": "eu",
+                    "GBP": "eu",
+                    "AUD": "oc",
+                    "NZD": "oc",
+                    "JPY": "oc"
+                },
+                "countries": {
+                    "AT": "eu",
+                    "AU": "oc",
+                    "BE": "eu",
+                    "CA": "na",
+                    "CH": "eu",
+                    "CZ": "eu",
+                    "DE": "eu",
+                    "DK": "eu",
+                    "ES": "eu",
+                    "FI": "eu",
+                    "FR": "eu",
+                    "GB": "eu",
+                    "GR": "eu",
+                    "IE": "eu",
+                    "IT": "eu",
+                    "MX": "na",
+                    "NL": "eu",
+                    "NO": "eu",
+                    "NZ": "oc",
+                    "PL": "eu",
+                    "PT": "eu",
+                    "RO": "eu",
+                    "SE": "eu",
+                    "SK": "eu",
+                    "US": "na",
+                    "HU": "eu"
+                }
+            },
+            "appToAppHandover": {
+                "urls": [
+                    "^https://payments\\.klarna\\.com([/?#].*)?$"
+                ]
+            },
+            "webViewMessaging": {
+                "trustedOrigins": [
+                    "^https://([a-zA-Z0-9-]+\\.)*klarna\\.com([/?#].*)?$",
+                    "^https://([a-zA-Z0-9-]+\\.)*klarna\\.net([/?#].*)?$",
+                    "^https://([a-zA-Z0-9-]+\\.)*klarnacdn\\.net([/?#].*)?$",
+                    "^https://([a-zA-Z0-9-]+\\.)*klarnaservices\\.com([/?#].*)?$"
+                ]
+            },
+            "sandboxBrowser": {
+                "allowList": [
+                    "^https://pay\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://cdn\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.test\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.nonprod\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://redirect\\.openbanking\\.klarna\\.com([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarna\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnacdn\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnaservices\\.com([/?#].*)?$"
+                ]
+            },
+            "separateFullscreen": {
+                "allowList": [
+                    "^https://pay\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://app\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.test\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.nonprod\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarna\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnacdn\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnaservices\\.com([/?#].*)?$"
+                ]
+            }
+        },
+        "debugToggles": {
+            "console": {
+                "level": "error",
+                "privacy": "public",
+                "logEndpointUrl": null
+            },
+            "webview": {
+                "onLoadDebugScriptUrl": null
+            },
+            "android": {
+                "makeWebViewsDebuggable": false
+            },
+            "ios": {}
+        },
+        "overrides": [
+            {
+                "condition": {
+                    "os": [
+                        {
+                            "name": "ios"
+                        },
+                        {
+                            "name": "android"
+                        }
+                    ]
+                },
+                "override": {
+                    "signInWithKlarnaTokenizationTimeout": 5000,
+                    "paymentActionTimeout": 5000,
+                    "analytics": {
+                        "blockEvents": [
+                            "blackListedURL",
+                            "eventListenerSet",
+                            "controllerSetUp",
+                            "componentEnvironmentSet",
+                            "componentRegionSet",
+                            "componentResourceEndpointSet",
+                            "componentThemeSet",
+                            "componentReturnURLSet",
+                            "newPageWillLoad",
+                            "osmControllerInit",
+                            "attachWebView",
+                            "deliverActionToNativeEvent",
+                            "merchantCallbackSet",
+                            "attachWebView",
+                            "standaloneWebViewNavLoadURL",
+                            "standaloneWebViewDelegateCalled",
+                            "permissionsRegisteredHandler",
+                            "standaloneWebViewClientSet",
+                            "standaloneWebViewNavLoadURL",
+                            "evaluationError",
+                            "standaloneWebViewClientCalled",
+                            "permissionsUnregisteredHandler",
+                            "standaloneWebViewJSInterfaceAdded",
+                            "messageQueueAddedDuplicateReceiver"
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": {
+                    "integration": [
+                        "osm"
+                    ]
+                },
+                "override": {
+                    "analytics": {
+                        "level": "off"
+                    }
+                }
+            },
+            {
+                "condition": {
+                    "os": [
+                        {
+                            "name": "ios"
+                        }
+                    ]
+                },
+                "override": {
+                    "analytics": {
+                        "level": "info"
+                    }
+                }
+            },
+            {
+                "condition": {
+                    "sdk": [
+                        {
+                            "os": "ios",
+                            "version": {
+                                "equal": [
+                                    "2.6.25",
+                                    "2.6.26"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "override": {
+                    "disabled": true
+                }
+            },
+            {
+                "condition": {
+                    "sdk": [
+                        {
+                            "os": "ios",
+                            "version": {
+                                "equal": [
+                                    "2.11.1"
+                                ]
+                            }
+                        }
+                    ],
+                    "integration": [
+                        "payments",
+                        "hybrid",
+                        "webView"
+                    ]
+                },
+                "override": {
+                    "authenticationBrowserDisabled": true
+                }
+            }
+        ],
+        "texts": [
+            {
+                "name": "paymentView.card.instructions.hold",
+                "localizations": [
+                    {
+                        "default": true,
+                        "locale": "default",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Hold the front of your card up to the camera"
+                    }
+                ],
+                "placeholders": []
+            },
+            {
+                "name": "paymentView.card.instructions.scanning",
+                "localizations": [
+                    {
+                        "default": true,
+                        "locale": "default",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Scanning card"
+                    }
+                ],
+                "placeholders": []
+            },
+            {
+                "name": "paymentView.card.instructions.success",
+                "localizations": [
+                    {
+                        "default": true,
+                        "locale": "default",
+                        "language": "en",
+                        "region": "*",
+                        "value": "%issuer% recognised"
+                    }
+                ],
+                "placeholders": [
+                    "%issuer%"
+                ]
+            },
+            {
+                "name": "signinwithklarna.button.label.continue",
+                "localizations": [
+                    {
+                        "locale": "da-DK",
+                        "language": "da",
+                        "region": "*",
+                        "value": "Fortsæt med Klarna"
+                    },
+                    {
+                        "locale": "de-DE",
+                        "language": "de",
+                        "region": "*",
+                        "value": "Weiter mit Klarna"
+                    },
+                    {
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Continue with Klarna"
+                    },
+                    {
+                        "locale": "es-ES",
+                        "language": "es",
+                        "region": "*",
+                        "value": "Continuar con Klarna"
+                    },
+                    {
+                        "locale": "fi-FI",
+                        "language": "fi",
+                        "region": "*",
+                        "value": "Jatka Klarnallaa"
+                    },
+                    {
+                        "locale": "sv-FI",
+                        "language": "sv",
+                        "region": "FI",
+                        "value": "Fortsätt med Klarna"
+                    },
+                    {
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Continuer avec Klarna"
+                    },
+                    {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Folytatás a Klarnával"
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Continua con Klarna"
+                    },
+                    {
+                        "locale": "nb-NO",
+                        "language": "nb",
+                        "region": "*",
+                        "value": "Fortsett med Klarna"
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Verdergaan met Klarna"
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Kontynuuj z Klarna"
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Continuar com Klarna"
+                    },
+                    {
+                        "locale": "ro-RO",
+                        "language": "ro",
+                        "region": "*",
+                        "value": "Continuă cu Klarna"
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Fortsätt med Klarna"
+                    }
+                ],
+                "placeholders": []
+            },
+            {
+                "name": "signinwithklarna.button.label.continuewith",
+                "localizations": [
+                    {
+                        "locale": "da-DK",
+                        "language": "da",
+                        "region": "*",
+                        "value": "Fortsæt med "
+                    },
+                    {
+                        "locale": "de-DE",
+                        "language": "de",
+                        "region": "*",
+                        "value": "Weiter mit "
+                    },
+                    {
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Continue with "
+                    },
+                    {
+                        "locale": "es-ES",
+                        "language": "es",
+                        "region": "*",
+                        "value": "Continuar con "
+                    },
+                    {
+                        "locale": "fi-FI",
+                        "language": "fi",
+                        "region": "*",
+                        "value": "Jatka Klarnallaa "
+                    },
+                    {
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Continuer avec "
+                    },
+                    {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Folytatás a Klarnával "
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Continua con "
+                    },
+                    {
+                        "locale": "nb-NO",
+                        "language": "nb",
+                        "region": "*",
+                        "value": "Fortsett med "
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Verdergaan met "
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Kontynuuj z "
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Continuar com "
+                    },
+                    {
+                        "locale": "ro-RO",
+                        "language": "ro",
+                        "region": "*",
+                        "value": "Continuă cu "
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Fortsätt med "
+                    }
+                ],
+                "placeholders": []
+            },
+            {
+                "name": "button.label.paywith",
+                "localizations": [
+                    {
+                        "locale": "cs-CZ",
+                        "language": "cs",
+                        "region": "CZ",
+                        "value": "Zaplatit s"
+                    },
+                    {
+                        "locale": "da-DK",
+                        "language": "da",
+                        "region": "*",
+                        "value": "Betal med"
+                    },
+                    {
+                        "locale": "de-DE",
+                        "language": "de",
+                        "region": "*",
+                        "value": "Bezahlen mit"
+                    },
+                    {
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Pay with"
+                    },
+                    {
+                        "locale": "el-GR",
+                        "language": "el",
+                        "region": "*",
+                        "value": "Πληρωμή με"
+                    },
+                    {
+                        "locale": "es-ES",
+                        "language": "es",
+                        "region": "*",
+                        "value": "Pagar con"
+                    },
+                    {
+                        "locale": "fi-FI",
+                        "language": "fi",
+                        "region": "*",
+                        "value": "Maksa käyttäen"
+                    },
+                    {
+                        "locale": "fr-CA",
+                        "language": "fr",
+                        "region": "CA",
+                        "value": "Payez avec"
+                    },
+                    {
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Payer avec"
+                    },
+                    {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Fizetés a Klarnával"
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Paga con"
+                    },
+                    {
+                        "locale": "nb-NO",
+                        "language": "nb",
+                        "region": "*",
+                        "value": "Betal med"
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Betalen met"
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Zapłać za pomocą"
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Pagar com"
+                    },
+                    {
+                        "locale": "sk-SK",
+                        "language": "sk",
+                        "region": "*",
+                        "value": "Zaplať pomocou"
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Betala med"
+                    }
+                ],
+                "placeholders": []
+            },
+            {
+                "name": "button.label.continuewith",
+                "localizations": [
+                    {
+                        "locale": "da-DK",
+                        "language": "da",
+                        "region": "*",
+                        "value": "Fortsæt med"
+                    },
+                    {
+                        "locale": "de-DE",
+                        "language": "de",
+                        "region": "*",
+                        "value": "Weiter mit"
+                    },
+                    {
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Continue with"
+                    },
+                    {
+                        "locale": "es-ES",
+                        "language": "es",
+                        "region": "*",
+                        "value": "Continuar con"
+                    },
+                    {
+                        "locale": "fi-FI",
+                        "language": "fi",
+                        "region": "*",
+                        "value": "Jatka Klarnalla"
+                    },
+                    {
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Continuer avec"
+                    },
+                    {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Folytatás a Klarnával"
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Continua con"
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Verdergaan met"
+                    },
+                    {
+                        "locale": "nb-NO",
+                        "language": "nb",
+                        "region": "*",
+                        "value": "Fortsett med"
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Kontynuuj z"
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Continuar com"
+                    },
+                    {
+                        "locale": "ro-RO",
+                        "language": "ro",
+                        "region": "*",
+                        "value": "Continuă cu"
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Fortsätt med"
+                    }
+                ],
+                "placeholders": []
+            }
+        ],
+        "klarnaApps": {
+            "ios": [
+                {
+                    "bundleId": "com.klarna.app",
+                    "teamId": "UEGP57UW3K"
+                },
+                {
+                    "bundleId": "net.klarna.app.yellow",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.internalpink",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.purple",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.staging",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.oneoff",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.dev",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.dev",
+                    "teamId": "9C6FR7NUBF"
+                }
+            ],
+            "android": [
+                {
+                    "packageName": "com.myklarnamobile",
+                    "sha256CertFingerprints": [
+                        "B1:E3:7A:B5:C1:3D:F8:05:12:D3:67:E7:50:97:6F:96:E2:FF:A2:E6:E2:62:26:DA:37:9F:06:98:D5:89:34:EA",
+                        "FE:66:65:0B:19:D8:FD:AF:4C:E7:7A:9F:48:64:94:85:BD:8C:B7:7A:EE:F6:68:B5:56:71:5A:80:72:54:A4:EA"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.yellow",
+                    "sha256CertFingerprints": [
+                        "0E:73:B7:A2:BB:1A:18:CD:57:BB:3E:1A:9A:A2:C6:95:8E:20:B2:4B:E2:1E:0B:D0:CC:32:1A:4B:C9:D1:CE:E8",
+                        "E6:CF:48:C5:E5:C2:4C:74:0D:55:A6:0E:2A:65:43:32:5D:50:36:2A:C4:F5:D9:59:D4:E4:94:99:E3:F9:18:41"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.purple",
+                    "sha256CertFingerprints": [
+                        "03:51:AA:98:C2:01:41:F3:A9:F8:AC:56:38:E6:17:0E:7D:50:62:66:06:1C:86:C6:97:87:B3:BA:12:AD:21:7C",
+                        "FE:B5:8A:86:FE:A7:9E:CE:34:23:17:21:DF:A2:BF:0F:15:02:37:8B:B3:C3:99:BD:7B:60:E3:1C:98:5B:1A:D6"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.staging",
+                    "sha256CertFingerprints": [
+                        "43:DF:55:FB:60:7C:5F:31:25:FE:42:F3:0F:91:1B:12:43:40:8C:ED:64:CC:8F:1B:25:8B:1C:51:56:B5:8B:8B",
+                        "44:3E:C6:94:E3:9D:C7:B0:B5:D0:DF:15:42:91:E0:AC:28:50:69:DD:C8:A7:59:81:5D:55:8E:14:B4:53:79:C3"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.oneoff",
+                    "sha256CertFingerprints": [
+                        "C0:D9:F1:01:98:82:05:F8:08:01:06:2B:CA:8B:51:49:08:61:41:85:9D:74:5A:EA:73:AE:02:E2:DE:16:36:55"
+                    ]
+                },
+                {
+                    "packageName": "com.klarna",
+                    "sha256CertFingerprints": [
+                        "5C:D9:15:A8:10:32:78:F8:CB:74:DC:0F:3E:FB:B1:E2:87:7C:86:D8:6E:13:F6:53:67:55:D6:B9:D9:FA:C7:99"
+                    ]
+                }
+            ]
+        }
+    }
+}

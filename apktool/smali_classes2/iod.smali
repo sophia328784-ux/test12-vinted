@@ -1,0 +1,85 @@
+.class public final Liod;
+.super Lkh4;
+.source "r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lkh4;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final responseBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lu7g;)Lmh4;
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Lygk;->e(Ljava/lang/reflect/Type;)Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const-class v0, Ljava/util/Optional;
+
+    .line 6
+    .line 7
+    if-eq p0, v0, :cond_0
+
+    .line 8
+    .line 9
+    const/4 p0, 0x0
+
+    .line 10
+    return-object p0
+
+    .line 11
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 12
+    check-cast p1, Ljava/lang/reflect/ParameterizedType;
+
+    .line 13
+    .line 14
+    invoke-static {p0, p1}, Lygk;->d(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    invoke-virtual {p3, p0, p2}, Lu7g;->d(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;)Lmh4;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    new-instance p1, Lor6;
+
+    .line 23
+    .line 24
+    const/16 p2, 0x14
+
+    .line 25
+    .line 26
+    invoke-direct {p1, p0, p2}, Lor6;-><init>(Ljava/lang/Object;B)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-object p1
+.end method

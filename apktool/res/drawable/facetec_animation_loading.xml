@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$facetec_animation_loading__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="_R_G_L_1_G_L_11_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__1" />
+    <target android:name="_R_G_L_1_G_L_10_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__3" />
+    <target android:name="_R_G_L_1_G_L_9_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__5" />
+    <target android:name="_R_G_L_1_G_L_8_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__7" />
+    <target android:name="_R_G_L_1_G_L_7_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__9" />
+    <target android:name="_R_G_L_1_G_L_6_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__11" />
+    <target android:name="_R_G_L_1_G_L_5_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__13" />
+    <target android:name="_R_G_L_1_G_L_4_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__15" />
+    <target android:name="_R_G_L_1_G_L_3_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__17" />
+    <target android:name="_R_G_L_1_G_L_2_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__19" />
+    <target android:name="_R_G_L_1_G_L_1_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__21" />
+    <target android:name="_R_G_L_1_G_L_0_G_D_0_P_0" android:animation="@drawable/$facetec_animation_loading__23" />
+    <target android:name="_R_G_L_0_G_D_0_P_0_G_0_T_0" android:animation="@drawable/$facetec_animation_loading__25" />
+    <target android:name="_R_G_L_0_G_D_1_P_0_G_0_T_0" android:animation="@drawable/$facetec_animation_loading__31" />
+    <target android:name="_R_G_L_0_G_D_2_P_0_G_0_T_0" android:animation="@drawable/$facetec_animation_loading__37" />
+    <target android:name="_R_G_L_0_G_D_3_P_0_G_0_T_0" android:animation="@drawable/$facetec_animation_loading__43" />
+    <target android:name="_R_G_L_0_G_D_4_P_0_G_0_T_0" android:animation="@drawable/$facetec_animation_loading__49" />
+    <target android:name="_R_G_L_0_G_D_5_P_0_G_0_T_0" android:animation="@drawable/$facetec_animation_loading__55" />
+    <target android:name="_R_G_L_0_G_D_5_P_0" android:animation="@drawable/$facetec_animation_loading__61" />
+    <target android:name="time_group" android:animation="@drawable/$facetec_animation_loading__66" />
+</animated-vector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_success__31" android:duration="1520" android:startOffset="0" android:valueFrom="M-24.96 5.34 C-24.96,5.34 -24.96,5.47 -24.96,5.47 C-24.96,5.47 -24.71,5.34 -24.71,5.34 " android:valueTo="M-24.96 5.34 C-24.96,5.34 -24.96,5.47 -24.96,5.47 C-24.96,5.47 -24.71,5.34 -24.71,5.34 " android:valueType="pathType" android:propertyName="pathData" />
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_success__32" android:duration="360" android:startOffset="1520" android:valueFrom="M-24.96 5.34 C-24.96,5.34 -24.96,5.47 -24.96,5.47 C-24.96,5.47 -24.71,5.34 -24.71,5.34 " android:valueTo="M-24.96 5.34 C-24.96,5.34 -10.71,16.84 -10.71,16.84 C-10.71,16.84 -10.71,16.84 -10.71,16.84 " android:valueType="pathType" android:propertyName="pathData" />
+    <objectAnimator android:interpolator="@drawable/$facetec_animation_success__33" android:duration="880" android:startOffset="1880" android:valueFrom="M-24.96 5.34 C-24.96,5.34 -10.71,16.84 -10.71,16.84 C-10.71,16.84 -10.71,16.84 -10.71,16.84 " android:valueTo="M-24.96 5.34 C-24.96,5.34 -10.71,16.84 -10.71,16.84 C-10.71,16.84 18.79,-15.41 18.79,-15.41 " android:valueType="pathType" android:propertyName="pathData" />
+</set>

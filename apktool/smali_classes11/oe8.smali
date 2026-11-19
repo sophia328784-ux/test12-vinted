@@ -1,0 +1,226 @@
+.class public Loe8;
+.super Lf1;
+
+
+# instance fields
+.field public final a:[Lne8;
+
+
+# direct methods
+.method public constructor <init>(Lne8;)V
+    .locals 0
+
+    .line 35
+    invoke-direct {p0}, Lf1;-><init>()V
+
+    filled-new-array {p1}, [Lne8;
+
+    move-result-object p1
+
+    iput-object p1, p0, Loe8;->a:[Lne8;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lo1;)V
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Lf1;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lo1;->size()I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    new-array v0, v0, [Lne8;
+
+    .line 9
+    .line 10
+    iput-object v0, p0, Loe8;->a:[Lne8;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    :goto_0
+    invoke-virtual {p1}, Lo1;->size()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
+
+    .line 17
+    if-eq v0, v1, :cond_0
+
+    .line 18
+    .line 19
+    iget-object v1, p0, Loe8;->a:[Lne8;
+
+    .line 20
+    .line 21
+    invoke-virtual {p1, v0}, Lo1;->A(I)Lw0;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v2
+
+    .line 25
+    invoke-static {v2}, Lne8;->p(Lw0;)Lne8;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v2
+
+    .line 29
+    aput-object v2, v1, v0
+
+    .line 30
+    .line 31
+    add-int/lit8 v0, v0, 0x1
+
+    .line 32
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_0
+    return-void
+.end method
+
+.method public constructor <init>([Lne8;)V
+    .locals 3
+
+    invoke-direct {p0}, Lf1;-><init>()V
+
+    .line 36
+    array-length v0, p1
+
+    new-array v0, v0, [Lne8;
+
+    const/4 v1, 0x0
+
+    array-length v2, p1
+
+    invoke-static {p1, v1, v0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 37
+    iput-object v0, p0, Loe8;->a:[Lne8;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final h()Lorg/bouncycastle/asn1/ASN1Primitive;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lnv4;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Loe8;->a:[Lne8;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0}, Lnv4;-><init>([Lw0;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "GeneralNames:"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sget-object v1, Lhgi;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const/4 v2, 0x0
+
+    .line 14
+    :goto_0
+    iget-object v3, p0, Loe8;->a:[Lne8;
+
+    .line 15
+    .line 16
+    array-length v4, v3
+
+    .line 17
+    if-eq v2, v4, :cond_0
+
+    .line 18
+    .line 19
+    const-string v4, "    "
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    .line 24
+    aget-object v3, v3, v2
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    add-int/lit8 v2, v2, 0x1
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p0
+
+    .line 39
+    return-object p0
+.end method

@@ -1,0 +1,27 @@
+package defpackage;
+
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes7.dex */
+public final class jlm {
+    public final jgm a;
+    public final CoroutineContext b;
+
+    public jlm(jgm jgmVar, CoroutineContext coroutineContext) {
+        jgmVar.getClass();
+        coroutineContext.getClass();
+        this.a = jgmVar;
+        this.b = coroutineContext;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    public jlm(jgm jgmVar, CoroutineContext coroutineContext, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        if ((i & 2) != 0) {
+            aj5 aj5Var = vz5.a;
+            coroutineContext = ch5.c;
+        }
+        this(jgmVar, coroutineContext);
+    }
+}

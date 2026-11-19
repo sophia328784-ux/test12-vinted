@@ -1,0 +1,26 @@
+package defpackage;
+
+import android.app.Activity;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes10.dex */
+public final class czk implements rl5 {
+    public final ezk a;
+
+    public czk(ezk ezkVar) {
+        ezkVar.getClass();
+        this.a = ezkVar;
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityPostResumed(Activity activity) {
+        activity.getClass();
+        this.a.b.set(activity.getClass().getSimpleName());
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityPrePaused(Activity activity) {
+        activity.getClass();
+        this.a.c(activity);
+    }
+}

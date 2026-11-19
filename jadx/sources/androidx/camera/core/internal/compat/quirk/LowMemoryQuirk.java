@@ -1,0 +1,18 @@
+package androidx.camera.core.internal.compat.quirk;
+
+import android.os.Build;
+import androidx.camera.core.impl.Quirk;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes3.dex */
+public class LowMemoryQuirk implements Quirk {
+    private static final Set<String> DEVICE_MODELS = new HashSet(Arrays.asList("SM-A520W", "MOTOG3"));
+
+    public static boolean load() {
+        return DEVICE_MODELS.contains(Build.MODEL.toUpperCase(Locale.US));
+    }
+}

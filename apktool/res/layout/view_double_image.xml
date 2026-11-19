@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vinted.views.common.VintedImageView android:layout_gravity="left|top" android:id="@id/view_double_image_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vinted_scaling="cover" />
+    <com.vinted.views.common.VintedImageView android:layout_gravity="right|bottom" android:id="@id/view_double_image_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vinted_scaling="cover" />
+</merge>

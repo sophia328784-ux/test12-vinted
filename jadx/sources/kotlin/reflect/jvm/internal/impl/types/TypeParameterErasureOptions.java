@@ -1,0 +1,13 @@
+package kotlin.reflect.jvm.internal.impl.types;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes2.dex */
+public final class TypeParameterErasureOptions {
+    public final boolean a;
+    public final boolean b;
+
+    public TypeParameterErasureOptions(boolean z, boolean z2) {
+        this.a = z;
+        this.b = z2;
+    }
+}

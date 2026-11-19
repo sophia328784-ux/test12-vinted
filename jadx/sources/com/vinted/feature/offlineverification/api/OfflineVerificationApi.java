@@ -1,0 +1,23 @@
+package com.vinted.feature.offlineverification.api;
+
+import com.vinted.feature.offlineverification.api.request.OfflineVerificationEligibilityRequest;
+import com.vinted.feature.offlineverification.api.response.OfflineVerificationCriteriaResponse;
+import com.vinted.feature.offlineverification.api.response.OfflineVerificationEligibilityResponse;
+import io.reactivex.Single;
+import kotlin.Metadata;
+import retrofit2.http.Body;
+import retrofit2.http.GET;
+import retrofit2.http.Header;
+import retrofit2.http.POST;
+import retrofit2.http.Path;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes9.dex */
+@Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\bg\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H'J$\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\b0\u00032\b\b\u0001\u0010\t\u001a\u00020\n2\n\b\u0001\u0010\u000b\u001a\u0004\u0018\u00010\nH'¨\u0006\fÀ\u0006\u0003"}, d2 = {"Lcom/vinted/feature/offlineverification/api/OfflineVerificationApi;", "", "checkVerificationEligibility", "Lio/reactivex/Single;", "Lcom/vinted/feature/offlineverification/api/response/OfflineVerificationEligibilityResponse;", "eligibilityCheckRequest", "Lcom/vinted/feature/offlineverification/api/request/OfflineVerificationEligibilityRequest;", "getEvsRequiredFields", "Lcom/vinted/feature/offlineverification/api/response/OfflineVerificationCriteriaResponse;", "swapStatusWithCondition", "", "catalogId", "impl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+public interface OfflineVerificationApi {
+    @POST("offline_verification/eligibility")
+    Single<OfflineVerificationEligibilityResponse> checkVerificationEligibility(@Body OfflineVerificationEligibilityRequest eligibilityCheckRequest);
+
+    @GET("offline_verification/criteria/{catalog_id}")
+    Single<OfflineVerificationCriteriaResponse> getEvsRequiredFields(@Header("X-Swap-Status-With-Condition") String swapStatusWithCondition, @Path("catalog_id") String catalogId);
+}

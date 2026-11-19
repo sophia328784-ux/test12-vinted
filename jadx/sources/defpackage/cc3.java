@@ -1,0 +1,30 @@
+package defpackage;
+
+import com.vinted.feature.checkoutpluginbase.api.entity.PurchaseType;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes8.dex */
+public abstract /* synthetic */ class cc3 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[PurchaseType.values().length];
+        try {
+            iArr[PurchaseType.push_up.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[PurchaseType.closet_promotion.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            iArr[PurchaseType.return_label.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            iArr[PurchaseType.transaction.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        a = iArr;
+    }
+}

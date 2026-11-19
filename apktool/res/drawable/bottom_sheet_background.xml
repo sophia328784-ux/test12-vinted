@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/v_sys_unit_2" android:topRightRadius="@dimen/v_sys_unit_2" />
+    <solid android:color="@color/v_comp_bottom_sheet_background_color" />
+</shape>

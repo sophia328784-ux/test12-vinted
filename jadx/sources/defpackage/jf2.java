@@ -1,0 +1,90 @@
+package defpackage;
+
+import androidx.compose.runtime.c;
+import com.vinted.bloom.compose.generated.theme.molecule.BloomCellStyling;
+import com.vinted.bloom.compose.molecule.BloomCellKt;
+import com.vinted.bloom.compose.molecule.list.v2.BloomItemDividerKt;
+import com.vinted.bloom.compose.molecule.list.v2.BloomListContext;
+import com.vinted.feature.bumps.option.BumpOptionItemBox;
+import com.vinted.feature.bumps.option.OrderItemsState;
+import com.vinted.feature.bumps.option.a;
+import java.util.List;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function4;
+
+/* JADX INFO: compiled from: r8-map-id-ad22863d6d4aec61936f78b011ebbbb856e5885568f3755026a65c695fc525ea */
+/* JADX INFO: loaded from: classes8.dex */
+public final class jf2 implements Function4 {
+    final /* synthetic */ BloomListContext $context$inlined;
+    final /* synthetic */ List $items;
+    final /* synthetic */ int $lastIndex$inlined;
+    final /* synthetic */ Function1 $onRemoveClicked$inlined;
+    final /* synthetic */ String $removeItemLabel$inlined;
+    final /* synthetic */ OrderItemsState $state$inlined;
+
+    public jf2(List list, int i, BloomListContext bloomListContext, OrderItemsState orderItemsState, String str, Function1 function1) {
+        this.$items = list;
+        this.$lastIndex$inlined = i;
+        this.$context$inlined = bloomListContext;
+        this.$state$inlined = orderItemsState;
+        this.$removeItemLabel$inlined = str;
+        this.$onRemoveClicked$inlined = function1;
+    }
+
+    /* JADX WARN: Code duplicated, block: B:27:0x008e  */
+    public final void invoke(n4b n4bVar, int i, x04 x04Var, int i2) {
+        int i3;
+        if ((i2 & 6) == 0) {
+            i3 = i2 | (((c) x04Var).n(n4bVar) ? 4 : 2);
+        } else {
+            i3 = i2;
+        }
+        if ((i2 & 48) == 0) {
+            i3 |= x04Var.c(i) ? 32 : 16;
+        }
+        c cVar = (c) x04Var;
+        if (!cVar.X(i3 & 1, (i3 & 147) != 146)) {
+            cVar.a0();
+            return;
+        }
+        zmd zmdVar = c14.a;
+        Object obj = this.$items.get(i);
+        cVar.h0(1736436634);
+        int i4 = i3 & 14;
+        BumpOptionItemBox bumpOptionItemBox = (BumpOptionItemBox) obj;
+        cVar.h0(273219967);
+        BloomCellStyling.Size size = BloomCellStyling.Size.TIGHT;
+        nlc nlcVarI = c2j.i(nlc.a, "tag_bump_item");
+        boolean zN = cVar.n(this.$state$inlined) | cVar.n(this.$removeItemLabel$inlined) | cVar.n(this.$onRemoveClicked$inlined) | cVar.e(bumpOptionItemBox);
+        Object objS = cVar.S();
+        if (zN) {
+            objS = new a(this.$state$inlined, this.$removeItemLabel$inlined, this.$onRemoveClicked$inlined, bumpOptionItemBox);
+            cVar.s0(objS);
+        } else {
+            x04.a.getClass();
+            if (objS == u04.b) {
+                objS = new a(this.$state$inlined, this.$removeItemLabel$inlined, this.$onRemoveClicked$inlined, bumpOptionItemBox);
+                cVar.s0(objS);
+            }
+        }
+        BloomCellKt.BloomCell(t7h.c(nlcVarI, true, (Function1) objS), null, size, null, null, null, null, null, null, false, false, null, false, null, null, null, null, false, null, null, mw3.c(514530917, new gf2(bumpOptionItemBox, this.$state$inlined, i, this.$onRemoveClicked$inlined, this.$removeItemLabel$inlined), cVar), cVar, pui.Targets_merge_following_banner_VALUE, 0, 6, 1048570);
+        cVar.x(false);
+        if (i != this.$lastIndex$inlined) {
+            cVar.h0(1736491410);
+            BloomListContext bloomListContext = this.$context$inlined;
+            BloomItemDividerKt.BloomItemDivider(n4bVar, bloomListContext, bloomListContext.showDividerConfig.showInBetweenDividers, cVar, i4);
+            cVar.x(false);
+        } else {
+            cVar.h0(1736585588);
+            cVar.x(false);
+        }
+        cVar.x(false);
+    }
+
+    @Override // kotlin.jvm.functions.Function4
+    public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
+        invoke((n4b) obj, ((Number) obj2).intValue(), (x04) obj3, ((Number) obj4).intValue());
+        return Unit.a;
+    }
+}
